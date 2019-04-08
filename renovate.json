@@ -1,0 +1,63 @@
+{
+  "extends": [
+    ":prConcurrentLimit10",
+    ":prHourlyLimitNone",
+    ":prNotPending",
+    ":rebaseStalePrs",
+    ":renovatePrefix",
+    ":semanticCommitsDisabled",
+    ":timezone(Australia/Melbourne)",
+    ":unpublishSafe",
+    "group:definitelyTyped",
+    "preview:buildkite",
+    "preview:dockerCompose",
+    "preview:dockerVersions"
+  ],
+  "buildkite": {
+    "commitMessageExtra": "",
+    "commitMessageTopic": "Buildkite plugins",
+    "groupName": "Buildkite plugins"
+  },
+  "docker": {
+    "commitMessageExtra": "",
+    "group": {
+      "commitMessageTopic": "Docker images"
+    },
+    "groupName": "Docker images"
+  },
+  "packageRules": [
+    {
+      "packageNames": ["braid-design-system", "sku"],
+      "packagePatterns": ["^@?seek", "seek$"],
+      "schedule": "before 7am on every weekday"
+    },
+    {
+      "packagePatterns": ["*"],
+      "excludePackageNames": ["braid-design-system", "sku"],
+      "excludePackagePatterns": ["^@?seek", "seek$", "^@types/"],
+      "depTypeList": ["devDependencies"],
+      "groupName": "devDependencies"
+    },
+    {
+      "depTypeList": ["dependencies"],
+      "rangeStrategy": "auto"
+    },
+    {
+      "depTypeList": ["devDependencies"],
+      "rangeStrategy": "replace"
+    },
+    {
+      "depTypeList": ["peerDependencies"],
+      "rangeStrategy": "widen"
+    }
+  ],
+  "commitMessageAction": "",
+  "commitMessageExtra": "{{newValue}}",
+  "commitMessagePrefix": "deps:",
+  "commitMessageTopic": "{{depName}}",
+  "ignoreNpmrcFile": true,
+  "lazyGrouping": false,
+  "postUpdateOptions": ["npmDedupe", "yarnDedupeHighest"],
+  "prNotPendingHours": 1,
+  "schedule": "before 7am on Monday"
+}
