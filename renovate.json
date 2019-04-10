@@ -13,37 +13,50 @@
     "preview:dockerCompose",
     "preview:dockerVersions"
   ],
-  "buildkite": {
-    "commitMessageExtra": "",
-    "commitMessageTopic": "Buildkite plugins",
-    "groupName": "Buildkite plugins"
-  },
-  "docker": {
-    "commitMessageExtra": "",
-    "group": {
-      "commitMessageTopic": "Docker images"
-    },
-    "groupName": "Docker images"
-  },
   "packageRules": [
+    {
+      "commitMessageExtra": "{{newValue}}",
+      "commitMessageTopic": "{{depName}}",
+      "managers": ["buildkite", "gomod", "npm"]
+    },
+    {
+      "commitMessageExtra": "",
+      "depTypeList": ["devDependencies"],
+      "excludePackageNames": ["braid-design-system", "sku"],
+      "excludePackagePatterns": ["^@?seek", "seek$", "^@types/"],
+      "groupName": "npm devDependencies",
+      "managers": ["npm"]
+    },
+    {
+      "commitMessageExtra": "",
+      "depTypeList": ["peerDependencies"],
+      "excludePackageNames": ["braid-design-system", "sku"],
+      "excludePackagePatterns": ["^@?seek", "seek$", "^@types/"],
+      "groupName": "npm peerDependencies",
+      "managers": ["npm"]
+    },
+    {
+      "commitMessageExtra": "",
+      "commitMessageTopic": "Buildkite plugins",
+      "excludePackagePatterns": ["^seek-oss/"],
+      "groupName": "Buildkite plugins",
+      "managers": ["buildkite"]
+    },
+    {
+      "commitMessageExtra": "",
+      "group": {
+        "commitMessageTopic": "Docker images"
+      },
+      "groupName": "Docker images",
+      "managers": ["docker-compose", "dockerfile"]
+    },
     {
       "packageNames": ["braid-design-system", "sku"],
       "packagePatterns": ["^@?seek", "seek$"],
       "schedule": "before 7am on every weekday"
     },
     {
-      "packagePatterns": ["*"],
-      "excludePackageNames": ["braid-design-system", "sku"],
-      "excludePackagePatterns": ["^@?seek", "seek$", "^@types/"],
-      "depTypeList": ["devDependencies"],
-      "groupName": "devDependencies"
-    },
-    {
-      "depTypeList": ["dependencies"],
-      "rangeStrategy": "auto"
-    },
-    {
-      "depTypeList": ["devDependencies"],
+      "depTypeList": ["dependencies", "devDependencies"],
       "rangeStrategy": "replace"
     },
     {
@@ -52,9 +65,7 @@
     }
   ],
   "commitMessageAction": "",
-  "commitMessageExtra": "{{newValue}}",
   "commitMessagePrefix": "deps:",
-  "commitMessageTopic": "{{depName}}",
   "ignoreNpmrcFile": true,
   "lazyGrouping": false,
   "postUpdateOptions": ["npmDedupe", "yarnDedupeHighest"],
