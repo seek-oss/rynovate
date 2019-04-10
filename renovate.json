@@ -8,7 +8,6 @@
     ":semanticCommitsDisabled",
     ":timezone(Australia/Melbourne)",
     ":unpublishSafe",
-    "group:definitelyTyped",
     "preview:buildkite",
     "preview:dockerCompose"
   ],
@@ -17,6 +16,12 @@
       "commitMessageExtra": "{{newValue}}",
       "commitMessageTopic": "{{depName}}",
       "managers": ["buildkite", "gomod", "npm"]
+    },
+    {
+      "commitMessageExtra": "",
+      "groupName": "npm definitelyTyped",
+      "managers": ["npm"],
+      "packagePatterns": ["^@types/"]
     },
     {
       "commitMessageExtra": "",
@@ -36,7 +41,6 @@
     },
     {
       "commitMessageExtra": "",
-      "commitMessageTopic": "Buildkite plugins",
       "excludePackagePatterns": ["^seek-oss/"],
       "groupName": "Buildkite plugins",
       "managers": ["buildkite"],
@@ -45,7 +49,7 @@
     {
       "commitMessageExtra": "",
       "group": {
-        "commitMessageTopic": "Docker images"
+        "commitMessageTopic": "{{groupName}}"
       },
       "groupName": "Docker images",
       "managers": ["docker-compose", "dockerfile"],

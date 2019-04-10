@@ -15,6 +15,7 @@ Dependencies are grouped and scheduled:
 | JavaScript dependency     | No      | Monday   |
 | JavaScript devDependency  | Yes     | Monday   |
 | JavaScript peerDependency | Yes     | Monday   |
+| TypeScript definition     | Yes     | Monday   |
 | Buildkite plugin          | Yes     | Friday   |
 | Docker image              | Yes     | Friday   |
 
