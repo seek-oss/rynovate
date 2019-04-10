@@ -10,8 +10,7 @@
     ":unpublishSafe",
     "group:definitelyTyped",
     "preview:buildkite",
-    "preview:dockerCompose",
-    "preview:dockerVersions"
+    "preview:dockerCompose"
   ],
   "packageRules": [
     {
