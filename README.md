@@ -10,13 +10,13 @@ Dependencies are grouped and scheduled:
 
 | Type                      | Grouped | Schedule |
 | :------------------------ | :------ | :------- |
-| SEEK                      | No      | Weekdays |
-| Go module                 | No      | Mondays  |
-| JavaScript dependency     | No      | Mondays  |
-| JavaScript devDependency  | Yes     | Mondays  |
-| JavaScript peerDependency | Yes     | Mondays  |
-| Buildkite plugin          | Yes     | Mondays  |
-| Docker image              | Yes     | Mondays  |
+| SEEK                      | No      | Weekday  |
+| Go module                 | No      | Monday   |
+| JavaScript dependency     | No      | Monday   |
+| JavaScript devDependency  | Yes     | Monday   |
+| JavaScript peerDependency | Yes     | Monday   |
+| Buildkite plugin          | Yes     | Friday   |
+| Docker image              | Yes     | Friday   |
 
 Pull requests are tersely named:
 

@@ -40,7 +40,8 @@
       "commitMessageTopic": "Buildkite plugins",
       "excludePackagePatterns": ["^seek-oss/"],
       "groupName": "Buildkite plugins",
-      "managers": ["buildkite"]
+      "managers": ["buildkite"],
+      "schedule": "before 7am on Friday"
     },
     {
       "commitMessageExtra": "",
@@ -48,7 +49,8 @@
         "commitMessageTopic": "Docker images"
       },
       "groupName": "Docker images",
-      "managers": ["docker-compose", "dockerfile"]
+      "managers": ["docker-compose", "dockerfile"],
+      "schedule": "before 7am on Friday"
     },
     {
       "packageNames": ["braid-design-system", "sku"],
