@@ -1,7 +1,7 @@
 {
   "extends": [
     ":prConcurrentLimit10",
-    ":prHourlyLimitNone",
+    ":prHourlyLimit2",
     ":prNotPending",
     ":rebaseStalePrs",
     ":renovatePrefix",
