@@ -73,7 +73,7 @@
   "commitMessagePrefix": "deps:",
   "ignoreNpmrcFile": true,
   "lazyGrouping": false,
-  "postUpdateOptions": ["npmDedupe", "yarnDedupeHighest"],
+  "postUpdateOptions": [],
   "prNotPendingHours": 1,
   "schedule": "before 7am on Monday"
 }
