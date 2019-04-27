@@ -5,7 +5,7 @@
     ":prNotPending",
     ":rebaseStalePrs",
     ":renovatePrefix",
-    ":semanticCommitsDisabled",
+    ":semanticCommits",
     ":timezone(Australia/Melbourne)",
     ":unpublishSafe",
     "preview:buildkite",
@@ -19,7 +19,7 @@
     },
     {
       "commitMessageExtra": "",
-      "groupName": "npm definitelyTyped",
+      "groupName": "npm definitely typed",
       "managers": ["npm"],
       "packagePatterns": ["^@types/"]
     },
@@ -28,7 +28,7 @@
       "depTypeList": ["devDependencies"],
       "excludePackageNames": ["braid-design-system", "sku"],
       "excludePackagePatterns": ["^@?seek", "seek$", "^@types/"],
-      "groupName": "npm devDependencies",
+      "groupName": "npm dev dependencies",
       "managers": ["npm"]
     },
     {
@@ -36,13 +36,13 @@
       "depTypeList": ["peerDependencies"],
       "excludePackageNames": ["braid-design-system", "sku"],
       "excludePackagePatterns": ["^@?seek", "seek$", "^@types/"],
-      "groupName": "npm peerDependencies",
+      "groupName": "npm peer dependencies",
       "managers": ["npm"]
     },
     {
       "commitMessageExtra": "",
       "excludePackagePatterns": ["^seek-oss/"],
-      "groupName": "Buildkite plugins",
+      "groupName": "buildkite plugins",
       "managers": ["buildkite"],
       "schedule": "before 7am on Friday"
     },
@@ -51,7 +51,7 @@
       "group": {
         "commitMessageTopic": "{{groupName}}"
       },
-      "groupName": "Docker images",
+      "groupName": "docker images",
       "managers": ["docker-compose", "dockerfile"],
       "schedule": "before 7am on Friday"
     },
@@ -61,7 +61,16 @@
       "schedule": "before 7am on every weekday"
     },
     {
-      "depTypeList": ["dependencies", "devDependencies"],
+      "managers": ["gomod"],
+      "semanticCommitType": "fix"
+    },
+    {
+      "depTypeList": ["dependencies"],
+      "rangeStrategy": "replace",
+      "semanticCommitType": "fix"
+    },
+    {
+      "depTypeList": ["devDependencies"],
       "rangeStrategy": "replace"
     },
     {
@@ -70,10 +79,11 @@
     }
   ],
   "commitMessageAction": "",
-  "commitMessagePrefix": "deps:",
   "ignoreNpmrcFile": true,
   "lazyGrouping": false,
   "postUpdateOptions": [],
   "prNotPendingHours": 1,
-  "schedule": "before 7am on Monday"
+  "schedule": "before 7am on Monday",
+  "semanticCommitScope": "",
+  "semanticCommitType": "deps"
 }

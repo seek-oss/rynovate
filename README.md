@@ -21,11 +21,10 @@ Dependencies are grouped and scheduled:
 
 Pull requests are tersely named:
 
-| Grouped     | Title                                |
-| :---------- | :----------------------------------- |
-| No          | `deps: pino 5.12.2`                  |
-| Yes         | `deps: npm devDependencies`          |
-| Yes (major) | `deps: npm peerDependencies (major)` |
+| Type                      | Example                      |
+| :------------------------ | :--------------------------- |
+| Production dependency     | `fix: pino 5.12.2`           |
+| Non-production dependency | `deps: npm dev dependencies` |
 
 ## Usage
 
