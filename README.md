@@ -8,16 +8,16 @@
 
 Dependencies are grouped and scheduled:
 
-| Type                      | Grouped | Schedule |
-| :------------------------ | :------ | :------- |
-| SEEK                      | No      | Weekday  |
-| Go module                 | No      | Monday   |
-| JavaScript dependency     | No      | Monday   |
-| JavaScript devDependency  | Yes     | Monday   |
-| JavaScript peerDependency | Yes     | Monday   |
-| TypeScript definition     | Yes     | Monday   |
-| Buildkite plugin          | Yes     | Friday   |
-| Docker image              | Yes     | Friday   |
+| Type                      | Grouped | Schedule  |
+| :------------------------ | :------ | :-------- |
+| SEEK                      | No      | Weekday   |
+| Go module                 | No      | Monday    |
+| JavaScript dependency     | No      | Monday    |
+| JavaScript devDependency  | Yes     | Wednesday |
+| JavaScript peerDependency | Yes     | Wednesday |
+| TypeScript definition     | Yes     | Wednesday |
+| Buildkite plugin          | Yes     | Friday    |
+| Docker image              | Yes     | Friday    |
 
 Pull requests are tersely named:
 

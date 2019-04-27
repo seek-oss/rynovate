@@ -21,7 +21,8 @@
       "commitMessageExtra": "",
       "groupName": "npm definitely typed",
       "managers": ["npm"],
-      "packagePatterns": ["^@types/"]
+      "packagePatterns": ["^@types/"],
+      "schedule": "before 7am on Wednesday"
     },
     {
       "commitMessageExtra": "",
@@ -29,7 +30,8 @@
       "excludePackageNames": ["braid-design-system", "sku"],
       "excludePackagePatterns": ["^@?seek", "seek$", "^@types/"],
       "groupName": "npm dev dependencies",
-      "managers": ["npm"]
+      "managers": ["npm"],
+      "schedule": "before 7am on Wednesday"
     },
     {
       "commitMessageExtra": "",
@@ -37,7 +39,8 @@
       "excludePackageNames": ["braid-design-system", "sku"],
       "excludePackagePatterns": ["^@?seek", "seek$", "^@types/"],
       "groupName": "npm peer dependencies",
-      "managers": ["npm"]
+      "managers": ["npm"],
+      "schedule": "before 7am on Wednesday"
     },
     {
       "commitMessageExtra": "",
