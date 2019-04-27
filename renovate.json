@@ -61,6 +61,10 @@
       "schedule": "before 7am on every weekday"
     },
     {
+      "digest": {
+        "commitMessageExtra": "{{newDigestShort}}",
+        "commitMessageTopic": "{{{depName}}}"
+      },
       "managers": ["gomod"],
       "semanticCommitType": "fix"
     },
