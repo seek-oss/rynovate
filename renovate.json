@@ -22,7 +22,7 @@
       "groupName": "npm definitely typed",
       "managers": ["npm"],
       "packagePatterns": ["^@types/"],
-      "schedule": "before 7am on Wednesday"
+      "schedule": "before 7am on Tuesday"
     },
     {
       "commitMessageExtra": "",
@@ -31,7 +31,7 @@
       "excludePackagePatterns": ["^@?seek", "seek$", "^@types/"],
       "groupName": "npm dev dependencies",
       "managers": ["npm"],
-      "schedule": "before 7am on Wednesday"
+      "schedule": "before 7am on Tuesday"
     },
     {
       "commitMessageExtra": "",
@@ -40,14 +40,14 @@
       "excludePackagePatterns": ["^@?seek", "seek$", "^@types/"],
       "groupName": "npm peer dependencies",
       "managers": ["npm"],
-      "schedule": "before 7am on Wednesday"
+      "schedule": "before 7am on Tuesday"
     },
     {
       "commitMessageExtra": "",
       "excludePackagePatterns": ["^seek-oss/"],
       "groupName": "buildkite plugins",
       "managers": ["buildkite"],
-      "schedule": "before 7am on Friday"
+      "schedule": "before 7am on Wednesday"
     },
     {
       "commitMessageExtra": "",
@@ -56,7 +56,7 @@
       },
       "groupName": "docker images",
       "managers": ["docker-compose", "dockerfile"],
-      "schedule": "before 7am on Friday"
+      "schedule": "before 7am on Wednesday"
     },
     {
       "packageNames": ["braid-design-system", "sku"],
@@ -91,7 +91,7 @@
   "lazyGrouping": false,
   "postUpdateOptions": [],
   "prNotPendingHours": 1,
-  "schedule": "before 7am on Monday",
+  "schedule": "before 7am on Monday and Friday",
   "semanticCommitScope": "",
   "semanticCommitType": "deps"
 }
