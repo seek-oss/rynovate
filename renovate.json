@@ -61,6 +61,7 @@
     {
       "packageNames": ["braid-design-system", "sku"],
       "packagePatterns": ["^@?seek", "seek$"],
+      "rangeStrategy": "pin",
       "schedule": "before 7am on every weekday"
     },
     {
