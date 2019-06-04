@@ -13,6 +13,27 @@
   ],
   "packageRules": [
     {
+      "depTypeList": ["dependencies"],
+      "rangeStrategy": "auto",
+      "semanticCommitType": "fix"
+    },
+    {
+      "depTypeList": ["devDependencies"],
+      "rangeStrategy": "auto"
+    },
+    {
+      "depTypeList": ["peerDependencies"],
+      "rangeStrategy": "auto"
+    },
+    {
+      "digest": {
+        "commitMessageExtra": "{{newDigestShort}}",
+        "commitMessageTopic": "{{{depName}}}"
+      },
+      "managers": ["gomod"],
+      "semanticCommitType": "fix"
+    },
+    {
       "commitMessageExtra": "{{newValue}}",
       "commitMessageTopic": "{{depName}}",
       "managers": ["buildkite", "gomod", "npm"]
@@ -68,27 +89,6 @@
       "packagePatterns": ["^@?seek", "seek$"],
       "rangeStrategy": "pin",
       "schedule": "before 7am on every weekday"
-    },
-    {
-      "digest": {
-        "commitMessageExtra": "{{newDigestShort}}",
-        "commitMessageTopic": "{{{depName}}}"
-      },
-      "managers": ["gomod"],
-      "semanticCommitType": "fix"
-    },
-    {
-      "depTypeList": ["dependencies"],
-      "rangeStrategy": "replace",
-      "semanticCommitType": "fix"
-    },
-    {
-      "depTypeList": ["devDependencies"],
-      "rangeStrategy": "replace"
-    },
-    {
-      "depTypeList": ["peerDependencies"],
-      "rangeStrategy": "widen"
     }
   ],
   "commitMessageAction": "",
