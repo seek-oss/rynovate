@@ -1,0 +1,102 @@
+{
+  "extends": [
+    ":prConcurrentLimit10",
+    ":prHourlyLimit2",
+    ":prNotPending",
+    ":rebaseStalePrs",
+    ":renovatePrefix",
+    ":semanticCommits",
+    ":timezone(Australia/Melbourne)",
+    ":unpublishSafe",
+    "preview:buildkite",
+    "preview:dockerCompose"
+  ],
+  "packageRules": [
+    {
+      "depTypeList": ["dependencies"],
+      "rangeStrategy": "auto",
+      "semanticCommitType": "fix"
+    },
+    {
+      "depTypeList": ["devDependencies"],
+      "rangeStrategy": "auto"
+    },
+    {
+      "depTypeList": ["peerDependencies"],
+      "rangeStrategy": "auto"
+    },
+    {
+      "digest": {
+        "commitMessageExtra": "{{newDigestShort}}",
+        "commitMessageTopic": "{{{depName}}}"
+      },
+      "managers": ["gomod"],
+      "semanticCommitType": "fix"
+    },
+    {
+      "commitMessageExtra": "{{newValue}}",
+      "commitMessageTopic": "{{depName}}",
+      "managers": ["buildkite", "gomod", "npm"]
+    },
+    {
+      "commitMessageExtra": "",
+      "groupName": "npm definitely typed",
+      "managers": ["npm"],
+      "packagePatterns": ["^@types/"],
+      "recreateClosed": true,
+      "schedule": "before 7am on Tuesday"
+    },
+    {
+      "commitMessageExtra": "",
+      "depTypeList": ["devDependencies"],
+      "excludePackageNames": ["braid-design-system", "sku"],
+      "excludePackagePatterns": ["^@?seek", "seek$", "^@types/"],
+      "groupName": "npm dev dependencies",
+      "managers": ["npm"],
+      "recreateClosed": true,
+      "schedule": "before 7am on Tuesday"
+    },
+    {
+      "commitMessageExtra": "",
+      "depTypeList": ["peerDependencies"],
+      "excludePackageNames": ["braid-design-system", "sku"],
+      "excludePackagePatterns": ["^@?seek", "seek$", "^@types/"],
+      "groupName": "npm peer dependencies",
+      "managers": ["npm"],
+      "recreateClosed": true,
+      "schedule": "before 7am on Tuesday"
+    },
+    {
+      "commitMessageExtra": "",
+      "excludePackagePatterns": ["^seek-oss/"],
+      "groupName": "buildkite plugins",
+      "managers": ["buildkite"],
+      "recreateClosed": true,
+      "schedule": "before 7am on Wednesday"
+    },
+    {
+      "commitMessageExtra": "",
+      "group": {
+        "commitMessageTopic": "{{groupName}}"
+      },
+      "groupName": "docker images",
+      "managers": ["docker-compose", "dockerfile"],
+      "recreateClosed": true,
+      "schedule": "before 7am on Wednesday"
+    },
+    {
+      "packageNames": ["braid-design-system", "sku"],
+      "packagePatterns": ["^@?seek", "seek$"],
+      "rangeStrategy": "pin",
+      "schedule": "before 7am on every weekday"
+    }
+  ],
+  "commitMessageAction": "",
+  "ignoreNpmrcFile": true,
+  "lazyGrouping": false,
+  "postUpdateOptions": [],
+  "prNotPendingHours": 1,
+  "schedule": "before 7am on Monday and Friday",
+  "semanticCommitScope": "",
+  "semanticCommitType": "deps"
+}
