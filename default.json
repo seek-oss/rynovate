@@ -50,7 +50,12 @@
       "commitMessageExtra": "",
       "depTypeList": ["devDependencies"],
       "excludePackageNames": ["braid-design-system", "sku"],
-      "excludePackagePatterns": ["^@?seek", "seek$", "^@types/"],
+      "excludePackagePatterns": [
+        "^apollo-server",
+        "^@?seek",
+        "seek$",
+        "^@types/"
+      ],
       "groupName": "npm dev dependencies",
       "managers": ["npm"],
       "recreateClosed": true,
@@ -89,6 +94,12 @@
       "packagePatterns": ["^@?seek", "seek$"],
       "rangeStrategy": "pin",
       "schedule": "before 7am on every weekday"
+    },
+    {
+      "groupName": "apollo-server",
+      "packagePatterns": ["^apollo-server"],
+      "rangeStrategy": "pin",
+      "recreateClosed": true
     }
   ],
   "commitMessageAction": "",
