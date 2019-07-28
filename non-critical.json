@@ -18,6 +18,16 @@
       "recreateClosed": true
     }
   ],
+  "buildkite": {
+    "commitMessageExtra": "",
+    "managerBranchPrefix": ""
+  },
+  "docker": {
+    "commitMessageExtra": "",
+    "group": {
+      "commitMessageTopic": "{{groupName}}"
+    }
+  },
   "commitMessageAction": "",
   "ignoreNpmrcFile": true,
   "lazyGrouping": false,
