@@ -1,0 +1,29 @@
+{
+  "extends": [
+    ":prConcurrentLimit10",
+    ":prHourlyLimit2",
+    ":prNotPending",
+    ":rebaseStalePrs",
+    ":renovatePrefix",
+    ":semanticCommits",
+    ":timezone(Australia/Melbourne)",
+    ":unpublishSafe",
+    "preview:buildkite",
+    "preview:dockerCompose"
+  ],
+  "packageRules": [
+    {
+      "groupName": "all dependencies",
+      "packagePatterns": ["*"],
+      "recreateClosed": true
+    }
+  ],
+  "commitMessageAction": "",
+  "ignoreNpmrcFile": true,
+  "lazyGrouping": false,
+  "postUpdateOptions": [],
+  "prNotPendingHours": 1,
+  "schedule": "before 7am on Monday",
+  "semanticCommitScope": "",
+  "semanticCommitType": "fix"
+}
