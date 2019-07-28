@@ -25,5 +25,6 @@
   "prNotPendingHours": 1,
   "schedule": "before 7am on Monday",
   "semanticCommitScope": "",
-  "semanticCommitType": "fix"
+  "semanticCommitType": "fix",
+  "separateMajorMinor": false
 }
