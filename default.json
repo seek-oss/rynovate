@@ -14,11 +14,6 @@
   "packageRules": [
     {
       "depTypeList": ["dependencies"],
-      "packageNames": ["serverless"],
-      "allowedVersions": "<1.48.1"
-    },
-    {
-      "depTypeList": ["dependencies"],
       "rangeStrategy": "auto",
       "semanticCommitType": "fix"
     },
