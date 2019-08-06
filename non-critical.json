@@ -29,6 +29,7 @@
     }
   },
   "commitMessageAction": "",
+  "commitMessageExtra": "",
   "ignoreNpmrcFile": true,
   "lazyGrouping": false,
   "postUpdateOptions": [],
