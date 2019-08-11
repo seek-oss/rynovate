@@ -7,7 +7,6 @@
     ":renovatePrefix",
     ":semanticCommits",
     ":timezone(Australia/Melbourne)",
-    ":unpublishSafe",
     "preview:buildkite",
     "preview:dockerCompose"
   ],
