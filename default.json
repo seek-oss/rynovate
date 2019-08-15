@@ -1,6 +1,5 @@
 {
   "extends": [
-    ":prConcurrentLimit10",
     ":prHourlyLimit2",
     ":prNotPending",
     ":rebaseStalePrs",
@@ -110,6 +109,7 @@
   "ignoreNpmrcFile": true,
   "lazyGrouping": false,
   "postUpdateOptions": [],
+  "prConcurrentLimit": 3,
   "prNotPendingHours": 1,
   "schedule": "before 7am on Monday and Friday",
   "semanticCommitScope": "",
