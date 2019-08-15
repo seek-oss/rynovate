@@ -31,7 +31,7 @@
   "ignoreNpmrcFile": true,
   "lazyGrouping": false,
   "postUpdateOptions": [],
-  "prConcurrentLimit": 3,
+  "prConcurrentLimit": 2,
   "prNotPendingHours": 1,
   "schedule": "before 7am on Monday",
   "semanticCommitScope": "",
