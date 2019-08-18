@@ -81,6 +81,7 @@
       "commitMessageExtra": "",
       "excludePackagePatterns": ["^seek-oss/"],
       "groupName": "buildkite plugins",
+      "managerBranchPrefix": "",
       "managers": ["buildkite"],
       "recreateClosed": true,
       "schedule": "before 7am on Wednesday"
