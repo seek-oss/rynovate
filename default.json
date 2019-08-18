@@ -91,6 +91,11 @@
       "schedule": "before 7am on every weekday"
     },
     {
+      "depTypeList": ["dependencies"],
+      "packageNames": ["aws-sdk"],
+      "schedule": "before 7am on the first day of the month"
+    },
+    {
       "groupName": "apollo-server",
       "packagePatterns": ["^apollo-server"],
       "rangeStrategy": "pin",
