@@ -96,9 +96,8 @@
       "schedule": "before 7am on the first day of the month"
     },
     {
-      "groupName": "apollo-server",
-      "packagePatterns": ["^apollo-server"],
-      "rangeStrategy": "pin",
+      "extends": ["group:monorepos"],
+      "excludePackageNames": [],
       "recreateClosed": true
     },
     {
