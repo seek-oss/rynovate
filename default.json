@@ -48,14 +48,8 @@
     {
       "commitMessageExtra": "",
       "depTypeList": ["devDependencies"],
-      "excludePackageNames": ["braid-design-system", "sku", "react-relay"],
-      "excludePackagePatterns": [
-        "^@?seek",
-        "seek$",
-        "^@types/",
-        "^apollo-server",
-        "^relay-"
-      ],
+      "excludePackageNames": ["braid-design-system", "sku"],
+      "excludePackagePatterns": ["^@?seek", "seek$", "^@types/"],
       "groupName": "npm dev dependencies",
       "managers": ["npm"],
       "recreateClosed": true,
@@ -64,14 +58,8 @@
     {
       "commitMessageExtra": "",
       "depTypeList": ["peerDependencies"],
-      "excludePackageNames": ["braid-design-system", "sku", "react-relay"],
-      "excludePackagePatterns": [
-        "^@?seek",
-        "seek$",
-        "^@types/",
-        "^apollo-server",
-        "^relay-"
-      ],
+      "excludePackageNames": ["braid-design-system", "sku"],
+      "excludePackagePatterns": ["^@?seek", "seek$", "^@types/"],
       "groupName": "npm peer dependencies",
       "managers": ["npm"],
       "recreateClosed": true,
