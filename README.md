@@ -1,23 +1,26 @@
 # Rynovate
 
-> Experimental [Renovate] preset
+> Experimental [Renovate] presets
 
 [renovate]: https://renovatebot.com/
 
-## Scheme
+## Presets
 
-Dependencies are grouped and scheduled:
+### `default`
 
-| Type                      | Grouped | Schedule       |
-| :------------------------ | :------ | :------------- |
-| SEEK                      | No      | Weekday        |
-| Go module                 | No      | Monday, Friday |
-| JavaScript dependency     | No      | Monday, Friday |
-| JavaScript devDependency  | Yes     | Tuesday        |
-| JavaScript peerDependency | Yes     | Tuesday        |
-| TypeScript definition     | Yes     | Tuesday        |
-| Buildkite plugin          | Yes     | Wednesday      |
-| Docker image              | Yes     | Wednesday      |
+Dependencies are selectively grouped and scheduled:
+
+| Type                              | Grouped | Schedule       |
+| :-------------------------------- | :------ | :------------- |
+| SEEK                              | No      | Weekday        |
+| Go module                         | No      | Monday, Friday |
+| JavaScript dependency             | No      | Monday, Friday |
+| JavaScript devDependency          | Yes     | Tuesday        |
+| JavaScript peerDependency         | Yes     | Tuesday        |
+| TypeScript definition             | Yes     | Tuesday        |
+| Buildkite plugin                  | Yes     | Wednesday      |
+| Docker image                      | Yes     | Wednesday      |
+| Noisy dependency (e.g. `aws-sdk`) | No      | Monthly        |
 
 Pull requests are tersely named:
 
@@ -25,6 +28,16 @@ Pull requests are tersely named:
 | :------------------------ | :--------------------------- |
 | Production dependency     | `fix: pino 5.12.2`           |
 | Non-production dependency | `deps: npm dev dependencies` |
+
+### `non-critical`
+
+| Type | Grouped | Schedule |
+| :--- | :------ | :------- |
+| \*   | Yes     | Monday   |
+
+| Type | Example                 |
+| :--- | :---------------------- |
+| \*   | `fix: all dependencies` |
 
 ## Usage
 
@@ -35,5 +48,13 @@ Reference in an [extends] array within [Renovate] config:
 ```json
 {
   "extends": ["github>seek-oss/rynovate"]
+}
+```
+
+Choose a named preset with a `:preset` suffix:
+
+```json
+{
+  "extends": ["github>seek-oss/rynovate:non-critical"]
 }
 ```
