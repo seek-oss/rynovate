@@ -79,7 +79,7 @@
     },
     {
       "commitMessageExtra": "",
-      "excludePackagePatterns": ["^seek-oss/"],
+      "excludePackagePatterns": ["^seek-jobs/", "^seek-oss/"],
       "groupName": "buildkite plugins",
       "managerBranchPrefix": "",
       "managers": ["buildkite"],
