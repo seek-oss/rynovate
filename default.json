@@ -8,7 +8,8 @@
     ":timezone(Australia/Melbourne)",
     ":updateNotScheduled",
     "preview:buildkite",
-    "preview:dockerCompose"
+    "preview:dockerCompose",
+    "docker:disableMajor"
   ],
   "packageRules": [
     {
