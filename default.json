@@ -14,16 +14,7 @@
   "packageRules": [
     {
       "depTypeList": ["dependencies"],
-      "rangeStrategy": "auto",
       "semanticCommitType": "fix"
-    },
-    {
-      "depTypeList": ["devDependencies"],
-      "rangeStrategy": "auto"
-    },
-    {
-      "depTypeList": ["peerDependencies"],
-      "rangeStrategy": "auto"
     },
     {
       "digest": {
@@ -114,6 +105,7 @@
   "postUpdateOptions": [],
   "prConcurrentLimit": 2,
   "prNotPendingHours": 1,
+  "rangeStrategy": "auto",
   "schedule": "before 7am on Monday and Friday",
   "semanticCommitScope": "",
   "semanticCommitType": "deps"
