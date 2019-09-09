@@ -30,6 +30,7 @@
       "managers": ["buildkite", "gomod", "npm"]
     },
     {
+      "automerge": true,
       "commitMessageExtra": "",
       "groupName": "npm definitely typed",
       "managers": ["npm"],

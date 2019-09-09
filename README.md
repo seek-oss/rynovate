@@ -10,17 +10,17 @@
 
 Dependencies are selectively grouped and scheduled:
 
-| Type                              | Grouped | Schedule       |
-| :-------------------------------- | :------ | :------------- |
-| SEEK                              | No      | Weekday        |
-| Go module                         | No      | Monday, Friday |
-| JavaScript dependency             | No      | Monday, Friday |
-| JavaScript devDependency          | Yes     | Tuesday        |
-| JavaScript peerDependency         | Yes     | Tuesday        |
-| TypeScript definition             | Yes     | Tuesday        |
-| Buildkite plugin                  | Yes     | Wednesday      |
-| Docker image                      | Yes     | Wednesday      |
-| Noisy dependency (e.g. `aws-sdk`) | No      | Monthly        |
+| Type                              | Grouped | Schedule            |
+| :-------------------------------- | :------ | :------------------ |
+| SEEK                              | No      | Weekday             |
+| Go module                         | No      | Monday, Friday      |
+| JavaScript dependency             | No      | Monday, Friday      |
+| JavaScript devDependency          | Yes     | Tuesday             |
+| JavaScript peerDependency         | Yes     | Tuesday             |
+| TypeScript definition             | Yes     | Tuesday, automerged |
+| Buildkite plugin                  | Yes     | Wednesday           |
+| Docker image                      | Yes     | Wednesday           |
+| Noisy dependency (e.g. `aws-sdk`) | No      | Monthly             |
 
 Pull requests are tersely named:
 
