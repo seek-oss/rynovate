@@ -99,6 +99,16 @@
       "packageNames": ["react-relay"],
       "packagePatterns": ["^relay-"],
       "recreateClosed": true
+    },
+    {
+      "groupName": "eslint",
+      "packagePatterns": ["^eslint-"],
+      "recreateClosed": true
+    },
+    {
+      "groupName": "babel",
+      "packagePatterns": ["^@babel/", "^babel-"],
+      "recreateClosed": true
     }
   ],
   "commitMessageAction": "",
