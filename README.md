@@ -17,6 +17,10 @@ Dependencies are selectively grouped and scheduled:
 | JavaScript dependency             | No      | Monday, Friday      |
 | JavaScript devDependency          | Yes     | Tuesday             |
 | JavaScript peerDependency         | Yes     | Tuesday             |
+| Relay dependency                  | Yes     | Monday, Friday      |
+| Babel dependency                  | Yes     | Tuesday             |
+| Eslint dependency                 | Yes     | Tuesday             |
+| JavaScript dependency             | No      | Monday, Friday      |
 | TypeScript definition             | Yes     | Tuesday, automerged |
 | Buildkite plugin                  | Yes     | Wednesday           |
 | Docker image                      | Yes     | Wednesday           |

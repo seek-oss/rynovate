@@ -98,17 +98,23 @@
       "groupName": "relay",
       "packageNames": ["react-relay"],
       "packagePatterns": ["^relay-"],
+      "managers": ["npm"],
       "recreateClosed": true
     },
     {
       "groupName": "eslint",
+      "packageNames": ["eslint"],
       "packagePatterns": ["^eslint-"],
-      "recreateClosed": true
+      "recreateClosed": true,
+      "managers": ["npm"],
+      "schedule": "before 7am on Tuesday"
     },
     {
       "groupName": "babel",
       "packagePatterns": ["^@babel/", "^babel-"],
-      "recreateClosed": true
+      "recreateClosed": true,
+      "managers": ["npm"],
+      "schedule": "before 7am on Tuesday"
     }
   ],
   "commitMessageAction": "",
