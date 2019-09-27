@@ -30,7 +30,7 @@
   "commitMessageExtra": "",
   "ignoreNpmrcFile": true,
   "lazyGrouping": false,
-  "postUpdateOptions": [],
+  "postUpdateOptions": ["yarnDedupeHighest"],
   "prConcurrentLimit": 2,
   "prNotPendingHours": 1,
   "schedule": "before 7am on Monday",
