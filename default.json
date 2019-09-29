@@ -18,8 +18,9 @@
     },
     {
       "digest": {
-        "commitMessageExtra": "{{newDigestShort}}",
-        "commitMessageTopic": "{{{depName}}}"
+        "commitMessageExtra": "",
+        "groupName": "gomod digests",
+        "schedule": "before 7am on the first day of the month"
       },
       "managers": ["gomod"],
       "semanticCommitType": "fix"
