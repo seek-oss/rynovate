@@ -13,7 +13,8 @@ Dependencies are selectively grouped and scheduled:
 | Type                              | Grouped | Schedule            |
 | :-------------------------------- | :------ | :------------------ |
 | SEEK                              | No      | Weekday             |
-| Go module                         | No      | Monday, Friday      |
+| Go module digest update           | Yes     | Monthly             |
+| Go module version update          | No      | Monday, Friday      |
 | JavaScript dependency             | No      | Monday, Friday      |
 | JavaScript devDependency          | Yes     | Tuesday             |
 | JavaScript peerDependency         | Yes     | Tuesday             |
