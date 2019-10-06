@@ -105,7 +105,7 @@
   "ignoreNpmrcFile": true,
   "lazyGrouping": false,
   "postUpdateOptions": ["yarnDedupeHighest"],
-  "prConcurrentLimit": 2,
+  "prConcurrentLimit": 3,
   "prNotPendingHours": 1,
   "rangeStrategy": "auto",
   "schedule": "before 7am on Monday and Friday",
