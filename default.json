@@ -110,5 +110,6 @@
   "rangeStrategy": "auto",
   "schedule": "before 7am on Monday and Friday",
   "semanticCommitScope": "",
-  "semanticCommitType": "deps"
+  "semanticCommitType": "deps",
+  "branchPrefix": "renovate--"
 }
