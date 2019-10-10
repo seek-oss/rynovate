@@ -3,7 +3,6 @@
     ":prHourlyLimit2",
     ":prNotPending",
     ":rebaseStalePrs",
-    ":renovatePrefix",
     ":semanticCommits",
     ":timezone(Australia/Melbourne)",
     ":updateNotScheduled",
