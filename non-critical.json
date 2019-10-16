@@ -11,6 +11,12 @@
   ],
   "packageRules": [
     {
+      "groupName": "gantry",
+      "packageNames": ["seek-jobs/gantry"],
+      "prPriority": 99,
+      "schedule": "before 7am on every weekday"
+    },
+    {
       "groupName": "all dependencies",
       "packagePatterns": ["*"],
       "recreateClosed": true
