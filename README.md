@@ -32,13 +32,15 @@ Pull requests are tersely named:
 
 ### `non-critical`
 
-| Type | Grouped | Schedule |
-| :--- | :------ | :------- |
-| \*   | Yes     | Monday   |
+| Type                    | Grouped | Schedule |
+| :---------------------- | :------ | :------- |
+| Gantry Buildkite plugin | No      | Weekday  |
+| \*                      | Yes     | Monday   |
 
-| Type | Example                 |
-| :--- | :---------------------- |
-| \*   | `fix: all dependencies` |
+| Type                    | Example                        |
+| :---------------------- | :----------------------------- |
+| Gantry Buildkite plugin | `fix: seek-jobs/gantry v1.0.0` |
+| \*                      | `fix: all dependencies`        |
 
 ## Usage
 
