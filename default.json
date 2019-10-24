@@ -28,7 +28,7 @@
     {
       "commitMessageExtra": "{{newValue}}",
       "commitMessageTopic": "{{depName}}",
-      "managers": ["buildkite", "gomod", "npm"]
+      "managers": ["buildkite", "gomod", "npm", "nvm"]
     },
     {
       "automerge": true,
