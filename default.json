@@ -36,6 +36,7 @@
       "groupName": "npm definitely typed",
       "managers": ["npm"],
       "packagePatterns": ["^@types/"],
+      "prPriority": 99,
       "recreateClosed": true,
       "schedule": "before 7am on Tuesday"
     },
@@ -81,7 +82,7 @@
     {
       "packageNames": ["braid-design-system", "sku"],
       "packagePatterns": ["^@?seek", "seek$"],
-      "prPriority": 99,
+      "prPriority": 98,
       "schedule": "before 7am on every weekday"
     },
     {
@@ -102,6 +103,7 @@
     },
     {
       "automerge": true,
+      "prPriority": 99,
       "schedule": "before 7am on every weekday",
       "updateTypes": ["pin"]
     }
