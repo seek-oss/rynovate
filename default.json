@@ -101,7 +101,7 @@
       "recreateClosed": true
     },
     {
-      "updateTypes": "pin",
+      "updateTypes": ["pin"],
       "automerge": true
     }
   ],
