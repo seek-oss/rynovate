@@ -99,6 +99,10 @@
       "packageNames": ["react-relay"],
       "packagePatterns": ["^relay-"],
       "recreateClosed": true
+    },
+    {
+      "updateTypes": "pin",
+      "automerge": true
     }
   ],
   "commitMessageAction": "",
