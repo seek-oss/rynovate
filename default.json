@@ -91,6 +91,11 @@
       "schedule": "before 7am on the first day of the month"
     },
     {
+      "automerge": true,
+      "depTypeList": ["devDependencies"],
+      "packageNames": ["@seek/indie-cardib-types"]
+    },
+    {
       "extends": ["group:monorepos"],
       "excludePackageNames": [],
       "recreateClosed": true
