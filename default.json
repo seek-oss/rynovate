@@ -96,6 +96,11 @@
       "packageNames": ["@seek/indie-cardib-types"]
     },
     {
+      "automerge": true,
+      "depTypeList": ["devDependencies"],
+      "packageNames": ["@seek/ie-shared-types"]
+    },
+    {
       "extends": ["group:monorepos"],
       "excludePackageNames": [],
       "recreateClosed": true
