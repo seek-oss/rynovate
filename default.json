@@ -93,7 +93,7 @@
     {
       "automerge": true,
       "depTypeList": ["devDependencies"],
-      "packageNames": ["@seek/indie-cardib-types"]
+      "packageNames": ["@seek/indie-cardib-types", "@seek/ie-shared-types"]
     },
     {
       "extends": ["group:monorepos"],
