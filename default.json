@@ -31,6 +31,12 @@
       "managers": ["buildkite", "gomod", "npm", "nvm"]
     },
     {
+      "managers": ["npm"],
+      "packageNames": ["@types/node"],
+      "updateTypes": ["major"],
+      "enabled": false
+    },
+    {
       "automerge": true,
       "commitMessageExtra": "",
       "groupName": "npm definitely typed",
