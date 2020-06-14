@@ -49,7 +49,7 @@
     {
       "commitMessageExtra": "",
       "depTypeList": ["devDependencies"],
-      "excludePackageNames": ["braid-design-system", "sku"],
+      "excludePackageNames": ["braid-design-system", "sku", "skuba"],
       "excludePackagePatterns": ["^@?seek", "seek$", "^@types/"],
       "groupName": "npm dev dependencies",
       "managers": ["npm"],
@@ -59,7 +59,7 @@
     {
       "commitMessageExtra": "",
       "depTypeList": ["peerDependencies"],
-      "excludePackageNames": ["braid-design-system", "sku"],
+      "excludePackageNames": ["braid-design-system", "sku", "skuba"],
       "excludePackagePatterns": ["^@?seek", "seek$", "^@types/"],
       "groupName": "npm peer dependencies",
       "managers": ["npm"],
@@ -86,7 +86,7 @@
       "schedule": "before 7am on Wednesday"
     },
     {
-      "packageNames": ["braid-design-system", "sku"],
+      "packageNames": ["braid-design-system", "sku", "skuba"],
       "packagePatterns": ["^@?seek", "seek$"],
       "prPriority": 98,
       "schedule": "before 7am on every weekday"
