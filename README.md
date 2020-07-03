@@ -60,16 +60,16 @@ Reference in an [extends] array within [Renovate] config:
 
 [extends]: https://renovatebot.com/docs/configuration-options/#extends
 
-```json
+```json5
 {
-  "extends": ["github>seek-oss/rynovate"]
+  extends: ["github>seek-oss/rynovate"],
 }
 ```
 
 Choose a named preset with a `:preset` suffix:
 
-```json
+```json5
 {
-  "extends": ["github>seek-oss/rynovate:non-critical"]
+  extends: ["github>seek-oss/rynovate:non-critical"],
 }
 ```
