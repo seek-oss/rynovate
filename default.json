@@ -99,7 +99,7 @@
     {
       "automerge": true,
       "depTypeList": ["devDependencies"],
-      "packageNames": ["@seek/indie-cardib-types", "@seek/ie-shared-types"]
+      "packageNames": ["@seek/indie-cardib-types", "@seek/ie-shared-types", "@seek/candidate-data-contracts"]
     },
     {
       "extends": ["group:monorepos"],
