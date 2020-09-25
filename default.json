@@ -1,7 +1,6 @@
 {
   "extends": [
     ":prHourlyLimit2",
-    ":prNotPending",
     ":rebaseStalePrs",
     ":renovatePrefix",
     ":semanticCommits",
