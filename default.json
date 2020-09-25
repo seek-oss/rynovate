@@ -1,6 +1,6 @@
 {
   "extends": [
-    ":prHourlyLimit2",
+    ":prHourlyLimit4",
     ":rebaseStalePrs",
     ":renovatePrefix",
     ":semanticCommits",
