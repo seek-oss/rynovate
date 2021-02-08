@@ -62,7 +62,7 @@ Reference in an [extends] array within [Renovate] config:
 
 ```json5
 {
-  extends: ["github>seek-oss/rynovate"],
+  extends: ['github>seek-oss/rynovate'],
 }
 ```
 
@@ -70,6 +70,6 @@ Choose a named preset with a `:preset` suffix:
 
 ```json5
 {
-  extends: ["github>seek-oss/rynovate:non-critical"],
+  extends: ['github>seek-oss/rynovate:non-critical'],
 }
 ```
