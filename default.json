@@ -93,6 +93,7 @@
     {
       "depTypeList": ["dependencies"],
       "packageNames": ["aws-sdk"],
+      "packagePatterns": ["^@aws-sdk/"],
       "schedule": "after 3am and before 6am on the first day of the month"
     },
     {
