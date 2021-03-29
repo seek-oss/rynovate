@@ -91,9 +91,13 @@
       "schedule": "after 3am and before 6am on every weekday"
     },
     {
+      "commitMessageExtra": "",
       "depTypeList": ["dependencies"],
+      "groupName": "aws-sdk",
+      "managers": ["npm"],
       "packageNames": ["aws-sdk"],
       "packagePatterns": ["^@aws-sdk/"],
+      "recreateClosed": true,
       "schedule": "after 3am and before 6am on the first day of the month"
     },
     {
