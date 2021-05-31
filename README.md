@@ -54,6 +54,10 @@ Pull requests are tersely named:
 | Gantry Buildkite plugin | `fix: seek-jobs/gantry v1.0.0` |
 | \*                      | `fix: all dependencies`        |
 
+### `seek-n-major`
+
+Same as the `default` preset, but less noisy as only monitors major updates for non-SEEK deps
+
 ## Usage
 
 Reference in an [extends] array within [Renovate] config:
