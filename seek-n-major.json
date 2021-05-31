@@ -32,7 +32,7 @@
     {
       "matchManagers": ["npm"],
       "matchPackageNames": ["@types/node"],
-      "updateTypes": ["major"],
+      "matchUpdateTypes": ["major"],
       "enabled": false
     },
     {
@@ -43,7 +43,7 @@
       "matchPackagePatterns": ["^@types/"],
       "prPriority": 99,
       "recreateClosed": true,
-      "updateTypes": ["major"],
+      "matchUpdateTypes": ["major"],
       "schedule": "before 3am on Tuesday"
     },
     {
@@ -54,7 +54,7 @@
       "groupName": "npm dev dependencies",
       "matchManagers": ["npm"],
       "recreateClosed": true,
-      "updateTypes": ["major"],
+      "matchUpdateTypes": ["major"],
       "schedule": "after 3am and before 6am on Tuesday"
     },
     {
@@ -65,7 +65,7 @@
       "groupName": "npm peer dependencies",
       "matchManagers": ["npm"],
       "recreateClosed": true,
-      "updateTypes": ["major"],
+      "matchUpdateTypes": ["major"],
       "schedule": "after 3am and before 6am on Tuesday"
     },
     {
@@ -101,14 +101,14 @@
       "matchPackageNames": ["aws-sdk"],
       "matchPackagePatterns": ["^@aws-sdk/"],
       "recreateClosed": true,
-      "updateTypes": ["major"],
+      "matchUpdateTypes": ["major"],
       "schedule": "after 3am and before 6am on the first day of the month"
     },
     {
       "automerge": true,
       "depTypeList": ["devDependencies"],
       "matchPackageNames": ["sku", "skuba"],
-      "updateTypes": ["major"]
+      "matchUpdateTypes": ["major"]
     },
     {
       "extends": ["group:monorepos"],
@@ -119,7 +119,7 @@
       "automerge": true,
       "prPriority": 99,
       "schedule": "before 3am on every weekday",
-      "updateTypes": ["pin"]
+      "matchUpdateTypes": ["pin"]
     }
   ],
   "commitMessageAction": "",
