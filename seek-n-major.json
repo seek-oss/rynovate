@@ -40,7 +40,7 @@
       "commitMessageExtra": "",
       "groupName": "npm definitely typed",
       "matchManagers": ["npm"],
-      "packagePatterns": ["^@types/"],
+      "matchPackagePatterns": ["^@types/"],
       "prPriority": 99,
       "recreateClosed": true,
       "updateTypes": ["major"],
@@ -89,7 +89,7 @@
     },
     {
       "matchPackageNames": ["braid-design-system", "sku", "skuba"],
-      "packagePatterns": ["^@?seek", "seek$"],
+      "matchPackagePatterns": ["^@?seek", "seek$"],
       "prPriority": 98,
       "schedule": "after 3am and before 6am on every weekday"
     },
@@ -99,7 +99,7 @@
       "groupName": "aws-sdk",
       "matchManagers": ["npm"],
       "matchPackageNames": ["aws-sdk"],
-      "packagePatterns": ["^@aws-sdk/"],
+      "matchPackagePatterns": ["^@aws-sdk/"],
       "recreateClosed": true,
       "updateTypes": ["major"],
       "schedule": "after 3am and before 6am on the first day of the month"
