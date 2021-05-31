@@ -28,12 +28,9 @@
     },
     {
       "automerge": true,
-      "commitMessageExtra": "",
-      "groupName": "npm definitely typed",
       "matchManagers": ["npm"],
       "matchPackagePatterns": ["^@types/"],
       "prPriority": 99,
-      "recreateClosed": true,
       "matchUpdateTypes": ["major"],
       "schedule": "before 3am on Tuesday"
     },
