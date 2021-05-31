@@ -22,17 +22,9 @@
     },
     {
       "matchManagers": ["npm"],
-      "matchPackageNames": ["@types/node"],
+      "matchPackageNames": ["^@types/"],
       "matchUpdateTypes": ["major"],
       "enabled": false
-    },
-    {
-      "automerge": true,
-      "matchManagers": ["npm"],
-      "matchPackagePatterns": ["^@types/"],
-      "prPriority": 99,
-      "matchUpdateTypes": ["major"],
-      "schedule": "before 3am on Tuesday"
     },
     {
       "depTypeList": ["devDependencies"],
@@ -76,7 +68,7 @@
       "schedule": "after 3am and before 6am on every weekday"
     },
     {
-      "automerge": true,
+      "automerge": false,
       "depTypeList": ["devDependencies"],
       "matchPackageNames": ["sku", "skuba"],
       "matchUpdateTypes": ["major"]
@@ -87,7 +79,7 @@
       "recreateClosed": true
     },
     {
-      "automerge": true,
+      "automerge": false,
       "prPriority": 99,
       "schedule": "before 3am on every weekday",
       "matchUpdateTypes": ["pin"]
