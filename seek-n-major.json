@@ -16,15 +16,6 @@
       "semanticCommitType": "fix"
     },
     {
-      "digest": {
-        "commitMessageExtra": "",
-        "groupName": "gomod digests",
-        "schedule": "after 3am and before 6am on the first day of the month"
-      },
-      "matchManagers": ["gomod"],
-      "semanticCommitType": "fix"
-    },
-    {
       "commitMessageExtra": "{{newValue}}",
       "commitMessageTopic": "{{depName}}",
       "matchManagers": ["buildkite", "gomod", "npm", "nvm"]
