@@ -31,7 +31,7 @@
     },
     {
       "matchManagers": ["npm"],
-      "packageNames": ["@types/node"],
+      "matchPackageNames": ["@types/node"],
       "updateTypes": ["major"],
       "enabled": false
     },
@@ -88,7 +88,7 @@
       "schedule": "after 3am and before 6am on Wednesday"
     },
     {
-      "packageNames": ["braid-design-system", "sku", "skuba"],
+      "matchPackageNames": ["braid-design-system", "sku", "skuba"],
       "packagePatterns": ["^@?seek", "seek$"],
       "prPriority": 98,
       "schedule": "after 3am and before 6am on every weekday"
@@ -98,7 +98,7 @@
       "depTypeList": ["dependencies"],
       "groupName": "aws-sdk",
       "matchManagers": ["npm"],
-      "packageNames": ["aws-sdk"],
+      "matchPackageNames": ["aws-sdk"],
       "packagePatterns": ["^@aws-sdk/"],
       "recreateClosed": true,
       "updateTypes": ["major"],
@@ -107,7 +107,7 @@
     {
       "automerge": true,
       "depTypeList": ["devDependencies"],
-      "packageNames": ["sku", "skuba"],
+      "matchPackageNames": ["sku", "skuba"],
       "updateTypes": ["major"]
     },
     {
