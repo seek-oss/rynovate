@@ -76,17 +76,6 @@
       "schedule": "after 3am and before 6am on every weekday"
     },
     {
-      "commitMessageExtra": "",
-      "depTypeList": ["dependencies"],
-      "groupName": "aws-sdk",
-      "matchManagers": ["npm"],
-      "matchPackageNames": ["aws-sdk"],
-      "matchPackagePatterns": ["^@aws-sdk/"],
-      "recreateClosed": true,
-      "matchUpdateTypes": ["major"],
-      "schedule": "after 3am and before 6am on the first day of the month"
-    },
-    {
       "automerge": true,
       "depTypeList": ["devDependencies"],
       "matchPackageNames": ["sku", "skuba"],
