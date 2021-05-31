@@ -68,12 +68,6 @@
       "schedule": "after 3am and before 6am on every weekday"
     },
     {
-      "automerge": false,
-      "depTypeList": ["devDependencies"],
-      "matchPackageNames": ["sku", "skuba"],
-      "matchUpdateTypes": ["major"]
-    },
-    {
       "extends": ["group:monorepos"],
       "excludePackageNames": [],
       "recreateClosed": true
