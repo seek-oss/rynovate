@@ -21,16 +21,16 @@
         "groupName": "gomod digests",
         "schedule": "after 3am and before 6am on the first day of the month"
       },
-      "managers": ["gomod"],
+      "matchManagers": ["gomod"],
       "semanticCommitType": "fix"
     },
     {
       "commitMessageExtra": "{{newValue}}",
       "commitMessageTopic": "{{depName}}",
-      "managers": ["buildkite", "gomod", "npm", "nvm"]
+      "matchManagers": ["buildkite", "gomod", "npm", "nvm"]
     },
     {
-      "managers": ["npm"],
+      "matchManagers": ["npm"],
       "packageNames": ["@types/node"],
       "updateTypes": ["major"],
       "enabled": false
@@ -39,7 +39,7 @@
       "automerge": true,
       "commitMessageExtra": "",
       "groupName": "npm definitely typed",
-      "managers": ["npm"],
+      "matchManagers": ["npm"],
       "packagePatterns": ["^@types/"],
       "prPriority": 99,
       "recreateClosed": true,
@@ -52,7 +52,7 @@
       "excludePackageNames": ["braid-design-system", "sku", "skuba"],
       "excludePackagePatterns": ["^@?seek", "seek$", "^@types/"],
       "groupName": "npm dev dependencies",
-      "managers": ["npm"],
+      "matchManagers": ["npm"],
       "recreateClosed": true,
       "updateTypes": ["major"],
       "schedule": "after 3am and before 6am on Tuesday"
@@ -63,7 +63,7 @@
       "excludePackageNames": ["braid-design-system", "sku", "skuba"],
       "excludePackagePatterns": ["^@?seek", "seek$", "^@types/"],
       "groupName": "npm peer dependencies",
-      "managers": ["npm"],
+      "matchManagers": ["npm"],
       "recreateClosed": true,
       "updateTypes": ["major"],
       "schedule": "after 3am and before 6am on Tuesday"
@@ -73,7 +73,7 @@
       "excludePackagePatterns": ["^seek-jobs/", "^seek-oss/"],
       "groupName": "buildkite plugins",
       "managerBranchPrefix": "",
-      "managers": ["buildkite"],
+      "matchManagers": ["buildkite"],
       "recreateClosed": true,
       "schedule": "after 3am and before 6am on Wednesday"
     },
@@ -83,7 +83,7 @@
         "commitMessageTopic": "{{groupName}}"
       },
       "groupName": "docker images",
-      "managers": ["docker-compose", "dockerfile"],
+      "matchManagers": ["docker-compose", "dockerfile"],
       "recreateClosed": true,
       "schedule": "after 3am and before 6am on Wednesday"
     },
@@ -97,7 +97,7 @@
       "commitMessageExtra": "",
       "depTypeList": ["dependencies"],
       "groupName": "aws-sdk",
-      "managers": ["npm"],
+      "matchManagers": ["npm"],
       "packageNames": ["aws-sdk"],
       "packagePatterns": ["^@aws-sdk/"],
       "recreateClosed": true,
