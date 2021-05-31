@@ -35,13 +35,10 @@
       "schedule": "before 3am on Tuesday"
     },
     {
-      "commitMessageExtra": "",
       "depTypeList": ["devDependencies"],
       "excludePackageNames": ["braid-design-system", "sku", "skuba"],
       "excludePackagePatterns": ["^@?seek", "seek$", "^@types/"],
-      "groupName": "npm dev dependencies",
       "matchManagers": ["npm"],
-      "recreateClosed": true,
       "matchUpdateTypes": ["major"],
       "schedule": "after 3am and before 6am on Tuesday"
     },
