@@ -21,10 +21,11 @@
       "matchManagers": ["buildkite", "gomod", "npm", "nvm"]
     },
     {
+      "excludePackageNames": ["braid-design-system", "sku", "skuba"],
+      "excludePackagePatterns": ["^@?seek", "seek$"],
       "matchManagers": ["npm"],
-      "matchPackageNames": ["^@types/"],
-      "matchUpdateTypes": ["major"],
-      "enabled": true
+      "matchUpdateTypes": ["patch", "minor"],
+      "enabled": false
     },
     {
       "depTypeList": ["devDependencies"],
