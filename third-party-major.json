@@ -1,0 +1,92 @@
+{
+  "extends": [
+    ":prHourlyLimit4",
+    ":rebaseStalePrs",
+    ":renovatePrefix",
+    ":semanticCommits",
+    ":timezone(Australia/Melbourne)",
+    ":updateNotScheduled",
+    "preview:buildkite",
+    "preview:dockerCompose",
+    "docker:disableMajor"
+  ],
+  "packageRules": [
+    {
+      "depTypeList": ["dependencies"],
+      "semanticCommitType": "fix"
+    },
+    {
+      "commitMessageExtra": "{{newValue}}",
+      "commitMessageTopic": "{{depName}}",
+      "matchManagers": ["buildkite", "gomod", "npm", "nvm"]
+    },
+    {
+      "matchManagers": ["npm"],
+      "matchPackageNames": ["^@types/"],
+      "matchUpdateTypes": ["major"],
+      "enabled": true
+    },
+    {
+      "depTypeList": ["devDependencies"],
+      "excludePackageNames": ["braid-design-system", "sku", "skuba"],
+      "excludePackagePatterns": ["^@?seek", "seek$", "^@types/"],
+      "matchManagers": ["npm"],
+      "matchUpdateTypes": ["major"],
+      "schedule": "after 3am and before 6am on Tuesday"
+    },
+    {
+      "depTypeList": ["peerDependencies"],
+      "excludePackageNames": ["braid-design-system", "sku", "skuba"],
+      "excludePackagePatterns": ["^@?seek", "seek$", "^@types/"],
+      "matchManagers": ["npm"],
+      "matchUpdateTypes": ["major"],
+      "schedule": "after 3am and before 6am on Tuesday"
+    },
+    {
+      "commitMessageExtra": "",
+      "excludePackagePatterns": ["^seek-jobs/", "^seek-oss/"],
+      "groupName": "buildkite plugins",
+      "managerBranchPrefix": "",
+      "matchManagers": ["buildkite"],
+      "recreateClosed": true,
+      "schedule": "after 3am and before 6am on Wednesday"
+    },
+    {
+      "commitMessageExtra": "",
+      "group": {
+        "commitMessageTopic": "{{groupName}}"
+      },
+      "groupName": "docker images",
+      "matchManagers": ["docker-compose", "dockerfile"],
+      "recreateClosed": true,
+      "schedule": "after 3am and before 6am on Wednesday"
+    },
+    {
+      "matchPackageNames": ["braid-design-system", "sku", "skuba"],
+      "matchPackagePatterns": ["^@?seek", "seek$"],
+      "prPriority": 98,
+      "schedule": "after 3am and before 6am on every weekday"
+    },
+    {
+      "extends": ["group:monorepos"],
+      "excludePackageNames": [],
+      "recreateClosed": true
+    },
+    {
+      "automerge": false,
+      "prPriority": 99,
+      "schedule": "before 3am on every weekday",
+      "matchUpdateTypes": ["pin"]
+    }
+  ],
+  "commitMessageAction": "",
+  "ignoreNpmrcFile": true,
+  "lazyGrouping": false,
+  "postUpdateOptions": ["yarnDedupeHighest"],
+  "prConcurrentLimit": 3,
+  "prNotPendingHours": 1,
+  "rangeStrategy": "auto",
+  "schedule": "after 3am and before 6am on Monday and Friday",
+  "semanticCommitScope": "",
+  "semanticCommitType": "deps"
+}
