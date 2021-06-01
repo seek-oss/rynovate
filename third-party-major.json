@@ -68,11 +68,6 @@
       "schedule": "after 3am and before 6am on every weekday"
     },
     {
-      "extends": ["group:monorepos"],
-      "excludePackageNames": [],
-      "recreateClosed": true
-    },
-    {
       "automerge": false,
       "prPriority": 99,
       "schedule": "before 3am on every weekday",
