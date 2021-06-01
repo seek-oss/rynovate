@@ -56,7 +56,8 @@ Pull requests are tersely named:
 
 ### `seek-n-major`
 
-Same as the `default` preset, but less noisy as only monitors major updates for non-SEEK deps
+Same as the `default` preset, but less noisy as only monitors major updates for non-SEEK deps.
+Non-major Buildkite plugin and Docker image versions are still renovated.
 
 ## Usage
 
