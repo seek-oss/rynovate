@@ -68,7 +68,7 @@
       "schedule": "after 3am and before 6am on every weekday"
     },
     {
-      "automerge": false,
+      "automerge": true,
       "prPriority": 99,
       "schedule": "before 3am on every weekday",
       "matchUpdateTypes": ["pin"]
