@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "prettier": "2.3.0"
+  },
+  "license": "MIT",
+  "prettier": {
+    "singleQuote": true,
+    "tabWidth": 2
+  },
+  "scripts": {
+    "format": "prettier --write .",
+    "lint": "prettier --check ."
+  }
+}

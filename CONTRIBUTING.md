@@ -87,7 +87,7 @@ as package rule ordering can affect Renovate's behaviour in non-obvious ways.
 // Not recommended for testing changes to the preset. Instead, copy across the
 // raw JSON of the preset and tweak it from there.
 {
-  extends: ["github>seek-oss/rynovate"],
+  extends: ['github>seek-oss/rynovate'],
   packageRules: [
     // ...
   ],
