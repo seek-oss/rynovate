@@ -38,22 +38,25 @@ Dependencies are selectively grouped and scheduled:
 
 Pull requests are tersely named:
 
-| Type                      | Example                      |
-| :------------------------ | :--------------------------- |
-| Production dependency     | `fix: pino 5.12.2`           |
-| Non-production dependency | `deps: npm dev dependencies` |
+| Type                      | Example                       |
+| :------------------------ | :---------------------------- |
+| Production dependency     | `fix: pino 5.12.2`            |
+| Non-production dependency | `deps: npm dev dependencies`  |
+| Lock file maintenance     | `deps: lock file maintenance` |
 
 ### `non-critical`
 
-| Type                    | Grouped | Schedule |
-| :---------------------- | :------ | :------- |
-| Gantry Buildkite plugin | No      | Weekday  |
-| \*                      | Yes     | Monday   |
+| Type                    | Grouped | Schedule                             |
+| :---------------------- | :------ | :----------------------------------- |
+| Gantry Buildkite plugin | No      | Weekday                              |
+| Lock file maintenance   | Yes     | Fortnightly on Wednesday, automerged |
+| \*                      | Yes     | Monday                               |
 
-| Type                    | Example                        |
-| :---------------------- | :----------------------------- |
-| Gantry Buildkite plugin | `fix: seek-jobs/gantry v1.0.0` |
-| \*                      | `fix: all dependencies`        |
+| Type                    | Example                         |
+| :---------------------- | :------------------------------ |
+| Gantry Buildkite plugin | `deps: seek-jobs/gantry v1.0.0` |
+| Lock file maintenance   | `deps: lock file maintenance`   |
+| \*                      | `fix: all dependencies`         |
 
 ### `third-party-major`
 
