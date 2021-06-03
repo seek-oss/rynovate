@@ -13,15 +13,24 @@
     {
       "excludePackageNames": ["seek-jobs/gantry"],
       "groupName": "all dependencies",
-      "packagePatterns": ["*"],
       "recreateClosed": true,
-      "schedule": "before 7am on Monday"
+      "semanticCommitType": "fix",
+      "updateTypes": [
+        "bump",
+        "digest",
+        "major",
+        "minor",
+        "patch",
+        "pin",
+        "rollback"
+      ]
     },
     {
       "commitMessageAction": "",
       "commitMessageExtra": "{{newValue}}",
       "commitMessageTopic": "{{depName}}",
-      "packageNames": ["seek-jobs/gantry"]
+      "packageNames": ["seek-jobs/gantry"],
+      "schedule": "before 6:00 am on every weekday"
     }
   ],
   "buildkite": {
@@ -41,8 +50,8 @@
   "postUpdateOptions": ["yarnDedupeHighest"],
   "prConcurrentLimit": 2,
   "prNotPendingHours": 1,
-  "schedule": "before 7am on every weekday",
+  "schedule": "before 6:00 am on Monday",
   "semanticCommitScope": "",
-  "semanticCommitType": "fix",
+  "semanticCommitType": "deps",
   "separateMajorMinor": false
 }
