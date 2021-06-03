@@ -2,6 +2,7 @@
   "devDependencies": {
     "concurrently": "6.2.0",
     "prettier": "2.3.0",
+    "re2": "1.16.0",
     "renovate": "25.36.0"
   },
   "license": "MIT",
