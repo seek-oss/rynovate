@@ -1,6 +1,8 @@
 {
   "devDependencies": {
-    "prettier": "2.3.0"
+    "concurrently": "6.2.0",
+    "prettier": "2.3.0",
+    "renovate": "25.36.0"
   },
   "license": "MIT",
   "prettier": {
@@ -9,6 +11,10 @@
   },
   "scripts": {
     "format": "prettier --write .",
-    "lint": "prettier --check ."
+    "lint": "prettier --check .",
+    "test": "concurrently yarn:test:*",
+    "test:default": "RENOVATE_CONFIG_FILE=default renovate-config-validator",
+    "test:non-critical": "RENOVATE_CONFIG_FILE=non-critical renovate-config-validator",
+    "test:third-party-major": "RENOVATE_CONFIG_FILE=third-party-major renovate-config-validator"
   }
 }
