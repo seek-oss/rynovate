@@ -12,6 +12,7 @@ See [renovate-config-seek] for a baseline preset that only maintains SEEK npm pa
 - [Presets](#presets)
   - [default](#default)
   - [non-critical](#non-critical)
+  - [third-party-major](#third-party-major)
 - [Usage](#usage)
 - [Contributing](https://github.com/seek-oss/rynovate/blob/master/CONTRIBUTING.md)
 
