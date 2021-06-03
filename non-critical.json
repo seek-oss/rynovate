@@ -33,12 +33,12 @@
       "commitMessageAction": "",
       "commitMessageExtra": "{{newValue}}",
       "commitMessageTopic": "{{depName}}",
-      "schedule": "before 6:00 am on every weekday"
+      "schedule": "before 6:00 am every weekday"
     }
   ],
   "buildkite": {
-    "commitMessageExtra": "",
-    "managerBranchPrefix": ""
+    "additionalBranchPrefix": "",
+    "commitMessageExtra": ""
   },
   "docker": {
     "commitMessageExtra": "",
@@ -48,8 +48,6 @@
   },
   "commitMessageAction": "",
   "commitMessageExtra": "",
-  "ignoreNpmrcFile": true,
-  "lazyGrouping": false,
   "postUpdateOptions": ["yarnDedupeHighest"],
   "prConcurrentLimit": 2,
   "prNotPendingHours": 1,

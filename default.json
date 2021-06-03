@@ -83,9 +83,9 @@
       "excludePackagePatterns": ["^seek-jobs/", "^seek-oss/"],
       "matchManagers": ["buildkite"],
 
+      "additionalBranchPrefix": "",
       "commitMessageExtra": "",
       "groupName": "buildkite plugins",
-      "managerBranchPrefix": "",
       "recreateClosed": true,
       "schedule": "after 3:00 am and before 6:00 am on Wednesday"
     },
@@ -105,7 +105,7 @@
       "matchPackagePatterns": ["^@?seek", "seek$"],
 
       "prPriority": 98,
-      "schedule": "after 3:00 am and before 6:00 am on every weekday"
+      "schedule": "after 3:00 am and before 6:00 am every weekday"
     },
     {
       "matchDepTypes": ["dependencies"],
@@ -128,7 +128,7 @@
       ],
 
       "automerge": true,
-      "schedule": "before 3:00 am on every weekday"
+      "schedule": "before 3:00 am every weekday"
     },
     {
       "matchDepTypes": ["devDependencies"],
@@ -162,12 +162,10 @@
 
       "automerge": true,
       "prPriority": 99,
-      "schedule": "before 3:00 am on every weekday"
+      "schedule": "before 3:00 am every weekday"
     }
   ],
   "commitMessageAction": "",
-  "ignoreNpmrcFile": true,
-  "lazyGrouping": false,
   "postUpdateOptions": ["yarnDedupeHighest"],
   "prConcurrentLimit": 3,
   "prNotPendingHours": 1,
