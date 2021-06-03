@@ -23,5 +23,8 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile --ignore-optional --non-interactive
 
+      - name: Test
+        run: yarn test
+
       - name: Lint
         run: yarn lint
