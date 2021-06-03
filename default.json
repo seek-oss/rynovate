@@ -8,7 +8,8 @@
     ":updateNotScheduled",
     "preview:buildkite",
     "preview:dockerCompose",
-    "docker:disableMajor"
+    "docker:disableMajor",
+    "group:monorepos"
   ],
   "lockFileMaintenance": {
     "enabled": true
@@ -136,12 +137,6 @@
       "matchUpdateTypes": ["patch"],
 
       "automerge": true
-    },
-    {
-      "excludePackageNames": [],
-
-      "extends": ["group:monorepos"],
-      "recreateClosed": true
     },
     {
       "matchPackageNames": ["react-relay"],
