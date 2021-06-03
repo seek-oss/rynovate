@@ -9,6 +9,9 @@
     "preview:buildkite",
     "preview:dockerCompose"
   ],
+  "lockFileMaintenance": {
+    "enabled": true
+  },
   "packageRules": [
     {
       "excludePackageNames": ["seek-jobs/gantry"],
@@ -34,6 +37,13 @@
       "commitMessageExtra": "{{newValue}}",
       "commitMessageTopic": "{{depName}}",
       "schedule": "before 6:00 am every weekday"
+    },
+    {
+      "matchUpdateTypes": ["lockFileMaintenance"],
+
+      "automerge": true,
+      "prPriority": 99,
+      "schedule": "before 3:00 am every 2 weeks on Wednesday"
     }
   ],
   "buildkite": {
