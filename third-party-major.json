@@ -36,7 +36,7 @@
       "excludePackagePatterns": ["^@?seek", "seek$", "^@types/"],
       "matchManagers": ["npm"],
       "matchUpdateTypes": ["major"],
-      "schedule": "after 3am and before 6am on Tuesday"
+      "schedule": "after 3:00 am and before 6:00 am on Tuesday"
     },
     {
       "depTypeList": ["peerDependencies"],
@@ -44,7 +44,7 @@
       "excludePackagePatterns": ["^@?seek", "seek$", "^@types/"],
       "matchManagers": ["npm"],
       "matchUpdateTypes": ["major"],
-      "schedule": "after 3am and before 6am on Tuesday"
+      "schedule": "after 3:00 am and before 6:00 am on Tuesday"
     },
     {
       "commitMessageExtra": "",
@@ -53,7 +53,7 @@
       "managerBranchPrefix": "",
       "matchManagers": ["buildkite"],
       "recreateClosed": true,
-      "schedule": "after 3am and before 6am on Wednesday"
+      "schedule": "after 3:00 am and before 6:00 am on Wednesday"
     },
     {
       "commitMessageExtra": "",
@@ -63,13 +63,13 @@
       "groupName": "docker images",
       "matchManagers": ["docker-compose", "dockerfile"],
       "recreateClosed": true,
-      "schedule": "after 3am and before 6am on Wednesday"
+      "schedule": "after 3:00 am and before 6:00 am on Wednesday"
     },
     {
       "matchPackageNames": ["braid-design-system", "sku", "skuba"],
       "matchPackagePatterns": ["^@?seek", "seek$"],
       "prPriority": 98,
-      "schedule": "after 3am and before 6am on every weekday"
+      "schedule": "after 3:00 am and before 6:00 am on every weekday"
     },
     {
       "automerge": true,
@@ -82,7 +82,7 @@
       "matchManagers": ["npm"],
       "matchUpdateTypes": ["pin"],
       "prPriority": 99,
-      "schedule": "before 3am on every weekday"
+      "schedule": "before 3:00 am on every weekday"
     }
   ],
   "commitMessageAction": "",
@@ -92,7 +92,7 @@
   "prConcurrentLimit": 3,
   "prNotPendingHours": 1,
   "rangeStrategy": "auto",
-  "schedule": "after 3am and before 6am on Monday and Friday",
+  "schedule": "after 3:00 am and before 6:00 am on Monday and Friday",
   "semanticCommitScope": "",
   "semanticCommitType": "deps"
 }

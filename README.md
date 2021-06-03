@@ -21,20 +21,20 @@ See [renovate-config-seek] for a baseline preset that only maintains SEEK npm pa
 
 Dependencies are selectively grouped and scheduled:
 
-| Type                              | Grouped | Schedule              |
-| :-------------------------------- | :------ | :-------------------- |
-| SEEK                              | No      | Weekday               |
-| Pin dependency                    | Yes     | Weekday, automerged   |
-| Go module digest update           | Yes     | Monthly               |
-| Go module version update          | No      | Monday, Friday        |
-| JavaScript dependency             | No      | Monday, Friday        |
-| JavaScript devDependency          | Yes     | Tuesday               |
-| JavaScript peerDependency         | Yes     | Tuesday               |
-| TypeScript definition             | Yes     | Tuesday, automerged   |
-| Buildkite plugin                  | Yes     | Wednesday             |
-| Docker image                      | Yes     | Wednesday             |
-| Lockfile maintenance              | Yes     | Wednesday, automerged |
-| Noisy dependency (e.g. `aws-sdk`) | No      | Monthly               |
+| Type                              | Grouped | Schedule                             |
+| :-------------------------------- | :------ | :----------------------------------- |
+| SEEK                              | No      | Weekday                              |
+| Pin dependency                    | Yes     | Weekday, automerged                  |
+| Go module digest update           | Yes     | Monthly                              |
+| Go module version update          | No      | Monday, Friday                       |
+| JavaScript dependency             | No      | Monday, Friday                       |
+| JavaScript devDependency          | Yes     | Tuesday                              |
+| JavaScript peerDependency         | Yes     | Tuesday                              |
+| TypeScript definition             | Yes     | Tuesday, automerged                  |
+| Buildkite plugin                  | Yes     | Wednesday                            |
+| Docker image                      | Yes     | Wednesday                            |
+| Lock file maintenance             | Yes     | Fortnightly on Wednesday, automerged |
+| Noisy dependency (e.g. `aws-sdk`) | No      | Monthly                              |
 
 Pull requests are tersely named:
 
