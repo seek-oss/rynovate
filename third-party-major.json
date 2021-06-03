@@ -36,17 +36,8 @@
     },
     {
       "excludePackageNames": ["braid-design-system", "sku", "skuba"],
-      "excludePackagePatterns": ["^@?seek", "seek$", "^@types/"],
-      "matchDepTypes": ["devDependencies"],
-      "matchManagers": ["npm"],
-      "matchUpdateTypes": ["major"],
-
-      "schedule": "after 3:00 am and before 6:00 am on Tuesday"
-    },
-    {
-      "excludePackageNames": ["braid-design-system", "sku", "skuba"],
-      "excludePackagePatterns": ["^@?seek", "seek$", "^@types/"],
-      "matchDepTypes": ["peerDependencies"],
+      "excludePackagePatterns": ["^@?seek", "seek$"],
+      "matchDepTypes": ["devDependencies", "peerDependencies"],
       "matchManagers": ["npm"],
       "matchUpdateTypes": ["major"],
 
