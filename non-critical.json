@@ -12,10 +12,7 @@
   "packageRules": [
     {
       "excludePackageNames": ["seek-jobs/gantry"],
-      "groupName": "all dependencies",
-      "recreateClosed": true,
-      "semanticCommitType": "fix",
-      "updateTypes": [
+      "matchUpdateTypes": [
         "bump",
         "digest",
         "major",
@@ -23,19 +20,25 @@
         "patch",
         "pin",
         "rollback"
-      ]
+      ],
+
+      "groupName": "all dependencies",
+      "recreateClosed": true,
+      "semanticCommitType": "fix"
     },
     {
+      "matchManagers": ["buildkite"],
+      "matchPackageNames": ["seek-jobs/gantry"],
+
       "commitMessageAction": "",
       "commitMessageExtra": "{{newValue}}",
       "commitMessageTopic": "{{depName}}",
-      "packageNames": ["seek-jobs/gantry"],
-      "schedule": "before 6:00 am on every weekday"
+      "schedule": "before 6:00 am every weekday"
     }
   ],
   "buildkite": {
-    "commitMessageExtra": "",
-    "managerBranchPrefix": ""
+    "additionalBranchPrefix": "",
+    "commitMessageExtra": ""
   },
   "docker": {
     "commitMessageExtra": "",
@@ -45,8 +48,6 @@
   },
   "commitMessageAction": "",
   "commitMessageExtra": "",
-  "ignoreNpmrcFile": true,
-  "lazyGrouping": false,
   "postUpdateOptions": ["yarnDedupeHighest"],
   "prConcurrentLimit": 2,
   "prNotPendingHours": 1,
