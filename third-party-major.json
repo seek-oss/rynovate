@@ -10,6 +10,9 @@
     "preview:dockerCompose",
     "docker:disableMajor"
   ],
+  "lockFileMaintenance": {
+    "enabled": true
+  },
   "packageRules": [
     {
       "depTypeList": ["dependencies"],
@@ -71,8 +74,15 @@
     {
       "automerge": true,
       "prPriority": 99,
-      "schedule": "before 3am on every weekday",
-      "matchUpdateTypes": ["pin"]
+      "schedule": "before 3:00 am every 2 weeks on Wednesday",
+      "updateTypes": ["lockFileMaintenance"]
+    },
+    {
+      "automerge": true,
+      "matchManagers": ["npm"],
+      "matchUpdateTypes": ["pin"],
+      "prPriority": 99,
+      "schedule": "before 3am on every weekday"
     }
   ],
   "commitMessageAction": "",

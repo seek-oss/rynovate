@@ -10,6 +10,9 @@
     "preview:dockerCompose",
     "docker:disableMajor"
   ],
+  "lockFileMaintenance": {
+    "enabled": true
+  },
   "packageRules": [
     {
       "depTypeList": ["dependencies"],
@@ -43,7 +46,8 @@
       "packagePatterns": ["^@types/"],
       "prPriority": 99,
       "recreateClosed": true,
-      "schedule": "before 3am on Tuesday"
+      "schedule": "before 3am on Tuesday",
+      "updateTypes": ["major", "minor", "patch"]
     },
     {
       "commitMessageExtra": "",
@@ -53,7 +57,8 @@
       "groupName": "npm dev dependencies",
       "managers": ["npm"],
       "recreateClosed": true,
-      "schedule": "after 3am and before 6am on Tuesday"
+      "schedule": "after 3am and before 6am on Tuesday",
+      "updateTypes": ["major", "minor", "patch"]
     },
     {
       "commitMessageExtra": "",
@@ -63,7 +68,8 @@
       "groupName": "npm peer dependencies",
       "managers": ["npm"],
       "recreateClosed": true,
-      "schedule": "after 3am and before 6am on Tuesday"
+      "schedule": "after 3am and before 6am on Tuesday",
+      "updateTypes": ["major", "minor", "patch"]
     },
     {
       "commitMessageExtra": "",
@@ -126,6 +132,12 @@
       "packageNames": ["react-relay"],
       "packagePatterns": ["^relay-"],
       "recreateClosed": true
+    },
+    {
+      "automerge": true,
+      "prPriority": 99,
+      "schedule": "before 3:00 am every 2 weeks on Wednesday",
+      "updateTypes": ["lockFileMaintenance"]
     },
     {
       "automerge": true,
