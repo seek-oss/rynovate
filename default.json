@@ -8,140 +8,164 @@
     ":updateNotScheduled",
     "preview:buildkite",
     "preview:dockerCompose",
-    "docker:disableMajor"
+    "docker:disableMajor",
+    "group:monorepos"
   ],
+  "lockFileMaintenance": {
+    "enabled": true
+  },
   "packageRules": [
     {
-      "depTypeList": ["dependencies"],
+      "matchDepTypes": ["dependencies"],
+      "matchManagers": ["npm"],
+
       "semanticCommitType": "fix"
     },
     {
+      "matchManagers": ["gomod"],
+
       "digest": {
         "commitMessageExtra": "",
         "groupName": "gomod digests",
-        "schedule": "after 3am and before 6am on the first day of the month"
+        "schedule": "after 3:00 am and before 6:00 am on the first day of the month"
       },
-      "managers": ["gomod"],
       "semanticCommitType": "fix"
     },
     {
+      "matchManagers": ["buildkite", "gomod", "npm", "nvm"],
+
       "commitMessageExtra": "{{newValue}}",
-      "commitMessageTopic": "{{depName}}",
-      "managers": ["buildkite", "gomod", "npm", "nvm"]
+      "commitMessageTopic": "{{depName}}"
     },
     {
-      "managers": ["npm"],
-      "packageNames": ["@types/node"],
-      "updateTypes": ["major"],
+      "matchManagers": ["npm"],
+      "matchPackageNames": ["@types/node"],
+      "matchUpdateTypes": ["major"],
+
       "enabled": false
     },
     {
+      "matchManagers": ["npm"],
+      "matchPackagePatterns": ["^@types/"],
+      "matchUpdateTypes": ["major", "minor", "patch"],
+
       "automerge": true,
       "commitMessageExtra": "",
       "groupName": "npm definitely typed",
-      "managers": ["npm"],
-      "packagePatterns": ["^@types/"],
       "prPriority": 99,
       "recreateClosed": true,
-      "schedule": "before 3am on Tuesday"
+      "schedule": "before 3:00 am on Tuesday"
     },
     {
-      "commitMessageExtra": "",
-      "depTypeList": ["devDependencies"],
       "excludePackageNames": ["braid-design-system", "sku", "skuba"],
       "excludePackagePatterns": ["^@?seek", "seek$", "^@types/"],
+      "matchDepTypes": ["devDependencies"],
+      "matchManagers": ["npm"],
+      "matchUpdateTypes": ["major", "minor", "patch"],
+
+      "commitMessageExtra": "",
       "groupName": "npm dev dependencies",
-      "managers": ["npm"],
       "recreateClosed": true,
-      "schedule": "after 3am and before 6am on Tuesday"
+      "schedule": "after 3:00 am and before 6:00 am on Tuesday"
     },
     {
-      "commitMessageExtra": "",
-      "depTypeList": ["peerDependencies"],
       "excludePackageNames": ["braid-design-system", "sku", "skuba"],
       "excludePackagePatterns": ["^@?seek", "seek$", "^@types/"],
-      "groupName": "npm peer dependencies",
-      "managers": ["npm"],
-      "recreateClosed": true,
-      "schedule": "after 3am and before 6am on Tuesday"
-    },
-    {
+      "matchDepTypes": ["peerDependencies"],
+      "matchManagers": ["npm"],
+      "matchUpdateTypes": ["major", "minor", "patch"],
+
       "commitMessageExtra": "",
-      "excludePackagePatterns": ["^seek-jobs/", "^seek-oss/"],
-      "groupName": "buildkite plugins",
-      "managerBranchPrefix": "",
-      "managers": ["buildkite"],
+      "groupName": "npm peer dependencies",
       "recreateClosed": true,
-      "schedule": "after 3am and before 6am on Wednesday"
+      "schedule": "after 3:00 am and before 6:00 am on Tuesday"
     },
     {
+      "excludePackagePatterns": ["^seek-jobs/", "^seek-oss/"],
+      "matchManagers": ["buildkite"],
+
+      "additionalBranchPrefix": "",
+      "commitMessageExtra": "",
+      "groupName": "buildkite plugins",
+      "recreateClosed": true,
+      "schedule": "after 3:00 am and before 6:00 am on Wednesday"
+    },
+    {
+      "matchManagers": ["docker-compose", "dockerfile"],
+
       "commitMessageExtra": "",
       "group": {
         "commitMessageTopic": "{{groupName}}"
       },
       "groupName": "docker images",
-      "managers": ["docker-compose", "dockerfile"],
       "recreateClosed": true,
-      "schedule": "after 3am and before 6am on Wednesday"
+      "schedule": "after 3:00 am and before 6:00 am on Wednesday"
     },
     {
-      "packageNames": ["braid-design-system", "sku", "skuba"],
-      "packagePatterns": ["^@?seek", "seek$"],
+      "matchPackageNames": ["braid-design-system", "sku", "skuba"],
+      "matchPackagePatterns": ["^@?seek", "seek$"],
+
       "prPriority": 98,
-      "schedule": "after 3am and before 6am on every weekday"
+      "schedule": "after 3:00 am and before 6:00 am every weekday"
     },
     {
+      "matchDepTypes": ["dependencies"],
+      "matchManagers": ["npm"],
+      "matchPackageNames": ["aws-sdk"],
+      "matchPackagePatterns": ["^@aws-sdk/"],
+
       "commitMessageExtra": "",
-      "depTypeList": ["dependencies"],
       "groupName": "aws-sdk",
-      "managers": ["npm"],
-      "packageNames": ["aws-sdk"],
-      "packagePatterns": ["^@aws-sdk/"],
       "recreateClosed": true,
-      "schedule": "after 3am and before 6am on the first day of the month"
+      "schedule": "after 3:00 am and before 6:00 am on the first day of the month"
     },
     {
-      "automerge": true,
-      "depTypeList": ["devDependencies"],
-      "packageNames": [
+      "matchDepTypes": ["devDependencies"],
+      "matchManagers": ["npm"],
+      "matchPackageNames": [
         "@seek/candidate-data-contracts",
         "@seek/ie-shared-types",
         "@seek/indie-cardib-types"
       ],
-      "schedule": "before 3am on every weekday"
-    },
-    {
+
       "automerge": true,
-      "depTypeList": ["devDependencies"],
-      "packageNames": ["sku", "skuba"],
-      "updateTypes": ["patch"]
+      "schedule": "before 3:00 am every weekday"
     },
     {
-      "extends": ["group:monorepos"],
-      "excludePackageNames": [],
-      "recreateClosed": true
+      "matchDepTypes": ["devDependencies"],
+      "matchPackageNames": ["sku", "skuba"],
+      "matchUpdateTypes": ["patch"],
+
+      "automerge": true
     },
     {
+      "matchPackageNames": ["react-relay"],
+      "matchPackagePatterns": ["^relay-"],
+
       "groupName": "relay",
-      "packageNames": ["react-relay"],
-      "packagePatterns": ["^relay-"],
       "recreateClosed": true
     },
     {
+      "matchUpdateTypes": ["lockFileMaintenance"],
+
       "automerge": true,
       "prPriority": 99,
-      "schedule": "before 3am on every weekday",
-      "updateTypes": ["pin"]
+      "schedule": "before 3:00 am every 2 weeks on Wednesday"
+    },
+    {
+      "matchUpdateTypes": ["pin"],
+
+      "automerge": true,
+      "prPriority": 99,
+      "schedule": "before 3:00 am every weekday"
     }
   ],
   "commitMessageAction": "",
-  "ignoreNpmrcFile": true,
-  "lazyGrouping": false,
   "postUpdateOptions": ["yarnDedupeHighest"],
   "prConcurrentLimit": 3,
   "prNotPendingHours": 1,
   "rangeStrategy": "auto",
-  "schedule": "after 3am and before 6am on Monday and Friday",
+  "schedule": "after 3:00 am and before 6:00 am on Monday and Friday",
   "semanticCommitScope": "",
   "semanticCommitType": "deps"
 }
