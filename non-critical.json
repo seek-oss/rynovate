@@ -12,10 +12,7 @@
   "packageRules": [
     {
       "excludePackageNames": ["seek-jobs/gantry"],
-      "groupName": "all dependencies",
-      "recreateClosed": true,
-      "semanticCommitType": "fix",
-      "updateTypes": [
+      "matchUpdateTypes": [
         "bump",
         "digest",
         "major",
@@ -23,13 +20,19 @@
         "patch",
         "pin",
         "rollback"
-      ]
+      ],
+
+      "groupName": "all dependencies",
+      "recreateClosed": true,
+      "semanticCommitType": "fix"
     },
     {
+      "matchManagers": ["buildkite"],
+      "matchPackageNames": ["seek-jobs/gantry"],
+
       "commitMessageAction": "",
       "commitMessageExtra": "{{newValue}}",
       "commitMessageTopic": "{{depName}}",
-      "packageNames": ["seek-jobs/gantry"],
       "schedule": "before 6:00 am on every weekday"
     }
   ],
