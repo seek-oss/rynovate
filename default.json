@@ -16,10 +16,10 @@
   },
   "packageRules": [
     {
-      "matchDepTypes": ["dependencies"],
-      "matchManagers": ["npm"],
+      "matchManagers": ["buildkite", "gomod", "npm", "nvm"],
 
-      "semanticCommitType": "fix"
+      "commitMessageExtra": "{{newValue}}",
+      "commitMessageTopic": "{{depName}}"
     },
     {
       "matchManagers": ["gomod"],
@@ -32,10 +32,10 @@
       "semanticCommitType": "fix"
     },
     {
-      "matchManagers": ["buildkite", "gomod", "npm", "nvm"],
+      "matchDepTypes": ["dependencies"],
+      "matchManagers": ["npm"],
 
-      "commitMessageExtra": "{{newValue}}",
-      "commitMessageTopic": "{{depName}}"
+      "semanticCommitType": "fix"
     },
     {
       "matchManagers": ["npm"],

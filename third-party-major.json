@@ -15,16 +15,16 @@
   },
   "packageRules": [
     {
-      "matchDepTypes": ["dependencies"],
-      "matchManagers": ["npm"],
-
-      "semanticCommitType": "fix"
-    },
-    {
       "matchManagers": ["buildkite", "npm", "nvm"],
 
       "commitMessageExtra": "{{newValue}}",
       "commitMessageTopic": "{{depName}}"
+    },
+    {
+      "matchDepTypes": ["dependencies"],
+      "matchManagers": ["npm"],
+
+      "semanticCommitType": "fix"
     },
     {
       "excludePackageNames": ["braid-design-system", "sku", "skuba"],
