@@ -45,6 +45,7 @@
     {
       "excludePackageNames": ["braid-design-system", "sku", "skuba"],
       "excludePackagePatterns": ["^@?seek", "seek$"],
+      "matchDepTypes": ["devDependencies"],
       "matchManagers": ["npm"],
       "matchUpdateTypes": ["major"],
 
@@ -52,6 +53,7 @@
     },
     {
       "excludePackagePatterns": ["^seek-jobs/", "^seek-oss/"],
+      "matchDepTypes": ["peerDependencies"],
       "matchManagers": ["buildkite"],
 
       "additionalBranchPrefix": "",
