@@ -29,11 +29,11 @@ Dependencies are selectively grouped and scheduled:
 | Go module digest update           | Yes     | Monthly                              |
 | Go module version update          | No      | Monday, Friday                       |
 | JavaScript dependency             | No      | Monday, Friday                       |
-| JavaScript devDependency          | Yes     | Tuesday                              |
-| JavaScript peerDependency         | Yes     | Tuesday                              |
-| TypeScript definition             | Yes     | Tuesday, automerged                  |
-| Buildkite plugin                  | Yes     | Wednesday                            |
-| Docker image                      | Yes     | Wednesday                            |
+| JavaScript devDependency          | Yes     | Fortnightly on Tuesday               |
+| JavaScript peerDependency         | Yes     | Fortnightly on Tuesday               |
+| TypeScript definition             | Yes     | Fortnightly on Tuesday, automerged   |
+| Buildkite plugin                  | Yes     | Fortnightly on Wednesday             |
+| Docker image                      | Yes     | Fortnightly on Wednesday             |
 | Lock file maintenance             | Yes     | Fortnightly on Wednesday, automerged |
 | Noisy dependency (e.g. `aws-sdk`) | No      | Monthly                              |
 
@@ -50,14 +50,14 @@ Pull requests are tersely named:
 | Type                    | Grouped | Schedule                             |
 | :---------------------- | :------ | :----------------------------------- |
 | Gantry Buildkite plugin | No      | Weekday                              |
-| Lock file maintenance   | Yes     | Fortnightly on Wednesday, automerged |
 | \*                      | Yes     | Monday                               |
+| Lock file maintenance   | Yes     | Fortnightly on Wednesday, automerged |
 
 | Type                    | Example                         |
 | :---------------------- | :------------------------------ |
 | Gantry Buildkite plugin | `deps: seek-jobs/gantry v1.0.0` |
-| Lock file maintenance   | `deps: lock file maintenance`   |
 | \*                      | `fix: all dependencies`         |
+| Lock file maintenance   | `deps: lock file maintenance`   |
 
 ### `third-party-major`
 
