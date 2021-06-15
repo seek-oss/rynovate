@@ -66,6 +66,8 @@ Non-major Buildkite plugin and Docker image versions are still renovated.
 
 ## Usage
 
+### Getting started with presets
+
 Reference in an [extends] array within [Renovate] config:
 
 [extends]: https://renovatebot.com/docs/configuration-options/#extends
@@ -83,3 +85,46 @@ Choose a named preset with a `:preset` suffix:
   extends: ['github>seek-oss/rynovate:non-critical'],
 }
 ```
+
+### Adding your own package rules
+
+Disable incompatible major version upgrades for a specific package:
+
+```json5
+{
+  extends: ['github>seek-oss/rynovate'],
+  packageRules: [
+    {
+      matchManagers: ['npm'],
+      matchPackageNames: ['your-package-name-here'],
+      matchUpdateTypes: ['major'],
+
+      enabled: false,
+    },
+  ],
+}
+```
+
+Ungroup a specific package that is usually grouped by the preset:
+
+```json5
+{
+  extends: ['github>seek-oss/rynovate:non-critical'],
+  packageRules: [
+    {
+      matchManagers: ['npm'],
+      matchPackageNames: ['your-package-name-here'],
+      matchUpdateTypes: ['major', 'minor', 'patch'],
+
+      commitMessageExtra: '{{newValue}}',
+      commitMessageTopic: '{{depName}}',
+      groupName: null,
+      schedule: 'before 3:00 am every weekday',
+    },
+  ],
+}
+```
+
+For more information, see Renovate's comprehensive documentation of its [configuration options].
+
+[configuration options]: https://docs.renovatebot.com/configuration-options
