@@ -24,7 +24,8 @@ Dependencies are selectively grouped and scheduled:
 
 | Type                              | Grouped | Schedule                             |
 | :-------------------------------- | :------ | :----------------------------------- |
-| SEEK                              | No      | Weekday                              |
+| SEEK (select package versions)    | No      | Weekday, automerged                  |
+| SEEK (rest)                       | No      | Weekday                              |
 | Pin dependency                    | Yes     | Weekday, automerged                  |
 | Go module digest update           | Yes     | Monthly                              |
 | Go module version update          | No      | Monday, Friday                       |
