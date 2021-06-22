@@ -58,7 +58,12 @@
     },
     {
       "excludePackageNames": ["braid-design-system", "sku", "skuba"],
-      "excludePackagePatterns": ["^@?seek", "seek$", "^@types/"],
+      "excludePackagePatterns": [
+        "^@?seek",
+        "seek$",
+        "^@types/",
+        "^@vanilla-extract/"
+      ],
       "matchDepTypes": ["devDependencies"],
       "matchManagers": ["npm"],
       "matchUpdateTypes": ["major", "minor", "patch"],
@@ -70,7 +75,12 @@
     },
     {
       "excludePackageNames": ["braid-design-system", "sku", "skuba"],
-      "excludePackagePatterns": ["^@?seek", "seek$", "^@types/"],
+      "excludePackagePatterns": [
+        "^@?seek",
+        "seek$",
+        "^@types/",
+        "^@vanilla-extract/"
+      ],
       "matchDepTypes": ["peerDependencies"],
       "matchManagers": ["npm"],
       "matchUpdateTypes": ["major", "minor", "patch"],
@@ -103,7 +113,7 @@
     },
     {
       "matchPackageNames": ["braid-design-system", "sku", "skuba"],
-      "matchPackagePatterns": ["^@?seek", "seek$"],
+      "matchPackagePatterns": ["^@?seek", "seek$", "^@vanilla-extract/"],
 
       "prPriority": 98,
       "schedule": "after 3:00 am and before 6:00 am every weekday"
