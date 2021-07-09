@@ -14,6 +14,13 @@
   },
   "packageRules": [
     {
+      "matchManagers": ["npm"],
+      "matchPackageNames": ["@types/node"],
+      "matchUpdateTypes": ["major"],
+
+      "enabled": false
+    },
+    {
       "excludePackageNames": ["seek-jobs/gantry"],
       "matchUpdateTypes": [
         "bump",
