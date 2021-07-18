@@ -7,7 +7,8 @@
     ":semanticCommits",
     ":timezone(Australia/Melbourne)",
     "preview:buildkite",
-    "preview:dockerCompose"
+    "preview:dockerCompose",
+    "docker:disableMajor"
   ],
   "lockFileMaintenance": {
     "enabled": true
