@@ -57,10 +57,11 @@
       "schedule": "before 3:00 am every 2 weeks on Tuesday"
     },
     {
-      "excludePackageNames": ["braid-design-system", "sku", "skuba"],
+      "excludePackageNames": ["aws-sdk", "braid-design-system", "sku", "skuba"],
       "excludePackagePatterns": [
         "^@?seek",
         "seek$",
+        "^@aws-sdk/",
         "^@types/",
         "^@vanilla-extract/"
       ],
@@ -119,7 +120,6 @@
       "schedule": "after 3:00 am and before 6:00 am every weekday"
     },
     {
-      "matchDepTypes": ["dependencies"],
       "matchManagers": ["npm"],
       "matchPackageNames": ["aws-sdk"],
       "matchPackagePatterns": ["^@aws-sdk/"],
