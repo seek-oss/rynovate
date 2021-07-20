@@ -123,6 +123,7 @@
       "matchManagers": ["npm"],
       "matchPackageNames": ["aws-sdk"],
       "matchPackagePatterns": ["^@aws-sdk/"],
+      "matchUpdateTypes": ["major", "minor", "patch"],
 
       "commitMessageExtra": "",
       "groupName": "aws-sdk",
