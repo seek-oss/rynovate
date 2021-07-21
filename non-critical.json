@@ -49,7 +49,11 @@
     {
       "matchUpdateTypes": ["lockFileMaintenance"],
 
-      "automerge": true,
+      "automerge": true
+    },
+    {
+      "matchUpdateTypes": ["lockFileMaintenance"],
+
       "prPriority": 99,
       "schedule": "before 3:00 am every 2 weeks on Wednesday"
     }

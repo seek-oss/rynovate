@@ -49,7 +49,13 @@
       "matchPackagePatterns": ["^@types/"],
       "matchUpdateTypes": ["major", "minor", "patch"],
 
-      "automerge": true,
+      "automerge": true
+    },
+    {
+      "matchManagers": ["npm"],
+      "matchPackagePatterns": ["^@types/"],
+      "matchUpdateTypes": ["major", "minor", "patch"],
+
       "commitMessageExtra": "",
       "groupName": "npm definitely typed",
       "prPriority": 99,
@@ -139,7 +145,17 @@
         "@seek/indie-cardib-types"
       ],
 
-      "automerge": true,
+      "automerge": true
+    },
+    {
+      "matchDepTypes": ["devDependencies"],
+      "matchManagers": ["npm"],
+      "matchPackageNames": [
+        "@seek/candidate-data-contracts",
+        "@seek/ie-shared-types",
+        "@seek/indie-cardib-types"
+      ],
+
       "schedule": "before 3:00 am every weekday"
     },
     {
@@ -167,14 +183,22 @@
     {
       "matchUpdateTypes": ["lockFileMaintenance"],
 
-      "automerge": true,
+      "automerge": true
+    },
+    {
+      "matchUpdateTypes": ["lockFileMaintenance"],
+
       "prPriority": 99,
       "schedule": "before 3:00 am every 2 weeks on Wednesday"
     },
     {
       "matchUpdateTypes": ["pin"],
 
-      "automerge": true,
+      "automerge": true
+    },
+    {
+      "matchUpdateTypes": ["pin"],
+
       "prPriority": 99,
       "schedule": "before 3:00 am every weekday"
     }
