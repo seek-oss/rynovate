@@ -46,6 +46,12 @@
     },
     {
       "matchManagers": ["npm"],
+      "matchPackageNames": ["pino-pretty"],
+
+      "allowedVersions": "< 7"
+    },
+    {
+      "matchManagers": ["npm"],
       "matchPackagePatterns": ["^@types/"],
       "matchUpdateTypes": ["major", "minor", "patch"],
 
