@@ -46,6 +46,13 @@
     },
     {
       "matchManagers": ["npm"],
+      "matchPackageNames": ["eslint"],
+      "matchUpdateTypes": ["major"],
+
+      "allowedVersions": "< 8"
+    },
+    {
+      "matchManagers": ["npm"],
       "matchPackagePatterns": ["^@types/"],
       "matchUpdateTypes": ["major", "minor", "patch"],
 
