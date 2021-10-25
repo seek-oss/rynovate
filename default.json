@@ -47,7 +47,6 @@
     {
       "matchManagers": ["npm"],
       "matchPackageNames": ["eslint"],
-      "matchUpdateTypes": ["major"],
 
       "allowedVersions": "< 8"
     },
