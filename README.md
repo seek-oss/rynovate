@@ -106,6 +106,22 @@ Disable incompatible major version upgrades for a specific package:
 }
 ```
 
+Ignore a specific package version:
+
+```json5
+{
+  extends: ['github>seek-oss/rynovate'],
+  packageRules: [
+    {
+      matchManagers: ['npm'],
+      matchPackageNames: ['your-package-name-here'],
+
+      allowedVersions: '!/^1.2.3$/',
+    },
+  ],
+}
+```
+
 Ungroup a specific package that is usually grouped by the preset:
 
 ```json5
