@@ -146,6 +146,7 @@
       "matchDepTypes": ["devDependencies"],
       "matchManagers": ["npm"],
       "matchPackageNames": [
+        "@seek/backoffice-access",
         "@seek/candidate-data-contracts",
         "@seek/ie-shared-types",
         "@seek/indie-cardib-types"
@@ -157,6 +158,7 @@
       "matchDepTypes": ["devDependencies"],
       "matchManagers": ["npm"],
       "matchPackageNames": [
+        "@seek/backoffice-access",
         "@seek/candidate-data-contracts",
         "@seek/ie-shared-types",
         "@seek/indie-cardib-types"
