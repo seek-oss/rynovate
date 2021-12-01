@@ -140,7 +140,8 @@
       "commitMessageExtra": "",
       "groupName": "aws-sdk",
       "recreateClosed": true,
-      "schedule": "after 3:00 am and before 6:00 am on the first day of the month"
+      "schedule": "after 3:00 am and before 6:00 am on the first day of the month",
+      "stabilityDays": 0
     },
     {
       "matchDepTypes": ["devDependencies"],
