@@ -218,5 +218,6 @@
   "rangeStrategy": "auto",
   "schedule": "after 3:00 am and before 6:00 am on Monday and Friday",
   "semanticCommitScope": "",
-  "semanticCommitType": "deps"
+  "semanticCommitType": "deps",
+  "stabilityDays": 3
 }
