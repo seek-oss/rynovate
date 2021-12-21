@@ -22,6 +22,12 @@
       "enabled": false
     },
     {
+      "matchManagers": ["npm"],
+      "matchPackageNames": ["aws-sdk-mock"],
+
+      "allowedVersions": "!/^5.5.0$/"
+    },
+    {
       "excludePackageNames": ["seek-jobs/gantry"],
       "matchUpdateTypes": [
         "bump",
