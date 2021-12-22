@@ -179,6 +179,7 @@
       "matchManagers": ["npm"],
       "matchPackageNames": ["sku", "skuba"],
       "matchUpdateTypes": ["patch"],
+
       "automerge": true,
       "stabilityDays": 0,
       "updateNotScheduled": true
