@@ -28,6 +28,12 @@
       "allowedVersions": "!/^5.5.0$/"
     },
     {
+      "matchManagers": ["npm"],
+      "matchPackageNames": ["faker"],
+
+      "allowedVersions": "!/^6.6.6$/"
+    },
+    {
       "excludePackageNames": ["seek-jobs/gantry"],
       "matchUpdateTypes": [
         "bump",

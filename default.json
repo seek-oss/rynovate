@@ -58,6 +58,12 @@
     },
     {
       "matchManagers": ["npm"],
+      "matchPackageNames": ["faker"],
+
+      "allowedVersions": "!/^6.6.6$/"
+    },
+    {
+      "matchManagers": ["npm"],
       "matchPackagePatterns": ["^@types/"],
       "matchUpdateTypes": ["major", "minor", "patch"],
 
