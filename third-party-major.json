@@ -41,6 +41,12 @@
       "allowedVersions": "!/^5.5.0$/"
     },
     {
+      "matchManagers": ["npm"],
+      "matchPackageNames": ["faker"],
+
+      "allowedVersions": "!/^6.6.6$/"
+    },
+    {
       "excludePackageNames": ["braid-design-system", "sku", "skuba"],
       "excludePackagePatterns": ["^@?seek", "seek$"],
       "matchDepTypes": ["devDependencies", "peerDependencies"],
