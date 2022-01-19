@@ -1,5 +1,7 @@
 # Rynovate
 
+[![Validate](https://github.com/seek-oss/rynovate/actions/workflows/validate.yml/badge.svg)](https://github.com/seek-oss/rynovate/actions/workflows/validate.yml)
+
 Mildly-aggressive [Renovate] presets for keeping dependencies up to date.
 
 See [renovate-config-seek] for a baseline preset that only maintains SEEK npm packages.
