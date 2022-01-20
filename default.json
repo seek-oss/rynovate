@@ -198,7 +198,7 @@
     },
     {
       "matchManagers": ["npm"],
-      "matchPackageNames": ["@seek/indie-api-types"],
+      "matchPackageNames": ["@seek/indie-api-types", "@seek/indie-mocks"],
       "matchUpdateTypes": ["minor", "patch"],
 
       "automerge": true,
