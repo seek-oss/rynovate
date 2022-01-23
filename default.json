@@ -160,6 +160,13 @@
       "updateNotScheduled": true
     },
     {
+      "matchManagers": ["npm"],
+      "matchPackageNames": ["apollo-server-plugin-base", "apollo-server-types"],
+      "matchUpdateTypes": ["major", "minor", "patch"],
+
+      "groupName": "apollo-server monorepo"
+    },
+    {
       "matchDepTypes": ["devDependencies"],
       "matchManagers": ["npm"],
       "matchPackageNames": [
