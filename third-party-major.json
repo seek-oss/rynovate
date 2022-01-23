@@ -43,9 +43,9 @@
     },
     {
       "matchManagers": ["npm"],
-      "matchPackageNames": ["faker"],
+      "matchPackageNames": ["@types/faker", "faker"],
 
-      "allowedVersions": "!/^6.6.6$/"
+      "allowedVersions": "< 6"
     },
     {
       "excludePackageNames": ["braid-design-system", "sku", "skuba"],
