@@ -151,7 +151,7 @@
       "matchPackageNames": ["seek-jobs/gantry"],
 
       "prCreation": "immediate",
-      "schedule": "after 3:00am and before 6:00 pm every weekday"
+      "schedule": "after 3:00am and before 9:00 am every weekday"
     },
     {
       "matchManagers": ["npm"],
