@@ -150,7 +150,7 @@
       "matchPackageNames": ["seek-jobs/gantry"],
 
       "prCreation": "immediate",
-      "schedule": "after 3:00 am and before 9:00 am every weekday"
+      "schedule": "after 3:00 am and before 5:00 pm every weekday"
     },
     {
       "matchManagers": ["npm"],
@@ -249,6 +249,7 @@
       "schedule": "before 3:00 am every weekday"
     }
   ],
+  "branchConcurrentLimit": 8,
   "commitMessageAction": "",
   "postUpdateOptions": ["yarnDedupeHighest"],
   "prConcurrentLimit": 3,
