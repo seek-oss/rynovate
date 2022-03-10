@@ -152,7 +152,8 @@
 
       "prCreation": "immediate",
       "schedule": "after 3:00 am and before 5:00 pm every weekday",
-      "stabilityDays": 0
+      "stabilityDays": 0,
+      "updateNotScheduled": true
     },
     {
       "matchManagers": ["npm"],
