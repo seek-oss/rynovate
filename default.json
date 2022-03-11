@@ -140,6 +140,7 @@
       "matchPackageNames": ["braid-design-system", "sku", "skuba"],
       "matchPackagePatterns": ["^@?seek", "seek$", "^@vanilla-extract/"],
 
+      "prCreation": "immediate",
       "prPriority": 98,
       "schedule": "after 3:00 am and before 6:00 am every weekday",
       "stabilityDays": 0,
@@ -150,7 +151,9 @@
       "matchPackageNames": ["seek-jobs/gantry"],
 
       "prCreation": "immediate",
-      "schedule": "after 3:00 am and before 5:00 pm every weekday"
+      "schedule": "after 3:00 am and before 5:00 pm every weekday",
+      "stabilityDays": 0,
+      "updateNotScheduled": true
     },
     {
       "matchManagers": ["npm"],
@@ -160,6 +163,7 @@
 
       "commitMessageExtra": "",
       "groupName": "aws-sdk",
+      "prCreation": "immediate",
       "recreateClosed": true,
       "schedule": "after 3:00 am and before 6:00 am on the first day of the month",
       "stabilityDays": 0,
@@ -183,6 +187,7 @@
       ],
 
       "automerge": true,
+      "prCreation": "immediate",
       "stabilityDays": 0,
       "updateNotScheduled": true
     },
@@ -196,6 +201,7 @@
         "@seek/indie-cardib-types"
       ],
 
+      "prCreation": "immediate",
       "schedule": "before 3:00 am every weekday",
       "stabilityDays": 0,
       "updateNotScheduled": true
@@ -206,6 +212,7 @@
       "matchUpdateTypes": ["patch"],
 
       "automerge": true,
+      "prCreation": "immediate",
       "stabilityDays": 0,
       "updateNotScheduled": true
     },
@@ -215,6 +222,7 @@
       "matchUpdateTypes": ["minor", "patch"],
 
       "automerge": true,
+      "prCreation": "immediate",
       "schedule": "before 3:00 am every weekday",
       "stabilityDays": 0,
       "updateNotScheduled": true
