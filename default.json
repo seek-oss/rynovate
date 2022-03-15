@@ -181,6 +181,7 @@
       "matchManagers": ["npm"],
       "matchPackageNames": [
         "@seek/backoffice-access",
+        "@seek/ca-graphql-schema",
         "@seek/candidate-data-contracts",
         "@seek/ie-shared-types",
         "@seek/indie-cardib-types"
@@ -196,15 +197,13 @@
       "matchManagers": ["npm"],
       "matchPackageNames": [
         "@seek/backoffice-access",
+        "@seek/ca-graphql-schema",
         "@seek/candidate-data-contracts",
         "@seek/ie-shared-types",
         "@seek/indie-cardib-types"
       ],
 
-      "prCreation": "immediate",
-      "schedule": "before 3:00 am every weekday",
-      "stabilityDays": 0,
-      "updateNotScheduled": true
+      "schedule": "before 3:00 am every weekday"
     },
     {
       "matchManagers": ["npm"],
