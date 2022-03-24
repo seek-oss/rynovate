@@ -9,18 +9,20 @@ permissions: {}
 jobs:
   validate:
     name: Lint & Test
+    permissions:
+      checks: write
     runs-on: ubuntu-latest
     steps:
       - name: Check out repo
         uses: actions/checkout@v3
 
       - name: Set up Node.js 16.x
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: 16.x
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile --ignore-optional --non-interactive
+        run: yarn install --frozen-lockfile
 
       - name: Test
         run: yarn test
