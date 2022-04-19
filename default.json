@@ -256,7 +256,7 @@
       "schedule": "before 3:00 am every weekday"
     }
   ],
-  "branchConcurrentLimit": 8,
+  "branchConcurrentLimit": 12,
   "commitMessageAction": "",
   "postUpdateOptions": ["yarnDedupeHighest"],
   "prConcurrentLimit": 3,
