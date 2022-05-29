@@ -183,6 +183,7 @@
         "@seek/backoffice-access",
         "@seek/ca-graphql-schema",
         "@seek/candidate-data-contracts",
+        "@seek/hirer-jobs-types",
         "@seek/ie-shared-types",
         "@seek/indie-cardib-types"
       ],
@@ -199,6 +200,7 @@
         "@seek/backoffice-access",
         "@seek/ca-graphql-schema",
         "@seek/candidate-data-contracts",
+        "@seek/hirer-jobs-types",
         "@seek/ie-shared-types",
         "@seek/indie-cardib-types"
       ],
