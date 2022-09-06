@@ -236,6 +236,13 @@
       "recreateClosed": true
     },
     {
+      "matchManagers": ["npm"],
+      "matchPackagePatterns": ["^serverless-"],
+      "matchUpdateTypes": ["major", "minor", "patch"],
+
+      "groupName": "serverless"
+    },
+    {
       "matchUpdateTypes": ["lockFileMaintenance"],
 
       "automerge": true
