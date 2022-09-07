@@ -87,7 +87,8 @@
         "seek$",
         "^@aws-sdk/",
         "^@types/",
-        "^@vanilla-extract/"
+        "^@vanilla-extract/",
+        "^serverless"
       ],
       "matchDepTypes": ["devDependencies"],
       "matchManagers": ["npm"],
@@ -234,12 +235,6 @@
 
       "groupName": "relay",
       "recreateClosed": true
-    },
-    {
-      "matchManagers": ["npm"],
-      "matchPackagePatterns": ["^serverless-"],
-      "matchPackageNames": ["serverless"],
-      "matchUpdateTypes": ["major", "minor", "patch"],
     },
     {
       "matchUpdateTypes": ["lockFileMaintenance"],
