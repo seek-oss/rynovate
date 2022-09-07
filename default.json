@@ -240,8 +240,6 @@
       "matchPackagePatterns": ["^serverless-"],
       "matchPackageNames": ["serverless"],
       "matchUpdateTypes": ["major", "minor", "patch"],
-
-      "groupName": "serverless"
     },
     {
       "matchUpdateTypes": ["lockFileMaintenance"],
