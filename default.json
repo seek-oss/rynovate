@@ -87,7 +87,8 @@
         "seek$",
         "^@aws-sdk/",
         "^@types/",
-        "^@vanilla-extract/"
+        "^@vanilla-extract/",
+        "^serverless"
       ],
       "matchDepTypes": ["devDependencies"],
       "matchManagers": ["npm"],
