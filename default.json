@@ -3,7 +3,6 @@
     ":dependencyDashboard",
     ":prNotPending",
     ":rebaseStalePrs",
-    ":renovatePrefix",
     ":semanticCommits",
     ":timezone(Australia/Melbourne)",
     "preview:buildkite",
