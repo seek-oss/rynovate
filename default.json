@@ -259,7 +259,7 @@
     }
   ],
   "branchConcurrentLimit": 12,
-  "branchPrefix": "renovate--",
+  "branchPrefix": "renovate-",
   "commitMessageAction": "",
   "postUpdateOptions": ["yarnDedupeHighest"],
   "prConcurrentLimit": 3,
