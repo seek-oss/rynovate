@@ -222,7 +222,8 @@
         "@seek/indie-mocks",
         "@seek/candidate-data-contracts",
         "@seek/apply-pipeline-contracts",
-        "@seek/blobstore-consumer-sdk"],
+        "@seek/blobstore-consumer-sdk"
+      ],
       "matchUpdateTypes": ["minor", "patch"],
 
       "automerge": true,
