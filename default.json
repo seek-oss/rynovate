@@ -182,7 +182,6 @@
       "matchPackageNames": [
         "@seek/backoffice-access",
         "@seek/ca-graphql-schema",
-        "@seek/candidate-data-contracts",
         "@seek/hirer-jobs-types",
         "@seek/ie-shared-types",
         "@seek/indie-cardib-types"
@@ -199,7 +198,6 @@
       "matchPackageNames": [
         "@seek/backoffice-access",
         "@seek/ca-graphql-schema",
-        "@seek/candidate-data-contracts",
         "@seek/hirer-jobs-types",
         "@seek/ie-shared-types",
         "@seek/indie-cardib-types"
@@ -219,7 +217,12 @@
     },
     {
       "matchManagers": ["npm"],
-      "matchPackageNames": ["@seek/indie-api-types", "@seek/indie-mocks"],
+      "matchPackageNames": [
+        "@seek/indie-api-types",
+        "@seek/indie-mocks",
+        "@seek/candidate-data-contracts",
+        "@seek/apply-pipeline-contracts",
+        "@seek/blobstore-consumer-sdk"],
       "matchUpdateTypes": ["minor", "patch"],
 
       "automerge": true,
