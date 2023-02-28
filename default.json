@@ -218,11 +218,11 @@
     {
       "matchManagers": ["npm"],
       "matchPackageNames": [
-        "@seek/indie-api-types",
-        "@seek/indie-mocks",
-        "@seek/candidate-data-contracts",
         "@seek/apply-pipeline-contracts",
-        "@seek/blobstore-consumer-sdk"
+        "@seek/blobstore-consumer-sdk",
+        "@seek/candidate-data-contracts",
+        "@seek/indie-api-types",
+        "@seek/indie-mocks"
       ],
       "matchUpdateTypes": ["minor", "patch"],
 
