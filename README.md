@@ -77,7 +77,12 @@ Reference in an [extends] array within [Renovate] config:
 
 ```json5
 {
-  extends: ['github>seek-oss/rynovate'],
+  extends: [
+    // Required to retrieve private SEEK packages
+    'local>seek-jobs/renovate-config',
+
+    'github>seek-oss/rynovate',
+  ],
 }
 ```
 
@@ -85,7 +90,12 @@ Choose a named preset with a `:preset` suffix:
 
 ```json5
 {
-  extends: ['github>seek-oss/rynovate:non-critical'],
+  extends: [
+    // Required to retrieve private SEEK packages
+    'local>seek-jobs/renovate-config',
+
+    'github>seek-oss/rynovate:non-critical'.
+  ],
 }
 ```
 
@@ -95,7 +105,12 @@ Disable incompatible major version upgrades for a specific package:
 
 ```json5
 {
-  extends: ['github>seek-oss/rynovate'],
+  extends: [
+    // Required to retrieve private SEEK packages
+    'local>seek-jobs/renovate-config',
+
+    'github>seek-oss/rynovate',
+  ],
   packageRules: [
     {
       matchManagers: ['npm'],
@@ -112,7 +127,12 @@ Ignore a specific package version:
 
 ```json5
 {
-  extends: ['github>seek-oss/rynovate'],
+  extends: [
+    // Required to retrieve private SEEK packages
+    'local>seek-jobs/renovate-config',
+
+    'github>seek-oss/rynovate',
+  ],
   packageRules: [
     {
       matchManagers: ['npm'],
@@ -128,7 +148,12 @@ Ungroup a specific package that is usually grouped by the preset:
 
 ```json5
 {
-  extends: ['github>seek-oss/rynovate:non-critical'],
+  extends: [
+    // Required to retrieve private SEEK packages
+    'local>seek-jobs/renovate-config',
+
+    'github>seek-oss/rynovate:non-critical',
+  ],
   packageRules: [
     {
       matchManagers: ['npm'],
