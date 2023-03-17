@@ -15,6 +15,11 @@
   },
   "packageRules": [
     {
+      "matchDepTypes": ["peerDependencies"],
+
+      "rangeStrategy": "widen"
+    },
+    {
       "matchManagers": ["buildkite", "gomod", "npm", "nvm"],
 
       "commitMessageExtra": "{{newValue}}",

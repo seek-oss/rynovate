@@ -16,6 +16,11 @@
   },
   "packageRules": [
     {
+      "matchDepTypes": ["peerDependencies"],
+
+      "rangeStrategy": "widen"
+    },
+    {
       "matchManagers": ["buildkite", "npm", "nvm"],
 
       "commitMessageExtra": "{{newValue}}",
