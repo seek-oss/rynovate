@@ -81,7 +81,6 @@
       "commitMessageExtra": "",
       "groupName": "npm definitely typed",
       "prPriority": 99,
-      "recreateClosed": true,
       "schedule": "before 3:00 am every 2 weeks on Tuesday"
     },
     {
@@ -100,7 +99,6 @@
 
       "commitMessageExtra": "",
       "groupName": "npm dev dependencies",
-      "recreateClosed": true,
       "schedule": "after 3:00 am and before 6:00 am every 2 weeks on Tuesday"
     },
     {
@@ -117,7 +115,6 @@
 
       "commitMessageExtra": "",
       "groupName": "npm peer dependencies",
-      "recreateClosed": true,
       "schedule": "after 3:00 am and before 6:00 am every 2 weeks on Tuesday"
     },
     {
@@ -127,7 +124,6 @@
       "additionalBranchPrefix": "",
       "commitMessageExtra": "",
       "groupName": "buildkite plugins",
-      "recreateClosed": true,
       "schedule": "after 3:00 am and before 6:00 am every 2 weeks on Wednesday"
     },
     {
@@ -138,7 +134,6 @@
         "commitMessageTopic": "{{groupName}}"
       },
       "groupName": "docker images",
-      "recreateClosed": true,
       "schedule": "after 3:00 am and before 6:00 am every 2 weeks on Wednesday"
     },
     {
@@ -169,7 +164,6 @@
       "commitMessageExtra": "",
       "groupName": "aws-sdk",
       "prCreation": "immediate",
-      "recreateClosed": true,
       "schedule": "after 3:00 am and before 6:00 am on the first day of the month",
       "stabilityDays": 0,
       "updateNotScheduled": true
@@ -241,8 +235,7 @@
       "matchPackageNames": ["react-relay"],
       "matchPackagePatterns": ["^relay-"],
 
-      "groupName": "relay",
-      "recreateClosed": true
+      "groupName": "relay"
     },
     {
       "matchUpdateTypes": ["lockFileMaintenance"],

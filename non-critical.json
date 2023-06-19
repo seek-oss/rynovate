@@ -47,7 +47,6 @@
       ],
 
       "groupName": "all dependencies",
-      "recreateClosed": true,
       "semanticCommitType": "fix"
     },
     {
