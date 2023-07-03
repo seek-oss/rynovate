@@ -62,6 +62,11 @@
     },
     {
       "matchManagers": ["npm"],
+      "matchPackageNames": ["aws-sdk-client-mock"],
+      "groupName": "aws-sdk client mock"
+    },
+    {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["@types/faker", "faker"],
 
       "allowedVersions": "< 6"
