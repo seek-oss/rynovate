@@ -62,7 +62,7 @@
     },
     {
       "matchManagers": ["npm"],
-      "matchPackageNames": ["aws-sdk-client-mock"],
+      "matchPackageNames": ["aws-sdk-client-mock", "aws-sdk-client-mock-jest"],
       "groupName": "aws-sdk client mock"
     },
     {
