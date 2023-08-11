@@ -268,6 +268,7 @@
   "schedule": "after 3:00 am and before 6:00 am on Monday and Friday",
   "semanticCommitScope": "",
   "semanticCommitType": "deps",
+  "prCreation": "immediate",
   "minimumReleaseAge": "3 days",
   "internalChecksFilter": "strict",
   "updateNotScheduled": false
