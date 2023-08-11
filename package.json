@@ -14,8 +14,8 @@
     "format": "prettier --write .",
     "lint": "prettier --check .",
     "test": "concurrently yarn:test:*",
-    "test:default": "RENOVATE_CONFIG_FILE=default renovate-config-validator",
-    "test:non-critical": "RENOVATE_CONFIG_FILE=non-critical renovate-config-validator",
-    "test:third-party-major": "RENOVATE_CONFIG_FILE=third-party-major renovate-config-validator"
+    "test:default": "RENOVATE_CONFIG_FILE=default.json renovate-config-validator",
+    "test:non-critical": "RENOVATE_CONFIG_FILE=non-critical.json renovate-config-validator",
+    "test:third-party-major": "RENOVATE_CONFIG_FILE=third-party-major.json renovate-config-validator"
   }
 }

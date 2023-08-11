@@ -146,7 +146,7 @@
 
       "prPriority": 98,
       "schedule": "after 3:00 am and before 6:00 am every weekday",
-      "minimumReleaseAge": 0,
+      "minimumReleaseAge": "0",
       "updateNotScheduled": true
     },
     {
@@ -154,7 +154,7 @@
       "matchPackageNames": ["seek-jobs/gantry"],
 
       "schedule": "after 3:00 am and before 5:00 pm every weekday",
-      "minimumReleaseAge": 0,
+      "minimumReleaseAge": "0",
       "updateNotScheduled": true
     },
     {
@@ -166,7 +166,7 @@
       "commitMessageExtra": "",
       "groupName": "aws-sdk",
       "schedule": "after 3:00 am and before 6:00 am on the first day of the month",
-      "minimumReleaseAge": 0,
+      "minimumReleaseAge": "0",
       "updateNotScheduled": true
     },
     {
@@ -188,7 +188,7 @@
       ],
 
       "automerge": true,
-      "minimumReleaseAge": 0,
+      "minimumReleaseAge": "0",
       "updateNotScheduled": true
     },
     {
@@ -210,7 +210,7 @@
       "matchUpdateTypes": ["patch"],
 
       "automerge": true,
-      "minimumReleaseAge": 0,
+      "minimumReleaseAge": "0",
       "updateNotScheduled": true
     },
     {
@@ -226,7 +226,7 @@
 
       "automerge": true,
       "schedule": "before 3:00 am every weekday",
-      "minimumReleaseAge": 0,
+      "minimumReleaseAge": "0",
       "updateNotScheduled": true
     },
     {
@@ -268,7 +268,7 @@
   "schedule": "after 3:00 am and before 6:00 am on Monday and Friday",
   "semanticCommitScope": "",
   "semanticCommitType": "deps",
-  "minimumReleaseAge": 3,
+  "minimumReleaseAge": "3",
   "internalChecksFilter": "strict",
   "updateNotScheduled": false
 }
