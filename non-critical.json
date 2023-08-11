@@ -2,7 +2,6 @@
   "extends": [
     ":dependencyDashboard",
     ":prHourlyLimit2",
-    ":prNotPending",
     ":rebaseStalePrs",
     ":renovatePrefix",
     ":semanticCommits",
