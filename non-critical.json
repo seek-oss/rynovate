@@ -11,27 +11,27 @@
     "preview:dockerCompose",
     "docker:disableMajor"
   ],
-  "lockFileMaintenance": {
-    "enabled": true
-  },
+  "lockFileMaintenance": { "enabled": true },
   "packageRules": [
+    {
+      "matchCategories": ["docker"],
+      "commitMessageExtra": "",
+      "group": { "commitMessageTopic": "{{groupName}}" }
+    },
     {
       "matchManagers": ["npm"],
       "matchPackageNames": ["@types/node"],
       "matchUpdateTypes": ["major"],
-
       "enabled": false
     },
     {
       "matchManagers": ["npm"],
       "matchPackageNames": ["aws-sdk-mock"],
-
       "allowedVersions": "!/^5.5.0$/"
     },
     {
       "matchManagers": ["npm"],
       "matchPackageNames": ["@types/faker", "faker"],
-
       "allowedVersions": "< 6"
     },
     {
@@ -45,41 +45,25 @@
         "pin",
         "rollback"
       ],
-
       "groupName": "all dependencies",
       "semanticCommitType": "fix"
     },
     {
       "matchManagers": ["buildkite"],
       "matchPackageNames": ["seek-jobs/gantry"],
-
       "commitMessageAction": "",
       "commitMessageExtra": "{{newValue}}",
       "commitMessageTopic": "{{depName}}",
       "schedule": "before 6:00 am every weekday"
     },
+    { "matchUpdateTypes": ["lockFileMaintenance"], "automerge": true },
     {
       "matchUpdateTypes": ["lockFileMaintenance"],
-
-      "automerge": true
-    },
-    {
-      "matchUpdateTypes": ["lockFileMaintenance"],
-
       "prPriority": 99,
       "schedule": "before 3:00 am every 2 weeks on Wednesday"
     }
   ],
-  "buildkite": {
-    "additionalBranchPrefix": "",
-    "commitMessageExtra": ""
-  },
-  "docker": {
-    "commitMessageExtra": "",
-    "group": {
-      "commitMessageTopic": "{{groupName}}"
-    }
-  },
+  "buildkite": { "additionalBranchPrefix": "", "commitMessageExtra": "" },
   "commitMessageAction": "",
   "commitMessageExtra": "",
   "postUpdateOptions": ["yarnDedupeHighest"],
