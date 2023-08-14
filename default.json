@@ -93,6 +93,7 @@
         "^@?seek",
         "seek$",
         "^@aws-sdk/",
+        "^@smithy/",
         "^@types/",
         "^@vanilla-extract/",
         "^serverless"
