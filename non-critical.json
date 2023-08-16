@@ -65,7 +65,7 @@
   "buildkite": { "additionalBranchPrefix": "", "commitMessageExtra": "" },
   "commitMessageAction": "",
   "commitMessageExtra": "",
-  "postUpdateOptions": ["yarnDedupeHighest"],
+  "postUpdateOptions": ["yarnDedupeFewer"],
   "prConcurrentLimit": 2,
   "prNotPendingHours": 1,
   "schedule": "before 6:00 am on Monday",
