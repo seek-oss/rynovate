@@ -67,7 +67,7 @@
     {
       "matchManagers": ["npm", "dockerfile"],
       "matchPackageNames": ["mcr.microsoft.com/playwright", "@playwright/test"],
-      "groupName": "aws-sdk client mock"
+      "groupName": "Playwright"
     },
     {
       "matchManagers": ["npm"],
