@@ -65,6 +65,11 @@
       "groupName": "aws-sdk client mock"
     },
     {
+      "matchManagers": ["npm", "dockerfile"],
+      "matchPackageNames": ["mcr.microsoft.com/playwright", "@playwright/test"],
+      "groupName": "aws-sdk client mock"
+    },
+    {
       "matchManagers": ["npm"],
       "matchPackageNames": ["@types/faker", "faker"],
 
