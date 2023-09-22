@@ -41,8 +41,6 @@
       "semanticCommitType": "fix"
     },
     {
-      "matchManagers": ["npm"],
-      "matchPackageNames": ["@types/node"],
       "matchUpdateTypes": ["major"],
 
       "enabled": false
