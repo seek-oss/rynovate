@@ -22,6 +22,13 @@
       "enabled": false
     },
     {
+      "matchUpdateTypes": ["major"],
+      "matchPackageNames": ["@koa/cors"],
+      "allowedVersions": "< 6",
+
+      "enabled": true
+    },
+    {
       "matchManagers": ["npm"],
       "matchPackageNames": ["aws-sdk-mock"],
       "allowedVersions": "!/^5.5.0$/"

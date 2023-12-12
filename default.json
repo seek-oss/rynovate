@@ -46,6 +46,13 @@
       "enabled": false
     },
     {
+      "matchUpdateTypes": ["major"],
+      "matchPackageNames": ["@koa/cors"],
+      "allowedVersions": "< 6",
+
+      "enabled": true
+    },
+    {
       "matchManagers": ["npm"],
       "matchPackageNames": ["eslint"],
 
