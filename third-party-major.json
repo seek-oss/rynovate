@@ -58,6 +58,12 @@
       "enabled": false
     },
     {
+      "matchUpdateTypes": ["major"],
+      "matchPackageNames": ["@koa/cors"],
+
+      "enabled": true
+    },
+    {
       "excludePackagePatterns": ["^seek-jobs/", "^seek-oss/"],
       "matchManagers": ["buildkite"],
 
