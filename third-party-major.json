@@ -53,15 +53,10 @@
       "allowedVersions": "< 6"
     },
     {
+      "excludePackageNames": ["@koa/cors", "@seek/ie-logging"],
       "matchUpdateTypes": ["major"],
 
       "enabled": false
-    },
-    {
-      "matchUpdateTypes": ["major"],
-      "matchPackageNames": ["@koa/cors"],
-
-      "enabled": true
     },
     {
       "excludePackagePatterns": ["^seek-jobs/", "^seek-oss/"],

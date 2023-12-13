@@ -18,14 +18,10 @@
       "group": { "commitMessageTopic": "{{groupName}}" }
     },
     {
+      "excludePackageNames": ["@koa/cors", "@seek/ie-logging"],
       "matchUpdateTypes": ["major"],
-      "enabled": false
-    },
-    {
-      "matchUpdateTypes": ["major"],
-      "matchPackageNames": ["@koa/cors"],
 
-      "enabled": true
+      "enabled": false
     },
     {
       "matchManagers": ["npm"],

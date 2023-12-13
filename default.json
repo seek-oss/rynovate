@@ -41,15 +41,10 @@
       "semanticCommitType": "fix"
     },
     {
+      "excludePackageNames": ["@koa/cors", "@seek/ie-logging"],
       "matchUpdateTypes": ["major"],
 
       "enabled": false
-    },
-    {
-      "matchUpdateTypes": ["major"],
-      "matchPackageNames": ["@koa/cors"],
-
-      "enabled": true
     },
     {
       "matchManagers": ["npm"],
