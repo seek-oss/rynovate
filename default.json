@@ -54,12 +54,6 @@
     },
     {
       "matchManagers": ["npm"],
-      "matchPackageNames": ["eslint"],
-
-      "allowedVersions": "< 8"
-    },
-    {
-      "matchManagers": ["npm"],
       "matchPackageNames": ["aws-sdk-mock"],
 
       "allowedVersions": "!/^5.5.0$/"
