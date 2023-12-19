@@ -65,6 +65,13 @@
       "enabled": false
     },
     {
+      "matchManagers": ["npm"],
+      "matchPackageNames": ["dd-trace"],
+      "matchUpdateTypes": ["major", "minor"],
+
+      "minimumReleaseAge": "14 days"
+    },
+    {
       "excludePackagePatterns": ["^seek-jobs/", "^seek-oss/"],
       "matchManagers": ["buildkite"],
 
