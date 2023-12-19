@@ -25,6 +25,12 @@
     },
     {
       "matchManagers": ["npm"],
+      "matchPackageNames": ["dd-trace"],
+
+      "minimumReleaseAge": "14 days"
+    },
+    {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["aws-sdk-mock"],
       "allowedVersions": "!/^5.5.0$/"
     },

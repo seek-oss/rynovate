@@ -48,6 +48,12 @@
     },
     {
       "matchManagers": ["npm"],
+      "matchPackageNames": ["dd-trace"],
+
+      "minimumReleaseAge": "14 days"
+    },
+    {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["eslint"],
 
       "allowedVersions": "< 8"
