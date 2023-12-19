@@ -49,6 +49,7 @@
     {
       "matchManagers": ["npm"],
       "matchPackageNames": ["dd-trace"],
+      "matchUpdateTypes": ["major", "minor"],
 
       "minimumReleaseAge": "14 days"
     },
