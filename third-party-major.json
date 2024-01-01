@@ -59,7 +59,11 @@
       "allowedVersions": "!/^4.21.0$/"
     },
     {
-      "excludePackageNames": ["@koa/cors", "@seek/ie-logging"],
+      "excludePackageNames": [
+        "@koa/cors",
+        "@seek/ie-logging",
+        "@seek/indie-api-types"
+      ],
       "matchUpdateTypes": ["major"],
 
       "enabled": false
