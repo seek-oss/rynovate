@@ -74,7 +74,7 @@
       "matchManagers": ["npm"],
       "matchPackageNames": ["dd-trace"],
 
-      "allowedVersions": "< 4.21"
+      "allowedVersions": "!/^4.21.0$/"
     },
     {
       "matchManagers": ["npm"],
