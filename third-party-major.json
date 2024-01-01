@@ -53,12 +53,6 @@
       "allowedVersions": "< 6"
     },
     {
-      "matchManagers": ["npm"],
-      "matchPackageNames": ["dd-trace"],
-
-      "allowedVersions": "< 4.21"
-    },
-    {
       "excludePackageNames": ["@koa/cors", "@seek/ie-logging"],
       "matchUpdateTypes": ["major"],
 

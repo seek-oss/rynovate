@@ -41,12 +41,6 @@
       "allowedVersions": "< 6"
     },
     {
-      "matchManagers": ["npm"],
-      "matchPackageNames": ["dd-trace"],
-
-      "allowedVersions": "< 4.21"
-    },
-    {
       "excludePackageNames": ["seek-jobs/gantry"],
       "matchUpdateTypes": [
         "bump",
