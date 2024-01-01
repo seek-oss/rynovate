@@ -72,6 +72,12 @@
     },
     {
       "matchManagers": ["npm"],
+      "matchPackageNames": ["dd-trace"],
+
+      "allowedVersions": "!/^4.21.0$/"
+    },
+    {
+      "matchManagers": ["npm"],
       "matchPackagePatterns": ["^@types/"],
       "matchUpdateTypes": ["major", "minor", "patch"],
 
