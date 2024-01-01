@@ -44,7 +44,8 @@
       "excludePackageNames": [
         "@koa/cors",
         "@seek/ie-logging",
-        "@seek/indie-api-types"
+        "@seek/indie-api-types",
+        "@seek/indie-mocks"
       ],
       "matchUpdateTypes": ["major"],
 
