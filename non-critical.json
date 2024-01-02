@@ -49,13 +49,7 @@
       "matchManagers": ["npm"],
       "matchPackageNames": ["dd-trace"],
 
-      "allowedVersions": "!/^3.42.0$/"
-    },
-    {
-      "matchManagers": ["npm"],
-      "matchPackageNames": ["dd-trace"],
-
-      "allowedVersions": "!/^4.21.0$/"
+      "allowedVersions": "!/^(3.42.0|4.21.0)$/"
     },
     {
       "excludePackageNames": ["seek-jobs/gantry"],
