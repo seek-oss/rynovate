@@ -138,7 +138,7 @@ Ignore a specific package version:
       matchManagers: ['npm'],
       matchPackageNames: ['your-package-name-here'],
 
-      allowedVersions: '!/^1.2.3$/',
+      allowedVersions: '!/^1\\.2\\.3$/',
     },
   ],
 }
