@@ -79,6 +79,12 @@
       "matchManagers": ["npm"],
       "matchPackageNames": ["dd-trace"],
 
+      "allowedVersions": "!/^3.42.0$/"
+    },
+    {
+      "matchManagers": ["npm"],
+      "matchPackageNames": ["dd-trace"],
+
       "allowedVersions": "!/^4.21.0$/"
     },
     {
