@@ -44,7 +44,7 @@
       "matchManagers": ["npm"],
       "matchPackageNames": ["aws-sdk-mock"],
 
-      "allowedVersions": "!/^5.5.0$/"
+      "allowedVersions": "!/^5\\.5\\.0$/"
     },
     {
       "matchManagers": ["npm"],
@@ -56,7 +56,7 @@
       "matchManagers": ["npm"],
       "matchPackageNames": ["dd-trace"],
 
-      "allowedVersions": "!/^4.21.0$/"
+      "allowedVersions": "!/^(3\\.42\\.0|4\\.21\\.0)$/"
     },
     {
       "excludePackageNames": [
