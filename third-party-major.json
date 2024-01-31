@@ -59,7 +59,6 @@
       "allowedVersions": "!/^(3\\.42\\.0|4\\.21\\.0)$/"
     },
     {
-    
       "excludePackageNames": ["braid-design-system", "sku", "skuba"],
       "excludePackagePatterns": ["^@?seek", "seek$"],
       "matchDepTypes": ["devDependencies", "peerDependencies"],
