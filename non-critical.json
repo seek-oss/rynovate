@@ -18,14 +18,9 @@
       "group": { "commitMessageTopic": "{{groupName}}" }
     },
     {
-      "excludePackageNames": [
-        "@koa/cors",
-        "@seek/ie-logging",
-        "@seek/indie-api-types",
-        "@seek/indie-mocks"
-      ],
+      "matchManagers": ["npm"],
+      "matchPackageNames": ["@types/node"],
       "matchUpdateTypes": ["major"],
-
       "enabled": false
     },
     {
