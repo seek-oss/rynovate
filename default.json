@@ -35,7 +35,7 @@
       "semanticCommitType": "fix"
     },
     {
-      "matchDepTypes": ["dependencies"],
+      "matchDepTypes": ["dependencies", "peerDependencies"],
       "matchManagers": ["npm"],
 
       "semanticCommitType": "fix"
@@ -113,19 +113,10 @@
       "schedule": "after 3:00 am and before 6:00 am every 2 weeks on Tuesday"
     },
     {
-      "excludePackageNames": ["braid-design-system", "sku", "skuba"],
-      "excludePackagePatterns": [
-        "^@?seek",
-        "seek$",
-        "^@types/",
-        "^@vanilla-extract/"
-      ],
       "matchDepTypes": ["peerDependencies"],
       "matchManagers": ["npm"],
       "matchUpdateTypes": ["major", "minor", "patch"],
 
-      "commitMessageExtra": "",
-      "groupName": "npm peer dependencies",
       "schedule": "after 3:00 am and before 6:00 am every 2 weeks on Tuesday"
     },
     {
