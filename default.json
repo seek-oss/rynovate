@@ -259,19 +259,15 @@
   "branchConcurrentLimit": 12,
   "branchPrefix": "renovate-",
   "commitMessageAction": "",
-  "gitIgnoredAuthors": [
-    "34733141+seek-oss-ci@users.noreply.github.com",
-    "87109344+buildagencygitapitoken[bot]@users.noreply.github.com"
-  ],
-  "internalChecksFilter": "strict",
-  "minimumReleaseAge": "3 days",
   "postUpdateOptions": ["yarnDedupeFewer"],
   "prConcurrentLimit": 3,
-  "prCreation": "immediate",
   "prNotPendingHours": 1,
   "rangeStrategy": "replace",
   "schedule": "after 3:00 am and before 6:00 am on Monday and Friday",
   "semanticCommitScope": "",
   "semanticCommitType": "deps",
+  "prCreation": "immediate",
+  "minimumReleaseAge": "3 days",
+  "internalChecksFilter": "strict",
   "updateNotScheduled": false
 }
