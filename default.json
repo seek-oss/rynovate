@@ -49,6 +49,13 @@
     },
     {
       "matchManagers": ["npm"],
+      "matchPackageNames": ["serverless"],
+      "matchUpdateTypes": ["major"],
+      "matchCurrentVersion": "/^3\\./",
+      "enabled": false
+    },
+    {
+      "matchManagers": ["npm"],
       "matchPackageNames": ["dd-trace"],
       "matchUpdateTypes": ["major", "minor"],
 
