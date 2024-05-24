@@ -19,7 +19,7 @@
     },
     {
       "matchManagers": ["npm"],
-      "matchPackageNames": ["@types/node"],
+      "matchPackageNames": ["@types/node", "node-fetch"],
       "matchUpdateTypes": ["major"],
       "enabled": false
     },
