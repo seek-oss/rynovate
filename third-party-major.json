@@ -33,6 +33,13 @@
       "semanticCommitType": "fix"
     },
     {
+      "matchManagers": ["npm"],
+      "matchDepNames": ["serverless"],
+      "matchUpdateTypes": ["major"],
+      "matchCurrentVersion": "/^3\\./",
+      "enabled": false
+    },
+    {
       "excludePackageNames": ["braid-design-system", "sku", "skuba"],
       "excludePackagePatterns": ["^@?seek", "seek$"],
       "matchManagers": ["npm"],

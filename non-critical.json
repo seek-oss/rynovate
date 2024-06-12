@@ -19,8 +19,15 @@
     },
     {
       "matchManagers": ["npm"],
-      "matchDepNames": ["@types/node"],
+      "matchDepNames": ["@types/node", "node-fetch"],
       "matchUpdateTypes": ["major"],
+      "enabled": false
+    },
+    {
+      "matchManagers": ["npm"],
+      "matchDepNames": ["serverless"],
+      "matchUpdateTypes": ["major"],
+      "matchCurrentVersion": "/^3\\./",
       "enabled": false
     },
     {
