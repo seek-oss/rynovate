@@ -114,7 +114,7 @@ Disable incompatible major version upgrades for a specific package:
   packageRules: [
     {
       matchManagers: ['npm'],
-      matchPackageNames: ['your-package-name-here'],
+      matchDepNames: ['your-package-name-here'],
       matchUpdateTypes: ['major'],
 
       enabled: false,
@@ -136,7 +136,7 @@ Ignore a specific package version:
   packageRules: [
     {
       matchManagers: ['npm'],
-      matchPackageNames: ['your-package-name-here'],
+      matchDepNames: ['your-package-name-here'],
 
       allowedVersions: '!/^1\\.2\\.3$/',
     },
@@ -157,7 +157,7 @@ Ungroup a specific package that is usually grouped by the preset:
   packageRules: [
     {
       matchManagers: ['npm'],
-      matchPackageNames: ['your-package-name-here'],
+      matchDepNames: ['your-package-name-here'],
       matchUpdateTypes: ['major', 'minor', 'patch'],
 
       commitMessageExtra: '{{newValue}}',
