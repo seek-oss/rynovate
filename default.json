@@ -164,8 +164,8 @@
     },
     {
       "matchManagers": ["npm"],
-      "matchPackageNames": ["aws-sdk"],
-      "matchPackagePatterns": ["^@aws-sdk/", "^@smithy/", "serverless"],
+      "matchDepNames": ["aws-sdk", "serverless"],
+      "matchPackagePatterns": ["^@aws-sdk/", "^@smithy/"],
       "matchUpdateTypes": ["major", "minor", "patch"],
 
       "commitMessageExtra": "",
