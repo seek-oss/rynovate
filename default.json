@@ -164,12 +164,12 @@
     },
     {
       "matchManagers": ["npm"],
-      "matchDepNames": ["aws-sdk"],
+      "matchDepNames": ["aws-sdk", "serverless"],
       "matchPackagePatterns": ["^@aws-sdk/", "^@smithy/"],
       "matchUpdateTypes": ["major", "minor", "patch"],
 
       "commitMessageExtra": "",
-      "groupName": "aws-sdk",
+      "groupName": "aws-sdk and serverless",
       "schedule": "after 3:00 am and before 6:00 am on the first day of the month",
       "minimumReleaseAge": "0 days",
       "updateNotScheduled": true
