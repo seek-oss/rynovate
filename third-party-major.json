@@ -131,7 +131,7 @@
     }
   ],
   "commitMessageAction": "",
-  "postUpdateOptions": ["yarnDedupeFewer"],
+  "postUpdateOptions": ["yarnDedupeFewer", "pnpmDedupe"],
   "prConcurrentLimit": 3,
   "prNotPendingHours": 1,
   "rangeStrategy": "replace",
