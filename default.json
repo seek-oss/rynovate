@@ -266,7 +266,7 @@
       "matchManagers": ["npm"],
       "matchDepNames": ["aws-lambda"],
       "replacementName": "@types/aws-lambda",
-      "replacementVersion": "latest"
+      "replacementVersion": "8.10.140"
     }
   ],
   "branchConcurrentLimit": null,
