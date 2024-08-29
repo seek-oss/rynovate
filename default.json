@@ -156,7 +156,7 @@
     },
     {
       "matchManagers": ["buildkite"],
-      "matchDepNames": ["seek-jobs/gantry"],
+      "matchDepNames": ["seek-jobs/gantry", "seek-jobs/automat"],
 
       "schedule": "after 3:00 am and before 5:00 pm every weekday",
       "minimumReleaseAge": "0 days",

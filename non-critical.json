@@ -54,7 +54,7 @@
       "allowedVersions": "!/^(3\\.42\\.0|4\\.21\\.0)$/"
     },
     {
-      "excludePackageNames": ["seek-jobs/gantry"],
+      "excludePackageNames": ["seek-jobs/gantry", "seek-jobs/automat"],
       "matchUpdateTypes": [
         "bump",
         "digest",
@@ -69,7 +69,7 @@
     },
     {
       "matchManagers": ["buildkite"],
-      "matchDepNames": ["seek-jobs/gantry"],
+      "matchDepNames": ["seek-jobs/gantry", "seek-jobs/automat"],
       "commitMessageAction": "",
       "commitMessageExtra": "{{newValue}}",
       "commitMessageTopic": "{{depName}}",
