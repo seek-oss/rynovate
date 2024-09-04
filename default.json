@@ -262,6 +262,17 @@
 
       "prPriority": 99,
       "schedule": "before 3:00 am every weekday"
+    },
+    {
+      "matchUpdateTypes": ["digest"],
+      "matchManagers": ["dockerfile"],
+      "automerge": true
+    },
+    {
+      "matchUpdateTypes": ["digest"],
+      "matchManagers": ["dockerfile"],
+      "schedule": ["before 7:00 am every week on Monday"],
+      "prPriority": 99
     }
   ],
   "branchConcurrentLimit": null,
