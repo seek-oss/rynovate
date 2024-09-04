@@ -271,7 +271,7 @@
     {
       "matchUpdateTypes": ["digest"],
       "matchManagers": ["dockerfile"],
-      "schedule": ["before 7:00 am every week on Monday"],
+      "schedule": ["before 7:00 on Monday"],
       "prPriority": 99
     }
   ],
