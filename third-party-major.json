@@ -9,7 +9,8 @@
     ":updateNotScheduled",
     "preview:buildkite",
     "preview:dockerCompose",
-    "docker:disableMajor"
+    "docker:disableMajor",
+    "docker:pinDigests"
   ],
   "lockFileMaintenance": {
     "enabled": true
@@ -128,6 +129,17 @@
 
       "prPriority": 99,
       "schedule": "before 3:00 am every weekday"
+    },
+    {
+      "matchUpdateTypes": ["digest"],
+      "matchManagers": ["dockerfile"],
+      "automerge": true
+    },
+    {
+      "matchUpdateTypes": ["digest"],
+      "matchManagers": ["dockerfile"],
+      "schedule": ["before 7:00 on Monday"],
+      "prPriority": 99
     }
   ],
   "commitMessageAction": "",

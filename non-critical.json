@@ -8,7 +8,8 @@
     ":timezone(Australia/Melbourne)",
     "preview:buildkite",
     "preview:dockerCompose",
-    "docker:disableMajor"
+    "docker:disableMajor",
+    "docker:pinDigests"
   ],
   "lockFileMaintenance": { "enabled": true },
   "packageRules": [
