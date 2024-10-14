@@ -1,4 +1,5 @@
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     ":dependencyDashboard",
     ":rebaseStalePrs",
@@ -231,6 +232,16 @@
       "matchUpdateTypes": ["minor", "patch"],
 
       "automerge": true,
+      "schedule": "before 3:00 am every weekday",
+      "minimumReleaseAge": "0 days",
+      "updateNotScheduled": true
+    },
+    {
+      "matchManagers": ["npm"],
+      "matchDepNames": [
+        "@seek/*"
+      ],
+      "matchUpdateTypes": ["major", "minor", "patch"],
       "schedule": "before 3:00 am every weekday",
       "minimumReleaseAge": "0 days",
       "updateNotScheduled": true
