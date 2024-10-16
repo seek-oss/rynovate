@@ -278,7 +278,10 @@
   "branchConcurrentLimit": null,
   "branchPrefix": "renovate-",
   "commitMessageAction": "",
-  "gitIgnoredAuthors": [],
+  "gitIgnoredAuthors": [
+    "34733141+seek-oss-ci@users.noreply.github.com",
+    "87109344+buildagencygitapitoken[bot]@users.noreply.github.com"
+  ],
   "postUpdateOptions": ["yarnDedupeFewer", "pnpmDedupe"],
   "prConcurrentLimit": 3,
   "prNotPendingHours": 1,

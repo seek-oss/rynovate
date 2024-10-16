@@ -55,7 +55,7 @@
       "allowedVersions": "!/^(3\\.42\\.0|4\\.21\\.0)$/"
     },
     {
-      "excludePackageNames": ["seek-jobs/gantry", "seek-jobs/automat"],
+      "excludePackageNames": ["seek-jobs/gantry", "seek-jobs/automat", "skuba"],
       "matchUpdateTypes": [
         "bump",
         "digest",
@@ -86,7 +86,10 @@
   "buildkite": { "additionalBranchPrefix": "", "commitMessageExtra": "" },
   "commitMessageAction": "",
   "commitMessageExtra": "",
-  "gitIgnoredAuthors": [],
+  "gitIgnoredAuthors": [
+    "34733141+seek-oss-ci@users.noreply.github.com",
+    "87109344+buildagencygitapitoken[bot]@users.noreply.github.com"
+  ],
   "postUpdateOptions": ["yarnDedupeFewer", "pnpmDedupe"],
   "prConcurrentLimit": 2,
   "prNotPendingHours": 1,
