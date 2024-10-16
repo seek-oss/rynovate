@@ -55,7 +55,11 @@
       "allowedVersions": "!/^(3\\.42\\.0|4\\.21\\.0)$/"
     },
     {
-      "excludePackageNames": ["seek-jobs/gantry", "seek-jobs/automat", "skuba"],
+      "matchPackageNames": [
+        "!seek-jobs/gantry",
+        "!seek-jobs/automat",
+        "!skuba"
+      ],
       "matchUpdateTypes": [
         "bump",
         "digest",
