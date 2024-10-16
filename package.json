@@ -18,6 +18,5 @@
     "test:default": "RENOVATE_CONFIG_FILE=default.json renovate-config-validator",
     "test:non-critical": "RENOVATE_CONFIG_FILE=non-critical.json renovate-config-validator",
     "test:third-party-major": "RENOVATE_CONFIG_FILE=third-party-major.json renovate-config-validator"
-  },
-  "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610"
+  }
 }
