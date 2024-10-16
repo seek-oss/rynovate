@@ -11,6 +11,7 @@
     "docker:disableMajor",
     "docker:pinDigests"
   ],
+  "configMigration": true,
   "lockFileMaintenance": { "enabled": true },
   "packageRules": [
     {
