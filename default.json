@@ -264,12 +264,12 @@
       "schedule": "before 3:00 am every weekday"
     },
     {
-      "matchUpdateTypes": ["digest"],
+      "matchUpdateTypes": ["digest", "pinDigest"],
       "matchManagers": ["dockerfile"],
       "automerge": true
     },
     {
-      "matchUpdateTypes": ["digest"],
+      "matchUpdateTypes": ["digest", "pinDigest"],
       "matchManagers": ["dockerfile"],
       "schedule": ["before 7:00 on Monday"],
       "prPriority": 99

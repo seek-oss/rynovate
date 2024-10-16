@@ -1,0 +1,4 @@
+{
+  configMigration: true,
+  extends: ['github>seek-oss/rynovate'],
+}
