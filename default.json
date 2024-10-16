@@ -10,6 +10,7 @@
     "group:monorepos",
     "docker:pinDigests"
   ],
+  "configMigration": true,
   "lockFileMaintenance": {
     "enabled": true
   },
