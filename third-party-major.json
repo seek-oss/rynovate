@@ -133,7 +133,8 @@
     {
       "matchUpdateTypes": ["digest", "pinDigest"],
       "matchManagers": ["dockerfile"],
-      "automerge": true
+      "automerge": true,
+      "recreateWhen": "always"
     },
     {
       "matchUpdateTypes": ["digest", "pinDigest"],
