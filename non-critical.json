@@ -21,37 +21,37 @@
     },
     {
       "matchManagers": ["npm"],
-      "matchDepNames": ["@types/node", "node-fetch"],
+      "matchPackageNames": ["@types/node", "node-fetch"],
       "matchUpdateTypes": ["major"],
       "enabled": false
     },
     {
       "matchManagers": ["npm"],
-      "matchDepNames": ["serverless"],
+      "matchPackageNames": ["serverless"],
       "matchUpdateTypes": ["major"],
       "matchCurrentVersion": "/^3\\./",
       "enabled": false
     },
     {
       "matchManagers": ["npm"],
-      "matchDepNames": ["dd-trace"],
+      "matchPackageNames": ["dd-trace"],
       "matchUpdateTypes": ["major", "minor"],
 
       "minimumReleaseAge": "14 days"
     },
     {
       "matchManagers": ["npm"],
-      "matchDepNames": ["aws-sdk-mock"],
+      "matchPackageNames": ["aws-sdk-mock"],
       "allowedVersions": "!/^5\\.5\\.0$/"
     },
     {
       "matchManagers": ["npm"],
-      "matchDepNames": ["@types/faker", "faker"],
+      "matchPackageNames": ["@types/faker", "faker"],
       "allowedVersions": "< 6"
     },
     {
       "matchManagers": ["npm"],
-      "matchDepNames": ["dd-trace"],
+      "matchPackageNames": ["dd-trace"],
 
       "allowedVersions": "!/^(3\\.42\\.0|4\\.21\\.0)$/"
     },
@@ -75,7 +75,7 @@
     },
     {
       "matchManagers": ["buildkite"],
-      "matchDepNames": ["seek-jobs/gantry", "seek-jobs/automat"],
+      "matchPackageNames": ["seek-jobs/gantry", "seek-jobs/automat"],
       "commitMessageAction": "",
       "commitMessageExtra": "{{newValue}}",
       "commitMessageTopic": "{{depName}}",
