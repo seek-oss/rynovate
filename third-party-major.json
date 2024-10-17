@@ -12,6 +12,7 @@
     "docker:disableMajor",
     "docker:pinDigests"
   ],
+  "configMigration": true,
   "lockFileMaintenance": {
     "enabled": true
   },
@@ -41,8 +42,13 @@
       "enabled": false
     },
     {
-      "excludePackageNames": ["braid-design-system", "sku", "skuba"],
-      "excludePackagePatterns": ["^@?seek", "seek$"],
+      "matchPackageNames": [
+        "!braid-design-system",
+        "!sku",
+        "!skuba",
+        "!/^@?seek/",
+        "!/seek$/"
+      ],
       "matchManagers": ["npm"],
       "matchUpdateTypes": ["patch", "minor"],
 
@@ -67,8 +73,13 @@
       "allowedVersions": "!/^(3\\.42\\.0|4\\.21\\.0)$/"
     },
     {
-      "excludePackageNames": ["braid-design-system", "sku", "skuba"],
-      "excludePackagePatterns": ["^@?seek", "seek$"],
+      "matchPackageNames": [
+        "!braid-design-system",
+        "!sku",
+        "!skuba",
+        "!/^@?seek/",
+        "!/seek$/"
+      ],
       "matchDepTypes": ["devDependencies", "peerDependencies"],
       "matchManagers": ["npm"],
       "matchUpdateTypes": ["major"],
@@ -83,7 +94,7 @@
       "minimumReleaseAge": "14 days"
     },
     {
-      "excludePackagePatterns": ["^seek-jobs/", "^seek-oss/"],
+      "matchPackageNames": ["!/^seek-jobs//", "!/^seek-oss//"],
       "matchManagers": ["buildkite"],
 
       "additionalBranchPrefix": "",
@@ -103,7 +114,7 @@
     },
     {
       "matchDepNames": ["braid-design-system", "sku", "skuba"],
-      "matchPackagePatterns": ["^@?seek", "seek$"],
+      "matchPackageNames": ["/^@?seek/", "/seek$/"],
 
       "prPriority": 98,
       "schedule": "after 3:00 am and before 6:00 am every weekday"
