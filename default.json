@@ -88,14 +88,14 @@
     },
     {
       "matchManagers": ["npm"],
-      "matchPackageNames": ["/^@types//"],
+      "matchDepNames": ["/^@types//"],
       "matchUpdateTypes": ["major", "minor", "patch"],
 
       "automerge": true
     },
     {
       "matchManagers": ["npm"],
-      "matchPackageNames": ["/^@types//"],
+      "matchDepNames": ["/^@types//"],
       "matchUpdateTypes": ["major", "minor", "patch"],
 
       "commitMessageExtra": "",
@@ -104,7 +104,7 @@
       "schedule": "before 3:00 am every 2 weeks on Tuesday"
     },
     {
-      "matchPackageNames": [
+      "matchDepNames": [
         "!aws-sdk",
         "!braid-design-system",
         "!sku",
@@ -132,7 +132,7 @@
       "schedule": "after 3:00 am and before 6:00 am every 2 weeks on Tuesday"
     },
     {
-      "matchPackageNames": ["!/^seek-jobs//", "!/^seek-oss//"],
+      "matchDepNames": ["!/^seek-jobs//", "!/^seek-oss//"],
       "matchManagers": ["buildkite"],
 
       "additionalBranchPrefix": "",
@@ -151,8 +151,14 @@
       "schedule": "after 3:00 am and before 6:00 am every 2 weeks on Wednesday"
     },
     {
-      "matchDepNames": ["braid-design-system", "sku", "skuba"],
-      "matchPackageNames": ["/^@?seek/", "/seek$/", "/^@vanilla-extract//"],
+      "matchDepNames": [
+        "braid-design-system",
+        "sku",
+        "skuba",
+        "/^@?seek/",
+        "/seek$/",
+        "/^@vanilla-extract//"
+      ],
 
       "prPriority": 98,
       "schedule": "after 3:00 am and before 6:00 am every weekday",
@@ -169,8 +175,7 @@
     },
     {
       "matchManagers": ["npm"],
-      "matchDepNames": ["aws-sdk", "serverless"],
-      "matchPackageNames": ["/^@aws-sdk//", "/^@smithy//"],
+      "matchDepNames": ["aws-sdk", "serverless", "/^@aws-sdk//", "/^@smithy//"],
       "matchUpdateTypes": ["major", "minor", "patch"],
 
       "commitMessageExtra": "",
@@ -240,8 +245,7 @@
       "updateNotScheduled": true
     },
     {
-      "matchDepNames": ["react-relay"],
-      "matchPackageNames": ["/^relay-/"],
+      "matchDepNames": ["react-relay", "/^relay-/"],
 
       "groupName": "relay"
     },
