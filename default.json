@@ -278,6 +278,13 @@
       "matchManagers": ["dockerfile"],
       "schedule": ["before 7:00 on Monday"],
       "prPriority": 99
+    },
+    {
+      "matchDepTypes": ["packageManager"],
+      "matchManagers": ["npm"],
+      "matchDepNames": ["pnpm"],
+
+      "allowedVersions": "<= 9.12.0"
     }
   ],
   "branchConcurrentLimit": null,
