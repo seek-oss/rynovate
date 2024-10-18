@@ -1,4 +1,5 @@
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     ":dependencyDashboard",
     ":rebaseStalePrs",
@@ -282,6 +283,18 @@
       "matchManagers": ["dockerfile"],
       "schedule": ["before 7:00 on Monday"],
       "prPriority": 99
+    }
+  ],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": ["infra/.+\\.ts"],
+      "matchStrings": [
+        "const DATADOG_EXTENSION_LAYER_VERSION = (?<currentValue>\\d+)"
+      ],
+      "packageNameTemplate": "DataDog/datadog-lambda-extension",
+      "depNameTemplate": "datadog lambda extension layer",
+      "datasourceTemplate": "github-releases"
     }
   ],
   "branchConcurrentLimit": null,
