@@ -193,6 +193,10 @@
       "groupName": "apollo-server monorepo"
     },
     {
+      "matchDepNames": ["pnpm"],
+      "schedule": "before 6:00 am every 2 weeks on Thursday"
+    },
+    {
       "matchDepTypes": ["devDependencies"],
       "matchManagers": ["npm"],
       "matchDepNames": [
