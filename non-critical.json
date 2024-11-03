@@ -27,6 +27,11 @@
       "enabled": false
     },
     {
+      "matchDepNames": ["node"],
+      "matchUpdateTypes": ["major"],
+      "enabled": false
+    },
+    {
       "matchManagers": ["npm"],
       "matchDepNames": ["serverless"],
       "matchUpdateTypes": ["major"],
