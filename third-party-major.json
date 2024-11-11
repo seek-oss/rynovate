@@ -36,13 +36,6 @@
       "semanticCommitType": "fix"
     },
     {
-      "matchManagers": ["npm"],
-      "matchDepNames": ["serverless"],
-      "matchUpdateTypes": ["major"],
-      "matchCurrentVersion": "/^3\\./",
-      "enabled": false
-    },
-    {
       "matchDepNames": [
         "!braid-design-system",
         "!sku",
