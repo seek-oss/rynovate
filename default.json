@@ -57,13 +57,6 @@
     },
     {
       "matchManagers": ["npm"],
-      "matchDepNames": ["serverless"],
-      "matchUpdateTypes": ["major"],
-      "matchCurrentVersion": "/^3\\./",
-      "enabled": false
-    },
-    {
-      "matchManagers": ["npm"],
       "matchDepNames": ["dd-trace"],
       "matchUpdateTypes": ["major", "minor"],
 
@@ -119,8 +112,7 @@
         "!/seek$/",
         "!/^@aws-sdk//",
         "!/^@types//",
-        "!/^@vanilla-extract//",
-        "!/^serverless/"
+        "!/^@vanilla-extract//"
       ],
       "matchDepTypes": ["devDependencies"],
       "matchManagers": ["npm"],
@@ -181,11 +173,11 @@
     },
     {
       "matchManagers": ["npm"],
-      "matchDepNames": ["aws-sdk", "serverless", "/^@aws-sdk//", "/^@smithy//"],
+      "matchDepNames": ["aws-sdk", "/^@aws-sdk//", "/^@smithy//"],
       "matchUpdateTypes": ["major", "minor", "patch"],
 
       "commitMessageExtra": "",
-      "groupName": "aws-sdk and serverless",
+      "groupName": "aws-sdk",
       "schedule": "after 3:00 am and before 6:00 am on the first day of the month",
       "minimumReleaseAge": "0 days",
       "updateNotScheduled": true

@@ -33,13 +33,6 @@
     },
     {
       "matchManagers": ["npm"],
-      "matchDepNames": ["serverless"],
-      "matchUpdateTypes": ["major"],
-      "matchCurrentVersion": "/^3\\./",
-      "enabled": false
-    },
-    {
-      "matchManagers": ["npm"],
       "matchDepNames": ["dd-trace"],
       "matchUpdateTypes": ["major", "minor"],
 
