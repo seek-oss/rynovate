@@ -56,6 +56,16 @@
       "enabled": false
     },
     {
+      "matchDepNames": [
+        "react",
+        "react-dom",
+        "@types/react",
+        "@types/react-dom"
+      ],
+      "matchUpdateTypes": ["major"],
+      "enabled": false
+    },
+    {
       "matchManagers": ["npm"],
       "matchDepNames": ["dd-trace"],
       "matchUpdateTypes": ["major", "minor"],
