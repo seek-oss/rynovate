@@ -60,12 +60,6 @@
     },
     {
       "matchManagers": ["npm"],
-      "matchDepNames": ["@aws-sdk/credential-providers"],
-
-      "allowedVersions": "< 3.730.0"
-    },
-    {
-      "matchManagers": ["npm"],
       "matchDepNames": ["aws-sdk-mock"],
 
       "allowedVersions": "!/^5\\.5\\.0$/"
