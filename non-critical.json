@@ -52,7 +52,7 @@
       "matchManagers": ["npm"],
       "matchDepNames": ["@aws-sdk/credential-providers"],
 
-      "allowedVersions": "< 3.730.0"
+      "allowedVersions": "!/^3\\.730\\.0$/"
     },
     {
       "matchManagers": ["npm"],
