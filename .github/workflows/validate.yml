@@ -4,6 +4,9 @@ on:
   - pull_request
   - push
 
+env:
+  COREPACK_DEFAULT_TO_LATEST: 0
+
 permissions: {}
 
 jobs:
