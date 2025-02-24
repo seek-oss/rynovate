@@ -1,9 +1,9 @@
 {
   "devDependencies": {
-    "concurrently": "9.1.1",
-    "prettier": "3.4.2",
+    "concurrently": "9.1.2",
+    "prettier": "3.5.1",
     "re2": "1.21.4",
-    "renovate": "39.83.3"
+    "renovate": "39.176.4"
   },
   "license": "MIT",
   "prettier": {
