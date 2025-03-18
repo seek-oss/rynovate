@@ -45,7 +45,12 @@
     },
     {
       "matchManagers": ["npm"],
-      "matchDepNames": ["@types/node", "node-fetch"],
+      "matchDepNames": ["@types/node"],
+      "allowedVersions": "<=22"
+    },
+    {
+      "matchManagers": ["npm"],
+      "matchDepNames": ["node-fetch"],
       "matchUpdateTypes": ["major"],
 
       "enabled": false
