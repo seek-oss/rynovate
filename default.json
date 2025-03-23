@@ -310,7 +310,7 @@
   "customManagers": [
     {
       "customType": "regex",
-      "fileMatch": ["(^|/)infra/.*\\.ts"],
+      "fileMatch": ["(^|/)infra/.*\\.ts$"],
       "matchStrings": [
         "const DATADOG_EXTENSION_LAYER_VERSION = (?<currentValue>\\d+)"
       ],
