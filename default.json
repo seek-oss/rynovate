@@ -45,7 +45,12 @@
     },
     {
       "matchManagers": ["npm"],
-      "matchDepNames": ["@types/node", "node-fetch"],
+      "matchDepNames": ["@types/node"],
+      "allowedVersions": "<=22"
+    },
+    {
+      "matchManagers": ["npm"],
+      "matchDepNames": ["node-fetch"],
       "matchUpdateTypes": ["major"],
 
       "enabled": false
@@ -100,11 +105,6 @@
       "matchDepNames": ["dd-trace"],
 
       "allowedVersions": "!/^(3\\.42\\.0|4\\.21\\.0)$/"
-    },
-    {
-      "matchDepNames": ["pnpm"],
-
-      "allowedVersions": "< 9.15.5"
     },
     {
       "matchManagers": ["npm"],
