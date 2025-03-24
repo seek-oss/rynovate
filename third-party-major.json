@@ -80,7 +80,7 @@
       "matchManagers": ["npm"],
       "matchDepNames": ["dd-trace"],
 
-      "allowedVersions": "!/^(3\\.42\\.0|4\\.21\\.0)$/"
+      "allowedVersions": "!/^(3\\.42\\.0|4\\.21\\.0|5\\.4[1-9]\\.\\d+)$/"
     },
     {
       "matchDepNames": [
