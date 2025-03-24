@@ -102,11 +102,6 @@
       "allowedVersions": "!/^(3\\.42\\.0|4\\.21\\.0)$/"
     },
     {
-      "matchDepNames": ["pnpm"],
-
-      "allowedVersions": "< 9.15.5"
-    },
-    {
       "matchManagers": ["npm"],
       "matchDepNames": ["/^@types//"],
       "matchUpdateTypes": ["major", "minor", "patch"],

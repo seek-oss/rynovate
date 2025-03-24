@@ -83,11 +83,6 @@
       "allowedVersions": "!/^(3\\.42\\.0|4\\.21\\.0)$/"
     },
     {
-      "matchDepNames": ["pnpm"],
-
-      "allowedVersions": "< 9.15.5"
-    },
-    {
       "matchDepNames": [
         "!braid-design-system",
         "!sku",
