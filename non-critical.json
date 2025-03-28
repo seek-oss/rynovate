@@ -68,7 +68,7 @@
       "matchManagers": ["npm"],
       "matchDepNames": ["dd-trace"],
 
-      "allowedVersions": "!/^(3\\.42\\.0|4\\.21\\.0|5\\.4[1-9]\\.\\d+)$/"
+      "allowedVersions": "!/^(3\\.42\\.0|4\\.21\\.0|5\\.4[1-3]\\.\\d+)$/"
     },
     {
       "matchDepNames": ["!seek-jobs/gantry", "!seek-jobs/automat", "!skuba"],
