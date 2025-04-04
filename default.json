@@ -277,6 +277,7 @@
     },
     {
       "matchDepNames": ["react-relay", "/^relay-/"],
+
       "groupName": "relay"
     },
     {
