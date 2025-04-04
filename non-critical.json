@@ -12,6 +12,7 @@
     "docker:disableMajor",
     "docker:pinDigests"
   ],
+  "configMigration": true,
   "lockFileMaintenance": { "enabled": true },
   "packageRules": [
     {
@@ -26,10 +27,18 @@
       "enabled": false
     },
     {
-      "matchManagers": ["npm"],
-      "matchDepNames": ["serverless"],
+      "matchDepNames": ["node"],
       "matchUpdateTypes": ["major"],
-      "matchCurrentVersion": "/^3\\./",
+      "enabled": false
+    },
+    {
+      "matchDepNames": [
+        "react",
+        "react-dom",
+        "@types/react",
+        "@types/react-dom"
+      ],
+      "matchUpdateTypes": ["major"],
       "enabled": false
     },
     {
@@ -38,6 +47,12 @@
       "matchUpdateTypes": ["major", "minor"],
 
       "minimumReleaseAge": "14 days"
+    },
+    {
+      "matchManagers": ["npm"],
+      "matchDepNames": ["@aws-sdk/credential-providers"],
+
+      "allowedVersions": "!/^3\\.730\\.0$/"
     },
     {
       "matchManagers": ["npm"],
@@ -53,10 +68,10 @@
       "matchManagers": ["npm"],
       "matchDepNames": ["dd-trace"],
 
-      "allowedVersions": "!/^(3\\.42\\.0|4\\.21\\.0)$/"
+      "allowedVersions": "!/^(3\\.42\\.0|4\\.21\\.0|5\\.4[1-3]\\.\\d+)$/"
     },
     {
-      "excludePackageNames": ["seek-jobs/gantry", "seek-jobs/automat"],
+      "matchDepNames": ["!seek-jobs/gantry", "!seek-jobs/automat", "!skuba"],
       "matchUpdateTypes": [
         "bump",
         "digest",
@@ -87,7 +102,10 @@
   "buildkite": { "additionalBranchPrefix": "", "commitMessageExtra": "" },
   "commitMessageAction": "",
   "commitMessageExtra": "",
-  "gitIgnoredAuthors": [],
+  "gitIgnoredAuthors": [
+    "34733141+seek-oss-ci@users.noreply.github.com",
+    "87109344+buildagencygitapitoken[bot]@users.noreply.github.com"
+  ],
   "postUpdateOptions": ["yarnDedupeFewer", "pnpmDedupe"],
   "prConcurrentLimit": 2,
   "prNotPendingHours": 1,

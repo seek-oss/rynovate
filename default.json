@@ -11,6 +11,7 @@
     "group:monorepos",
     "docker:pinDigests"
   ],
+  "configMigration": true,
   "lockFileMaintenance": {
     "enabled": true
   },
@@ -44,16 +45,29 @@
     },
     {
       "matchManagers": ["npm"],
-      "matchDepNames": ["@types/node", "node-fetch"],
+      "matchDepNames": ["@types/node"],
+      "allowedVersions": "<=22"
+    },
+    {
+      "matchManagers": ["npm"],
+      "matchDepNames": ["node-fetch"],
       "matchUpdateTypes": ["major"],
 
       "enabled": false
     },
     {
-      "matchManagers": ["npm"],
-      "matchDepNames": ["serverless"],
+      "matchDepNames": ["node"],
       "matchUpdateTypes": ["major"],
-      "matchCurrentVersion": "/^3\\./",
+      "enabled": false
+    },
+    {
+      "matchDepNames": [
+        "react",
+        "react-dom",
+        "@types/react",
+        "@types/react-dom"
+      ],
+      "matchUpdateTypes": ["major"],
       "enabled": false
     },
     {
@@ -62,6 +76,12 @@
       "matchUpdateTypes": ["major", "minor"],
 
       "minimumReleaseAge": "14 days"
+    },
+    {
+      "matchManagers": ["npm"],
+      "matchDepNames": ["@aws-sdk/credential-providers"],
+
+      "allowedVersions": "!/^3\\.730\\.0$/"
     },
     {
       "matchManagers": ["npm"],
@@ -84,18 +104,18 @@
       "matchManagers": ["npm"],
       "matchDepNames": ["dd-trace"],
 
-      "allowedVersions": "!/^(3\\.42\\.0|4\\.21\\.0)$/"
+      "allowedVersions": "!/^(3\\.42\\.0|4\\.21\\.0|5\\.4[1-3]\\.\\d+)$/"
     },
     {
       "matchManagers": ["npm"],
-      "matchPackagePatterns": ["^@types/"],
+      "matchDepNames": ["/^@types//"],
       "matchUpdateTypes": ["major", "minor", "patch"],
 
       "automerge": true
     },
     {
       "matchManagers": ["npm"],
-      "matchPackagePatterns": ["^@types/"],
+      "matchDepNames": ["/^@types//"],
       "matchUpdateTypes": ["major", "minor", "patch"],
 
       "commitMessageExtra": "",
@@ -104,14 +124,16 @@
       "schedule": "before 3:00 am every 2 weeks on Tuesday"
     },
     {
-      "excludePackageNames": ["aws-sdk", "braid-design-system", "sku", "skuba"],
-      "excludePackagePatterns": [
-        "^@?seek",
-        "seek$",
-        "^@aws-sdk/",
-        "^@types/",
-        "^@vanilla-extract/",
-        "^serverless"
+      "matchDepNames": [
+        "!aws-sdk",
+        "!braid-design-system",
+        "!sku",
+        "!skuba",
+        "!/^@?seek/",
+        "!/seek$/",
+        "!/^@aws-sdk//",
+        "!/^@types//",
+        "!/^@vanilla-extract//"
       ],
       "matchDepTypes": ["devDependencies"],
       "matchManagers": ["npm"],
@@ -129,7 +151,7 @@
       "schedule": "after 3:00 am and before 6:00 am every 2 weeks on Tuesday"
     },
     {
-      "excludePackagePatterns": ["^seek-jobs/", "^seek-oss/"],
+      "matchDepNames": ["!/^seek-jobs//", "!/^seek-oss//"],
       "matchManagers": ["buildkite"],
 
       "additionalBranchPrefix": "",
@@ -148,8 +170,14 @@
       "schedule": "after 3:00 am and before 6:00 am every 2 weeks on Wednesday"
     },
     {
-      "matchDepNames": ["braid-design-system", "sku", "skuba"],
-      "matchPackagePatterns": ["^@?seek", "seek$", "^@vanilla-extract/"],
+      "matchDepNames": [
+        "braid-design-system",
+        "sku",
+        "skuba",
+        "/^@?seek/",
+        "/seek$/",
+        "/^@vanilla-extract//"
+      ],
 
       "prPriority": 98,
       "schedule": "after 3:00 am and before 6:00 am every weekday",
@@ -166,12 +194,11 @@
     },
     {
       "matchManagers": ["npm"],
-      "matchDepNames": ["aws-sdk", "serverless"],
-      "matchPackagePatterns": ["^@aws-sdk/", "^@smithy/"],
+      "matchDepNames": ["aws-sdk", "/^@aws-sdk//", "/^@smithy//"],
       "matchUpdateTypes": ["major", "minor", "patch"],
 
       "commitMessageExtra": "",
-      "groupName": "aws-sdk and serverless",
+      "groupName": "aws-sdk",
       "schedule": "after 3:00 am and before 6:00 am on the first day of the month",
       "minimumReleaseAge": "0 days",
       "updateNotScheduled": true
@@ -182,6 +209,10 @@
       "matchUpdateTypes": ["major", "minor", "patch"],
 
       "groupName": "apollo-server monorepo"
+    },
+    {
+      "matchDepNames": ["pnpm"],
+      "schedule": "before 6:00 am every 2 weeks on Thursday"
     },
     {
       "matchDepTypes": ["devDependencies"],
@@ -245,9 +276,7 @@
       "updateNotScheduled": true
     },
     {
-      "matchDepNames": ["react-relay"],
-      "matchPackagePatterns": ["^relay-"],
-
+      "matchDepNames": ["react-relay", "/^relay-/"],
       "groupName": "relay"
     },
     {
@@ -273,21 +302,37 @@
       "schedule": "before 3:00 am every weekday"
     },
     {
-      "matchUpdateTypes": ["digest"],
+      "matchUpdateTypes": ["digest", "pinDigest"],
       "matchManagers": ["dockerfile"],
-      "automerge": true
+      "automerge": true,
+      "recreateWhen": "always"
     },
     {
-      "matchUpdateTypes": ["digest"],
+      "matchUpdateTypes": ["digest", "pinDigest"],
       "matchManagers": ["dockerfile"],
       "schedule": ["before 7:00 on Monday"],
       "prPriority": 99
     }
   ],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": ["(^|/)infra/.*\\.ts$"],
+      "matchStrings": [
+        "const DATADOG_EXTENSION_LAYER_VERSION = (?<currentValue>\\d+)"
+      ],
+      "packageNameTemplate": "DataDog/datadog-lambda-extension",
+      "depNameTemplate": "datadog lambda extension layer",
+      "datasourceTemplate": "github-releases"
+    }
+  ],
   "branchConcurrentLimit": null,
   "branchPrefix": "renovate-",
   "commitMessageAction": "",
-  "gitIgnoredAuthors": [],
+  "gitIgnoredAuthors": [
+    "34733141+seek-oss-ci@users.noreply.github.com",
+    "87109344+buildagencygitapitoken[bot]@users.noreply.github.com"
+  ],
   "postUpdateOptions": ["yarnDedupeFewer", "pnpmDedupe"],
   "prConcurrentLimit": 3,
   "prNotPendingHours": 1,
