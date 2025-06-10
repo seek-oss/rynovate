@@ -77,6 +77,11 @@
     },
     {
       "matchManagers": ["npm"],
+      "matchDepNames": ["@types/koa-bodyparser"],
+      "allowedVersions": "!/^5\\.0\\.2$/"
+    },
+    {
+      "matchManagers": ["npm"],
       "matchDepNames": ["dd-trace"],
       "matchUpdateTypes": ["major", "minor"],
 
