@@ -65,11 +65,6 @@
     },
     {
       "matchManagers": ["npm"],
-      "matchDepNames": ["@types/koa-bodyparser"],
-      "allowedVersions": "!/^5\\.0\\.[0-2]$/"
-    },
-    {
-      "matchManagers": ["npm"],
       "matchDepNames": ["@aws-sdk/credential-providers"],
 
       "allowedVersions": "!/^3\\.730\\.0$/"
