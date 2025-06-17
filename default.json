@@ -76,6 +76,11 @@
       "enabled": false
     },
     {
+      "matchDepNames": ["gaxios"],
+      "matchUpdateTypes": ["major"],
+      "enabled": false
+    },
+    {
       "matchManagers": ["npm"],
       "matchDepNames": ["dd-trace"],
       "matchUpdateTypes": ["major", "minor"],
