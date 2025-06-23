@@ -111,7 +111,8 @@
     {
       "matchDatasources": ["npm"],
       "matchPackageNames": ["koa-bodyparser", "@types/koa-bodyparser"],
-      "replacementName": "@koa/bodyparser"
+      "replacementName": "@koa/bodyparser",
+      "replacementVersion": "6.0.0"
     }
   ],
   "buildkite": { "additionalBranchPrefix": "", "commitMessageExtra": "" },
