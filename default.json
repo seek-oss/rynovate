@@ -323,6 +323,11 @@
       "matchManagers": ["dockerfile"],
       "schedule": ["before 7:00 on Monday"],
       "prPriority": 99
+    },
+    {
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["koa-bodyparser", "@types/koa-bodyparser"],
+      "replacementName": "@koa/bodyparser"
     }
   ],
   "customManagers": [

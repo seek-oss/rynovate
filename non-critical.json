@@ -107,6 +107,11 @@
       "matchUpdateTypes": ["lockFileMaintenance"],
       "prPriority": 99,
       "schedule": "before 3:00 am every 2 weeks on Wednesday"
+    },
+    {
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["koa-bodyparser", "@types/koa-bodyparser"],
+      "replacementName": "@koa/bodyparser"
     }
   ],
   "buildkite": { "additionalBranchPrefix": "", "commitMessageExtra": "" },
