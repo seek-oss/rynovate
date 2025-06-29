@@ -10,10 +10,9 @@
     "preview:buildkite",
     "preview:dockerCompose",
     "docker:disableMajor",
-    "docker:pinDigests"
+    "docker:pinDigests",
+    "github>seek-oss/rynovate:internal-shared"
   ],
-  "configMigration": true,
-  "lockFileMaintenance": { "enabled": true },
   "packageRules": [
     {
       "matchCategories": ["docker"],
@@ -30,55 +29,6 @@
       "matchDepNames": ["node"],
       "matchUpdateTypes": ["major"],
       "enabled": false
-    },
-    {
-      "matchDepNames": [
-        "react",
-        "react-dom",
-        "@types/react",
-        "@types/react-dom"
-      ],
-      "matchUpdateTypes": ["major"],
-      "enabled": false
-    },
-    {
-      "matchDepNames": ["koa"],
-      "matchUpdateTypes": ["major"],
-      "enabled": false
-    },
-    {
-      "matchDepNames": ["gaxios"],
-      "matchUpdateTypes": ["major"],
-      "enabled": false
-    },
-    {
-      "matchManagers": ["npm"],
-      "matchDepNames": ["dd-trace"],
-      "matchUpdateTypes": ["major", "minor"],
-
-      "minimumReleaseAge": "14 days"
-    },
-    {
-      "matchManagers": ["npm"],
-      "matchDepNames": ["@aws-sdk/credential-providers"],
-
-      "allowedVersions": "!/^3\\.730\\.0$/"
-    },
-    {
-      "matchManagers": ["npm"],
-      "matchDepNames": ["aws-sdk-mock"],
-      "allowedVersions": "!/^5\\.5\\.0$/"
-    },
-    {
-      "matchManagers": ["npm"],
-      "matchDepNames": ["@types/faker", "faker"],
-      "allowedVersions": "< 6"
-    },
-    {
-      "matchManagers": ["npm"],
-      "matchDepNames": ["dd-trace"],
-
-      "allowedVersions": "!/^(3\\.42\\.0|4\\.21\\.0|5\\.4[1-3]\\.\\d+)$/"
     },
     {
       "matchDepNames": ["!seek-jobs/gantry", "!seek-jobs/automat", "!skuba"],
@@ -107,26 +57,12 @@
       "matchUpdateTypes": ["lockFileMaintenance"],
       "prPriority": 99,
       "schedule": "before 3:00 am every 2 weeks on Wednesday"
-    },
-    {
-      "matchDatasources": ["npm"],
-      "matchPackageNames": ["koa-bodyparser", "@types/koa-bodyparser"],
-      "replacementName": "@koa/bodyparser",
-      "replacementVersion": "6.0.0"
     }
   ],
   "buildkite": { "additionalBranchPrefix": "", "commitMessageExtra": "" },
   "commitMessageAction": "",
   "commitMessageExtra": "",
-  "gitIgnoredAuthors": [
-    "34733141+seek-oss-ci@users.noreply.github.com",
-    "87109344+buildagencygitapitoken[bot]@users.noreply.github.com"
-  ],
-  "postUpdateOptions": ["yarnDedupeFewer", "pnpmDedupe"],
   "prConcurrentLimit": 2,
-  "prNotPendingHours": 1,
   "schedule": "before 6:00 am on Monday",
-  "semanticCommitScope": "",
-  "semanticCommitType": "deps",
   "separateMajorMinor": false
 }

@@ -9,12 +9,9 @@
     "preview:dockerCompose",
     "docker:disableMajor",
     "group:monorepos",
-    "docker:pinDigests"
+    "docker:pinDigests",
+    "github>seek-oss/rynovate:internal-shared"
   ],
-  "configMigration": true,
-  "lockFileMaintenance": {
-    "enabled": true
-  },
   "packageRules": [
     {
       "matchDepTypes": ["peerDependencies"],
@@ -61,60 +58,9 @@
       "enabled": false
     },
     {
-      "matchDepNames": [
-        "react",
-        "react-dom",
-        "@types/react",
-        "@types/react-dom"
-      ],
-      "matchUpdateTypes": ["major"],
-      "enabled": false
-    },
-    {
-      "matchDepNames": ["koa"],
-      "matchUpdateTypes": ["major"],
-      "enabled": false
-    },
-    {
-      "matchDepNames": ["gaxios"],
-      "matchUpdateTypes": ["major"],
-      "enabled": false
-    },
-    {
-      "matchManagers": ["npm"],
-      "matchDepNames": ["dd-trace"],
-      "matchUpdateTypes": ["major", "minor"],
-
-      "minimumReleaseAge": "14 days"
-    },
-    {
-      "matchManagers": ["npm"],
-      "matchDepNames": ["@aws-sdk/credential-providers"],
-
-      "allowedVersions": "!/^3\\.730\\.0$/"
-    },
-    {
-      "matchManagers": ["npm"],
-      "matchDepNames": ["aws-sdk-mock"],
-
-      "allowedVersions": "!/^5\\.5\\.0$/"
-    },
-    {
       "matchManagers": ["npm"],
       "matchDepNames": ["aws-sdk-client-mock", "aws-sdk-client-mock-jest"],
       "groupName": "aws-sdk client mock"
-    },
-    {
-      "matchManagers": ["npm"],
-      "matchDepNames": ["@types/faker", "faker"],
-
-      "allowedVersions": "< 6"
-    },
-    {
-      "matchManagers": ["npm"],
-      "matchDepNames": ["dd-trace"],
-
-      "allowedVersions": "!/^(3\\.42\\.0|4\\.21\\.0|5\\.4[1-3]\\.\\d+)$/"
     },
     {
       "matchManagers": ["npm"],
@@ -323,12 +269,6 @@
       "matchManagers": ["dockerfile"],
       "schedule": ["before 7:00 on Monday"],
       "prPriority": 99
-    },
-    {
-      "matchDatasources": ["npm"],
-      "matchPackageNames": ["koa-bodyparser", "@types/koa-bodyparser"],
-      "replacementName": "@koa/bodyparser",
-      "replacementVersion": "6.0.0"
     }
   ],
   "customManagers": [
@@ -346,17 +286,9 @@
   "branchConcurrentLimit": null,
   "branchPrefix": "renovate-",
   "commitMessageAction": "",
-  "gitIgnoredAuthors": [
-    "34733141+seek-oss-ci@users.noreply.github.com",
-    "87109344+buildagencygitapitoken[bot]@users.noreply.github.com"
-  ],
-  "postUpdateOptions": ["yarnDedupeFewer", "pnpmDedupe"],
   "prConcurrentLimit": 3,
-  "prNotPendingHours": 1,
   "rangeStrategy": "replace",
   "schedule": "after 3:00 am and before 6:00 am on Monday and Friday",
-  "semanticCommitScope": "",
-  "semanticCommitType": "deps",
   "prCreation": "immediate",
   "minimumReleaseAge": "3 days",
   "internalChecksFilter": "strict",
