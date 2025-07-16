@@ -10,7 +10,7 @@
     "singleQuote": true,
     "tabWidth": 2
   },
-  "packageManager": "pnpm@9.15.9",
+  "packageManager": "pnpm@10.13.1",
   "scripts": {
     "format": "prettier --write .",
     "lint": "prettier --check .",
