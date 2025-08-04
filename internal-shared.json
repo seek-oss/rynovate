@@ -58,6 +58,12 @@
       "matchPackageNames": ["koa-bodyparser", "@types/koa-bodyparser"],
       "replacementName": "@koa/bodyparser",
       "replacementVersion": "6.0.0"
+    },
+    {
+      "matchDatasources": ["npm"],
+      "matchDepNames": ["@types/koa", "koa", "seek-koala"],
+      "matchUpdateTypes": ["major", "minor", "patch"],
+      "groupName": "koa"
     }
   ],
   "gitIgnoredAuthors": [
