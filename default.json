@@ -269,11 +269,6 @@
       "matchManagers": ["dockerfile"],
       "schedule": ["before 7:00 on Monday"],
       "prPriority": 99
-    },
-    {
-      "matchDepNames": ["@types/koa", "koa", "seek-koala"],
-      "matchUpdateTypes": ["major", "minor", "patch"],
-      "groupName": "koa"
     }
   ],
   "customManagers": [
