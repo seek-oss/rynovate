@@ -60,10 +60,16 @@
       "replacementVersion": "6.0.0"
     },
     {
-      "matchDatasources": ["npm"],
-      "matchDepNames": ["@types/koa", "koa", "seek-koala"],
-      "matchUpdateTypes": ["major", "minor", "patch"],
-      "groupName": "koa"
+      "groupName": "koa v3",
+      "matchPackageNames": ["koa", "@types/koa"],
+      "separateMajorMinor": false,
+      "matchCurrentVersion": "^2.0.0"
+    },
+    {
+      "groupName": "koa v3",
+      "matchPackageNames": ["seek-koala"],
+      "separateMajorMinor": false,
+      "matchCurrentVersion": ">=7.0.0 <7.1.0"
     }
   ],
   "gitIgnoredAuthors": [
