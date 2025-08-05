@@ -63,18 +63,6 @@
       "groupName": "aws-sdk client mock"
     },
     {
-      "groupName": "koa v3",
-      "matchPackageNames": ["koa", "@types/koa"],
-      "separateMajorMinor": false,
-      "matchCurrentVersion": "^2.0.0"
-    },
-    {
-      "groupName": "koa v3",
-      "matchPackageNames": ["seek-koala"],
-      "separateMajorMinor": false,
-      "matchCurrentVersion": ">=7.0.0 <7.1.0"
-    },
-    {
       "matchManagers": ["npm"],
       "matchDepNames": ["/^@types//"],
       "matchUpdateTypes": ["major", "minor", "patch"],
@@ -90,6 +78,18 @@
       "groupName": "npm definitely typed",
       "prPriority": 99,
       "schedule": "before 3:00 am every 2 weeks on Tuesday"
+    },
+    {
+      "groupName": "koa v3",
+      "matchPackageNames": ["koa", "@types/koa"],
+      "separateMajorMinor": false,
+      "matchCurrentVersion": "^2.0.0"
+    },
+    {
+      "groupName": "koa v3",
+      "matchPackageNames": ["seek-koala"],
+      "separateMajorMinor": false,
+      "matchCurrentVersion": ">=7.0.0 <7.1.0"
     },
     {
       "matchDepNames": [
