@@ -300,7 +300,7 @@
       "matchStrings": [
         "const DATADOG_NODE_LAYER_VERSION = (?<currentValue>\\d+)"
       ],
-      "extractVersion": "^v\\d+\\.(?<version>\\d+)\\.\\d+$",
+      "extractVersionTemplate": "^v\\d+\\.(?<version>\\d+)\\.\\d+$",
       "packageNameTemplate": "DataDog/datadog-lambda-js",
       "depNameTemplate": "datadog lambda node layer",
       "datasourceTemplate": "github-releases"
