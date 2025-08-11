@@ -303,8 +303,7 @@
       "extractVersion": "^v\\d+\\.(?<version>\\d+)\\.\\d+$",
       "packageNameTemplate": "DataDog/datadog-lambda-js",
       "depNameTemplate": "datadog lambda node layer",
-      "datasourceTemplate": "github-releases",
-      "groupName": "datadog-lambda-js"
+      "datasourceTemplate": "github-releases"
     }
   ],
   "branchConcurrentLimit": null,
