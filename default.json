@@ -293,6 +293,17 @@
       "packageNameTemplate": "DataDog/datadog-lambda-extension",
       "depNameTemplate": "datadog lambda extension layer",
       "datasourceTemplate": "github-releases"
+    },
+    {
+      "customType": "regex",
+      "fileMatch": ["(^|/)infra/.*\\.ts$"],
+      "matchStrings": [
+        "const DATADOG_NODE_LAYER_VERSION = (?<currentValue>\\d+)"
+      ],
+      "extractVersionTemplate": "^v\\d+\\.(?<version>\\d+)\\.",
+      "depNameTemplate": "datadog-lambda-js",
+      "packageNameTemplate": "datadog-lambda-js",
+      "datasourceTemplate": "github-releases"
     }
   ],
   "branchConcurrentLimit": null,
