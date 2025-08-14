@@ -183,6 +183,11 @@
       "schedule": "before 6:00 am every 2 weeks on Thursday"
     },
     {
+      "matchDepNames": ["pnpm"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true
+    },
+    {
       "matchDepTypes": ["devDependencies"],
       "matchManagers": ["npm"],
       "matchDepNames": [
