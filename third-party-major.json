@@ -93,7 +93,7 @@
     {
       "matchUpdateTypes": ["lockFileMaintenance"],
 
-      "automerge": false
+      "automerge": true
     },
     {
       "matchUpdateTypes": ["lockFileMaintenance"],

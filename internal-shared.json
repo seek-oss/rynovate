@@ -2,14 +2,9 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "configMigration": true,
   "lockFileMaintenance": {
-    "enabled": false
+    "enabled": true
   },
   "packageRules": [
-    {
-      "matchManagers": ["npm"],
-      "matchDepNames": ["nx"],
-      "enabled": false
-    },
     {
       "matchDepNames": [
         "react",
