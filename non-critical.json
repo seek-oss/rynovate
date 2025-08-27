@@ -52,7 +52,7 @@
       "commitMessageTopic": "{{depName}}",
       "schedule": "before 6:00 am every weekday"
     },
-    { "matchUpdateTypes": ["lockFileMaintenance"], "automerge": true },
+    { "matchUpdateTypes": ["lockFileMaintenance"], "automerge": false },
     {
       "matchUpdateTypes": ["lockFileMaintenance"],
       "prPriority": 99,
