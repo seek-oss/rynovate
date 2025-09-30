@@ -93,8 +93,14 @@
     },
     {
       "groupName": "skuba v12.14.1 and pnpm v17",
-      "matchDepNames": ["skuba", "pnpm"],
-      "matchCurrentVersion": "/(^12\\.14\\.1$|^17\\.)/",
+      "matchDepNames": ["skuba"],
+      "matchCurrentVersion": "12.14.1",
+      "separateMajorMinor": false
+    },
+    {
+      "groupName": "skuba v12.14.1 and pnpm v17",
+      "matchDepNames": ["pnpm"],
+      "matchCurrentVersion": ">=17.0.0 <18.0.0",
       "separateMajorMinor": false
     },
     {
