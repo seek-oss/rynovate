@@ -62,6 +62,7 @@
   "buildkite": { "additionalBranchPrefix": "", "commitMessageExtra": "" },
   "commitMessageAction": "",
   "commitMessageExtra": "",
+  "minimumReleaseAge": "3 days",
   "prConcurrentLimit": 2,
   "schedule": "before 6:00 am on Monday",
   "separateMajorMinor": false
