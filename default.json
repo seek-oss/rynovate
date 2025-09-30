@@ -92,6 +92,12 @@
       "matchCurrentVersion": ">=7.0.0 <7.1.0"
     },
     {
+      "groupName": "skuba v12.14.1 and pnpm v17",
+      "matchDepNames": ["skuba", "pnpm"],
+      "matchCurrentVersion": "/(^12\\.14\\.1$|^17\\.)/",
+      "separateMajorMinor": false
+    },
+    {
       "matchDepNames": [
         "!aws-sdk",
         "!braid-design-system",
