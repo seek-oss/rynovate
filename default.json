@@ -99,6 +99,12 @@
       "separateMajorMinor": false
     },
     {
+      "groupName": "serverless",
+      "matchManagers": ["custom.regex", "npm"],
+      "matchPackageNames": ["serverless"],
+      "separateMajorMinor": false
+    },
+    {
       "matchDepNames": [
         "!aws-sdk",
         "!braid-design-system",
@@ -306,6 +312,15 @@
       "depNameTemplate": "datadog-lambda-js",
       "packageNameTemplate": "datadog-lambda-js",
       "datasourceTemplate": "github-releases"
+    },
+    {
+      "customType": "regex",
+      "managerFilePatterns": ["/(^|/)serverless(\\..*)?\\.ya?ml$/"],
+      "matchStrings": [
+        "frameworkVersion:\\s*['\"](?<currentValue>[^'\"]+)['\"]"
+      ],
+      "depNameTemplate": "serverless",
+      "datasourceTemplate": "npm"
     }
   ],
   "branchConcurrentLimit": null,
