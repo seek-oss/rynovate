@@ -100,7 +100,7 @@
     },
     {
       "groupName": "serverless",
-      "matchManagers": ["npm"],
+      "matchManagers": ["custom.regex", "npm"],
       "matchPackageNames": ["serverless"],
       "separateMajorMinor": false
     },
