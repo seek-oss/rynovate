@@ -106,15 +106,16 @@
     },
     {
       "matchDepNames": [
-        "!aws-sdk",
-        "!braid-design-system",
-        "!sku",
-        "!skuba",
         "!/^@?seek/",
-        "!/seek$/",
         "!/^@aws-sdk//",
         "!/^@types//",
-        "!/^@vanilla-extract//"
+        "!/^@vanilla-extract//",
+        "!/seek$/",
+        "!aws-sdk",
+        "!braid-design-system",
+        "!serverless",
+        "!sku",
+        "!skuba"
       ],
       "matchDepTypes": ["devDependencies"],
       "matchManagers": ["npm"],
