@@ -93,16 +93,9 @@
     },
     {
       "groupName": "skuba v12.14.1 and pnpm v10.17",
-      "matchPackageNames": ["skuba"],
-      "allowedVersions": ">=12.4.1",
-      "matchCurrentVersion": "<12.4.1",
-      "separateMajorMinor": false
-    },
-    {
-      "groupName": "skuba v12.14.1 and pnpm v10.17",
-      "matchPackageNames": ["pnpm"],
-      "allowedVersions": ">=10.17.0",
-      "matchCurrentVersion": "<10.17.0",
+      "matchPackageNames": ["skuba", "pnpm"],
+      "allowedVersions": ">=12.4.1 || >=10.17.0",
+      "additionalBranchPrefix": "skuba-pnpm-",
       "separateMajorMinor": false
     },
     {
