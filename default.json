@@ -92,6 +92,18 @@
       "matchCurrentVersion": ">=7.0.0 <7.1.0"
     },
     {
+      "groupName": "skuba 13",
+      "matchPackageNames": ["skuba"],
+      "matchCurrentVersion": ">=12.0.0 <13.0.0",
+      "separateMajorMinor": false
+    },
+    {
+      "groupName": "skuba 13",
+      "matchPackageNames": ["@seek/backstage-catalog-lint"],
+      "matchCurrentVersion": "<1.29.7",
+      "separateMajorMinor": false
+    },
+    {
       "groupName": "skuba v12.14.1 and pnpm v10.17",
       "matchPackageNames": ["skuba"],
       "allowedVersions": ">=12.4.1",
