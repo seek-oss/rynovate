@@ -46,11 +46,25 @@
     },
     {
       "matchManagers": ["buildkite"],
-      "matchDepNames": ["seek-jobs/gantry", "seek-jobs/automat"],
-      "commitMessageAction": "",
-      "commitMessageExtra": "{{newValue}}",
-      "commitMessageTopic": "{{depName}}",
-      "schedule": "before 6:00 am every weekday"
+      "matchDepNames": ["seek-jobs/gantry"],
+
+      "schedule": "after 3:00 am and before 5:00 pm every weekday",
+      "minimumReleaseAge": "1 hour",
+      "updateNotScheduled": true
+    },
+    {
+      "matchManagers": ["buildkite"],
+      "matchDepNames": ["seek-jobs/automat"],
+      "matchUpdateTypes": ["major"],
+      "enabled": false
+    },
+    {
+      "matchManagers": ["buildkite"],
+      "matchDepNames": ["seek-jobs/automat"],
+
+      "schedule": "after 3:00 am and before 5:00 pm every weekday",
+      "minimumReleaseAge": "1 hour",
+      "updateNotScheduled": true
     },
     { "matchUpdateTypes": ["lockFileMaintenance"], "automerge": true },
     {
