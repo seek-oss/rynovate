@@ -51,7 +51,7 @@
       "matchManagers": ["npm"],
       "matchDepNames": ["dd-trace"],
 
-      "allowedVersions": "!/^(3\\.42\\.0|4\\.21\\.0|5\\.4[1-3]\\.\\d+)$/"
+      "allowedVersions": "!/^(3\\.42\\.0|4\\.21\\.0|5\\.4[1-3]\\.\\d+|5\\.80\\.0)$/"
     },
     {
       "matchDatasources": ["npm"],
