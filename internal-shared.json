@@ -75,6 +75,21 @@
       "matchManagers": ["npm"],
       "matchDepNames": ["@koa/router"],
       "allowedVersions": "< 14"
+    },
+    {
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["gcr.io/distroless/nodejs20-debian12"],
+      "replacementName": "gcr.io/distroless/nodejs20-debian13"
+    },
+    {
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["gcr.io/distroless/nodejs22-debian12"],
+      "replacementName": "gcr.io/distroless/nodejs22-debian13"
+    },
+    {
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["gcr.io/distroless/nodejs24-debian12"],
+      "replacementName": "gcr.io/distroless/nodejs24-debian13"
     }
   ],
   "gitIgnoredAuthors": [
