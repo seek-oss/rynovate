@@ -3,7 +3,7 @@
     "concurrently": "9.2.1",
     "prettier": "3.7.4",
     "re2": "1.23.0",
-    "renovate": "41.173.1"
+    "renovate": "42.68.5"
   },
   "license": "MIT",
   "prettier": {
