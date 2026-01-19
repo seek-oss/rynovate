@@ -78,6 +78,16 @@
     },
     {
       "matchDatasources": ["docker"],
+      "matchPackageNames": [
+        "gcr.io/distroless/nodejs20-debian12",
+        "gcr.io/distroless/nodejs22-debian12",
+        "gcr.io/distroless/nodejs24-debian12"
+      ],
+      "matchUpdateTypes": ["pin"],
+      "enabled": false
+    },
+    {
+      "matchDatasources": ["docker"],
       "matchPackageNames": ["gcr.io/distroless/nodejs20-debian12"],
       "replacementName": "gcr.io/distroless/nodejs20-debian13"
     },
