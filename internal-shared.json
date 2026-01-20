@@ -83,7 +83,7 @@
         "gcr.io/distroless/nodejs22-debian12",
         "gcr.io/distroless/nodejs24-debian12"
       ],
-      "matchUpdateTypes": ["digest"],
+      "matchUpdateTypes": ["digest", "pinDigest"],
       "enabled": false
     },
     {
