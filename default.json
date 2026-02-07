@@ -189,7 +189,7 @@
     },
     {
       "matchManagers": ["npm"],
-      "matchDepNames": ["skuba"],
+      "matchDepNames": ["skuba", "/^@skuba-lib//"],
 
       "separateMultipleMajor": true,
       "prPriority": 98,
@@ -297,6 +297,10 @@
       "matchDepNames": ["react-relay", "/^relay-/"],
 
       "groupName": "relay"
+    },
+    {
+      "matchDepNames": ["/^@vocab//"],
+      "groupName": "vocab monorepo"
     },
     {
       "matchUpdateTypes": ["lockFileMaintenance"],
