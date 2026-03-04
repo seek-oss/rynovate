@@ -189,7 +189,7 @@
     },
     {
       "matchManagers": ["npm"],
-      "matchDepNames": ["skuba", "/^@skuba-lib//"],
+      "matchDepNames": ["skuba", "/^@skuba-lib//", "pnpm-plugin-skuba"],
 
       "separateMultipleMajor": true,
       "prPriority": 98,
