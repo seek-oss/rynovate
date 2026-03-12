@@ -65,7 +65,7 @@ Pull requests are tersely named:
 ### `third-party-major`
 
 Like the `default` preset, but less noisy as it only monitors major updates for non-SEEK deps.
-Non-major Buildkite plugin and Docker image versions are still renovated.
+Non-major Buildkite plugin and major Docker image versions are still renovated.
 
 ## Usage
 
