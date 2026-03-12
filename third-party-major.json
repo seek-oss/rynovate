@@ -10,7 +10,6 @@
     ":updateNotScheduled",
     "preview:buildkite",
     "preview:dockerCompose",
-    "docker:disableMajor",
     "docker:pinDigests",
     "github>seek-oss/rynovate:internal-shared"
   ],
