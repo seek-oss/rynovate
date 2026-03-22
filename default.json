@@ -162,6 +162,11 @@
     },
     {
       "matchManagers": ["docker-compose", "dockerfile"],
+      "matchPackageNames": ["public.ecr.aws/docker/library/node"],
+      "allowedVersions": "<25"
+    },
+    {
+      "matchManagers": ["docker-compose", "dockerfile"],
 
       "commitMessageExtra": "",
       "group": {
