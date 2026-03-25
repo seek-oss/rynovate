@@ -6,13 +6,7 @@
   },
   "packageRules": [
     {
-      "matchDepNames": [
-        "react",
-        "react-dom",
-        "@types/react",
-        "@types/react-dom",
-        "gaxios"
-      ],
+      "matchDepNames": ["gaxios"],
       "matchUpdateTypes": ["major"],
       "enabled": false
     },
@@ -100,6 +94,11 @@
       "matchDatasources": ["docker"],
       "matchPackageNames": ["gcr.io/distroless/nodejs24-debian12"],
       "replacementName": "gcr.io/distroless/nodejs24-debian13"
+    },
+    {
+      "matchDatasources": ["docker"],
+      "matchDepNames": ["/(?:^|\\/)node$/"],
+      "allowedVersions": "< 25"
     }
   ],
   "gitIgnoredAuthors": [
