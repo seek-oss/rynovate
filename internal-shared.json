@@ -66,11 +66,6 @@
       "matchCurrentVersion": ">=7.0.0 <7.1.0"
     },
     {
-      "matchManagers": ["npm"],
-      "matchDepNames": ["@koa/router"],
-      "allowedVersions": "< 14"
-    },
-    {
       "matchDatasources": ["docker"],
       "matchPackageNames": [
         "gcr.io/distroless/nodejs20-debian12",
