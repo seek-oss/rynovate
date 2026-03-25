@@ -6,13 +6,7 @@
   },
   "packageRules": [
     {
-      "matchDepNames": [
-        "react",
-        "react-dom",
-        "@types/react",
-        "@types/react-dom",
-        "gaxios"
-      ],
+      "matchDepNames": ["gaxios"],
       "matchUpdateTypes": ["major"],
       "enabled": false
     },
