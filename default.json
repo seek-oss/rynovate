@@ -335,6 +335,13 @@
       "matchManagers": ["dockerfile"],
       "schedule": ["before 7:00 on Monday"],
       "prPriority": 99
+    },
+    {
+      "matchManagers": ["npm"],
+      "matchDepNames": ["@seek/melways-sites"],
+      "prConcurrentLimit": 0,
+      "prPriority": 100,
+      "schedule": "at any time"
     }
   ],
   "customManagers": [
