@@ -98,7 +98,7 @@
     {
       "matchManagers": ["npm"],
       "matchDepNames": ["@seek/melways-sites"],
-      "prConcurrentLimit": null,
+      "prConcurrentLimit": 0,
       "prPriority": 100,
       "schedule": "at any time"
     }
