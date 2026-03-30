@@ -94,6 +94,13 @@
       "matchDatasources": ["docker"],
       "matchDepNames": ["/(?:^|\\/)node$/"],
       "allowedVersions": "< 25"
+    },
+    {
+      "matchManagers": ["npm"],
+      "matchDepNames": ["@seek/melways-sites"],
+      "prConcurrentLimit": 0,
+      "prPriority": 100,
+      "schedule": "at any time"
     }
   ],
   "gitIgnoredAuthors": [
