@@ -94,6 +94,11 @@
       "matchDatasources": ["docker"],
       "matchDepNames": ["/(?:^|\\/)node$/"],
       "allowedVersions": "< 25"
+    },
+    {
+      "matchManagers": ["npm"],
+      "matchDepNames": ["axios"],
+      "allowedVersions": "!/^(1\\.14\\.1|0\\.30\\.4)$/"
     }
   ],
   "gitIgnoredAuthors": [
