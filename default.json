@@ -10,6 +10,7 @@
     "docker:enableMajor",
     "group:monorepos",
     "docker:pinDigests",
+    "helpers:pinGitHubActionDigests",
     "github>seek-oss/rynovate:internal-shared"
   ],
   "packageRules": [
