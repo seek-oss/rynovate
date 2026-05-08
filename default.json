@@ -329,12 +329,14 @@
       "matchUpdateTypes": ["digest", "pinDigest"],
       "matchManagers": ["dockerfile"],
       "automerge": true,
-      "recreateWhen": "always"
+      "recreateWhen": "always",
+      "minimumReleaseAgeBehaviour": "timestamp-optional"
     },
     {
       "matchUpdateTypes": ["digest", "pinDigest"],
       "matchManagers": ["dockerfile"],
       "schedule": ["before 7:00 on Monday"],
+      "minimumReleaseAgeBehaviour": "timestamp-optional",
       "prPriority": 99
     },
     {
