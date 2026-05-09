@@ -330,13 +330,13 @@
       "matchManagers": ["dockerfile"],
       "automerge": true,
       "recreateWhen": "always",
-      "minimumReleaseAgeBehaviour": "timestamp-optional"
+      "minimumReleaseAge": null
     },
     {
       "matchUpdateTypes": ["digest", "pinDigest"],
       "matchManagers": ["dockerfile"],
       "schedule": ["before 7:00 on Monday"],
-      "minimumReleaseAgeBehaviour": "timestamp-optional",
+      "minimumReleaseAge": null,
       "prPriority": 99
     },
     {
