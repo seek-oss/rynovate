@@ -338,13 +338,6 @@
       "schedule": ["before 7:00 on Monday"],
       "minimumReleaseAgeBehaviour": "timestamp-optional",
       "prPriority": 99
-    },
-    {
-      "matchManagers": ["npm"],
-      "matchDepNames": ["@seek/melways-sites", "@seek/shared-constants"],
-      "prConcurrentLimit": 0,
-      "prPriority": 100,
-      "schedule": "at any time"
     }
   ],
   "customManagers": [
