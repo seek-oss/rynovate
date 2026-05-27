@@ -73,6 +73,7 @@
     {
       "matchDepNames": ["pnpm"],
       "matchUpdateTypes": ["major"],
+      "matchNewValue": "/^11/",
       "enabled": false
     },
     {
