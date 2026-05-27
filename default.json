@@ -71,6 +71,11 @@
       "automerge": true
     },
     {
+      "matchDepNames": ["pnpm"],
+      "matchUpdateTypes": ["major"],
+      "enabled": false
+    },
+    {
       "matchManagers": ["npm"],
       "matchDepNames": ["/^@types//"],
       "matchUpdateTypes": ["major", "minor", "patch"],
