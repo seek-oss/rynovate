@@ -11,6 +11,12 @@
       "enabled": false
     },
     {
+      "matchDepNames": ["pnpm"],
+      "matchUpdateTypes": ["major"],
+      "matchNewValue": "/^11/",
+      "enabled": false
+    },
+    {
       "matchManagers": ["npm"],
       "matchDepNames": ["dd-trace"],
       "matchUpdateTypes": ["major", "minor"],

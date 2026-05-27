@@ -30,6 +30,12 @@
       "enabled": false
     },
     {
+      "matchDepNames": ["pnpm"],
+      "matchUpdateTypes": ["major"],
+      "matchNewValue": "/^11/",
+      "enabled": false
+    },
+    {
       "matchDepNames": ["!seek-jobs/gantry", "!seek-jobs/automat", "!skuba"],
       "matchUpdateTypes": [
         "bump",
