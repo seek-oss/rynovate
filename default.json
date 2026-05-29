@@ -60,6 +60,11 @@
     },
     {
       "matchManagers": ["npm"],
+      "matchDepNames": ["@arethetypeswrong/core@0.18.2>fflate"],
+      "enabled": false
+    },
+    {
+      "matchManagers": ["npm"],
       "matchDepNames": ["aws-sdk-client-mock", "aws-sdk-client-mock-jest"],
       "groupName": "aws-sdk client mock"
     },
