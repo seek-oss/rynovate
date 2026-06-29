@@ -29,7 +29,6 @@
       "matchUpdateTypes": ["major"],
       "enabled": false
     },
-    //
     {
       "description": "https://github.com/seek-oss/skuba/issues/2363",
       "matchDepNames": ["pnpm"],
