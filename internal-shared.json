@@ -5,8 +5,8 @@
     "enabled": true
   },
   "packageRules": [
-    // https://github.com/seek-oss/skuba/issues/2363
     {
+      "description": "https://github.com/seek-oss/skuba/issues/2363",
       "matchDepNames": ["pnpm"],
       "matchUpdateTypes": ["major"],
       "matchNewValue": "/^11/",
@@ -19,37 +19,36 @@
 
       "minimumReleaseAge": "14 days"
     },
-    // https://github.com/aws/aws-sdk-js-v3/issues/6816
     {
+      "description": "https://github.com/aws/aws-sdk-js-v3/issues/6816",
       "matchManagers": ["npm"],
       "matchDepNames": ["@aws-sdk/credential-providers"],
 
       "allowedVersions": "!/^3\\.730\\.0$/"
     },
-    // https://github.com/dwyl/aws-sdk-mock/issues/256
     {
+      "description": "https://github.com/dwyl/aws-sdk-mock/issues/256",
       "matchManagers": ["npm"],
       "matchDepNames": ["aws-sdk-mock"],
 
       "allowedVersions": "!/^5\\.5\\.0$/"
     },
-    // https://github.com/seek-oss/rynovate/pull/55
     {
+      "description": "https://github.com/seek-oss/rynovate/pull/55",
       "matchManagers": ["npm"],
       "matchDepNames": ["@types/faker", "faker"],
 
       "allowedVersions": "< 6"
     },
-    // https://github.com/seek-oss/rynovate/pull/180
     {
+      "description": "https://github.com/seek-oss/rynovate/pull/180",
       "matchManagers": ["npm"],
       "matchDepNames": ["dotenv"],
 
       "allowedVersions": "< 17"
     },
-    // Various issues with dd-trace
-    // https://github.com/search?q=repo%3Aseek-oss%2Frynovate+dd-trace&type=pullrequests
     {
+      "description": "https://github.com/search?q=repo%3Aseek-oss%2Frynovate+dd-trace&type=pullrequests",
       "matchManagers": ["npm"],
       "matchDepNames": ["dd-trace"],
       "allowedVersions": "!/^(3\\.42\\.0|4\\.21\\.0|5\\.4[1-3]\\.\\d+|5\\.80\\.0)$/"

@@ -63,8 +63,8 @@
 
       "automerge": true
     },
-    // https://github.com/seek-oss/skuba/issues/2363
     {
+      "description": "https://github.com/seek-oss/skuba/issues/2363",
       "matchDepNames": ["pnpm"],
       "matchUpdateTypes": ["major"],
       "matchNewValue": "/^11/",
