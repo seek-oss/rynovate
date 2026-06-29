@@ -47,20 +47,8 @@
       "allowedVersions": "<=24"
     },
     {
-      "matchManagers": ["npm"],
-      "matchDepNames": ["node-fetch"],
-      "matchUpdateTypes": ["major"],
-
-      "enabled": false
-    },
-    {
       "matchDepNames": ["node"],
       "matchUpdateTypes": ["major"],
-      "enabled": false
-    },
-    {
-      "matchManagers": ["npm"],
-      "matchDepNames": ["@arethetypeswrong/core@0.18.2>fflate"],
       "enabled": false
     },
     {
@@ -75,6 +63,7 @@
 
       "automerge": true
     },
+    // https://github.com/seek-oss/skuba/issues/2363
     {
       "matchDepNames": ["pnpm"],
       "matchUpdateTypes": ["major"],
