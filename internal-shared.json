@@ -48,6 +48,12 @@
       "allowedVersions": "< 17"
     },
     {
+      "description": "https://devblogs.microsoft.com/typescript/announcing-typescript-7-0/ — TS 7.0 has no JS programmatic API (expected in 7.1); breaks typescript-eslint/skuba. Allow <7 or >=7.1.",
+      "matchManagers": ["npm"],
+      "matchDepNames": ["typescript"],
+      "allowedVersions": "<7.0.0 || >=7.1.0"
+    },
+    {
       "description": "https://github.com/search?q=repo%3Aseek-oss%2Frynovate+dd-trace&type=pullrequests",
       "matchManagers": ["npm"],
       "matchDepNames": ["dd-trace"],
