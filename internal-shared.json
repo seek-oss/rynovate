@@ -13,6 +13,13 @@
       "enabled": false
     },
     {
+      "description": "https://github.com/aws/aws-cdk/issues/37898",
+      "matchDepNames": ["pnpm"],
+      "matchUpdateTypes": ["major"],
+      "matchNewValue": "/^12/",
+      "enabled": false
+    },
+    {
       "matchManagers": ["npm"],
       "matchDepNames": ["dd-trace"],
       "matchUpdateTypes": ["major", "minor"],
