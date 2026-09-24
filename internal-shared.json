@@ -41,7 +41,7 @@
       "allowedVersions": "!/^5\\.5\\.0$/"
     },
     {
-      "description": "https://github.com/stschulte/aws-sdk-client-mock-vitest/releases/tag/v8.0.0 — v8 requires vitest 5 and drops Node 20",
+      "description": "https://github.com/stschulte/aws-sdk-client-mock-vitest/releases/tag/v8.0.0 — v8 requires vitest 5",
       "matchManagers": ["npm"],
       "matchDepNames": ["aws-sdk-client-mock-vitest"],
       "allowedVersions": "< 8"
