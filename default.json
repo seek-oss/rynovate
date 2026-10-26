@@ -363,38 +363,6 @@
       "prPriority": 99
     }
   ],
-  "customManagers": [
-    {
-      "customType": "regex",
-      "fileMatch": ["(^|/)infra/.*\\.ts$"],
-      "matchStrings": [
-        "const DATADOG_EXTENSION_LAYER_VERSION = (?<currentValue>\\d+)"
-      ],
-      "packageNameTemplate": "DataDog/datadog-lambda-extension",
-      "depNameTemplate": "datadog lambda extension layer",
-      "datasourceTemplate": "github-releases"
-    },
-    {
-      "customType": "regex",
-      "fileMatch": ["(^|/)infra/.*\\.ts$"],
-      "matchStrings": [
-        "const DATADOG_NODE_LAYER_VERSION = (?<currentValue>\\d+)"
-      ],
-      "extractVersionTemplate": "^v\\d+\\.(?<version>\\d+)\\.",
-      "depNameTemplate": "datadog-lambda-js",
-      "packageNameTemplate": "DataDog/datadog-lambda-js",
-      "datasourceTemplate": "github-releases"
-    },
-    {
-      "customType": "regex",
-      "managerFilePatterns": ["/(^|/)serverless(\\..*)?\\.ya?ml$/"],
-      "matchStrings": [
-        "frameworkVersion:\\s*['\"](?<currentValue>[^'\"]+)['\"]"
-      ],
-      "depNameTemplate": "serverless",
-      "datasourceTemplate": "npm"
-    }
-  ],
   "branchConcurrentLimit": null,
   "branchPrefix": "renovate-",
   "commitMessageAction": "",
