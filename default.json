@@ -382,7 +382,7 @@
       ],
       "extractVersionTemplate": "^v\\d+\\.(?<version>\\d+)\\.",
       "depNameTemplate": "datadog-lambda-js",
-      "packageNameTemplate": "datadog-lambda-js",
+      "packageNameTemplate": "DataDog/datadog-lambda-js",
       "datasourceTemplate": "github-releases"
     },
     {
