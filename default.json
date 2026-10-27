@@ -64,20 +64,6 @@
       "automerge": true
     },
     {
-      "description": "https://github.com/seek-oss/skuba/issues/2363",
-      "matchDepNames": ["pnpm"],
-      "matchUpdateTypes": ["major"],
-      "matchNewValue": "/^11/",
-      "enabled": false
-    },
-    {
-      "description": "https://github.com/aws/aws-cdk/issues/37898",
-      "matchDepNames": ["pnpm"],
-      "matchUpdateTypes": ["major"],
-      "matchNewValue": "/^12/",
-      "enabled": false
-    },
-    {
       "matchManagers": ["npm"],
       "matchDepNames": ["/^@types//"],
       "matchUpdateTypes": ["major", "minor", "patch"],
