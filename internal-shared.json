@@ -145,6 +145,16 @@
       ],
       "depNameTemplate": "serverless",
       "datasourceTemplate": "npm"
+    },
+    {
+      "customType": "regex",
+      "description": "Bump manual pnpm installation pins in Dockerfiles",
+      "managerFilePatterns": ["/(^|/)([^/]*\\.)?[Dd]ockerfile[^/]*$/"],
+      "matchStrings": [
+        "npm (?:i|install)[^\\n]*?\\bpnpm@(?<currentValue>[^\\s'\"&]+)"
+      ],
+      "depNameTemplate": "pnpm",
+      "datasourceTemplate": "npm"
     }
   ],
   "gitIgnoredAuthors": [
